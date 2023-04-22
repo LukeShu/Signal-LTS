@@ -1,5 +1,6 @@
 package org.thoughtcrime.securesms.conversation
 
+import android.content.Context
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
@@ -10,8 +11,8 @@ import io.reactivex.rxjava3.kotlin.subscribeBy
 import org.signal.core.util.concurrent.LifecycleDisposable
 import org.thoughtcrime.securesms.R
 import org.thoughtcrime.securesms.database.ThreadTable
-import org.thoughtcrime.securesms.keyvalue.SignalStore
 import org.thoughtcrime.securesms.recipients.Recipient
+import org.thoughtcrime.securesms.util.Util
 
 /**
  * Delegate object for managing the conversation options menu
@@ -66,7 +67,7 @@ internal object ConversationOptionsMenu {
       if (recipient?.isGroup == false) {
         if (isPushAvailable) {
           menuInflater.inflate(R.menu.conversation_callable_secure, menu)
-        } else if (!recipient.isReleaseNotes && SignalStore.misc().smsExportPhase.allowSmsFeatures()) {
+        } else if (!recipient.isReleaseNotes && Util.isDefaultSmsProvider(callback.requireContext())) {
           menuInflater.inflate(R.menu.conversation_callable_insecure, menu)
         }
       } else if (recipient?.isGroup == true) {
@@ -210,6 +211,8 @@ internal object ConversationOptionsMenu {
    * Callbacks abstraction for the converstaion options menu
    */
   interface Callback {
+    fun requireContext(): Context
+
     fun getSnapshot(): Snapshot
 
     fun onOptionsMenuCreated(menu: Menu)

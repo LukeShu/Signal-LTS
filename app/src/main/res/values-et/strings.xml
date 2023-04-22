@@ -371,19 +371,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Rämpspostitusest teatatud ja blokeeritud.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS-sõnumite toetamine on praegu välja lülitatud. Saad eksportida oma sõnumid mõnda teise rakendusse oma telefonis.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS-sõnumite toetamine on praegu välja lülitatud. Saad eksportida oma sõnumid mõnda teise rakendusse oma telefonis.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal ei toeta enam SMS-sõnumeid. Saad eksportida sõnumid mõnda teise oma telefoni rakendusse.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal ei toeta enam SMS-sõnumeid. Saad eksportida sõnumid mõnda teise oma telefoni rakendusse.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Ekspordi SMS-sõnumid</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Ekspordi SMS-sõnumid</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-sõnumite toetamine on praegu välja lülitatud. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-sõnumite toetamine on praegu välja lülitatud. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal ei toeta enam SMS-sõnumeid. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal ei toeta enam SMS-sõnumeid. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Kutsu Signalisse</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Saadame sulle varsti jälle meeldetuletuse.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Saadame sulle varsti jälle meeldetuletuse.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Vormindatud teksti saatmine</string>
@@ -1070,7 +1070,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Koputa ja hoia all, et salvestada helisõnum, vabasta saatmiseks</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal ei toeta enam SMS-sõnumeid.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal ei toeta enam SMS-sõnumeid.</string> -->
 
     <!-- InviteActivity -->
     <string name="InviteActivity_share">Jaga</string>
@@ -1469,7 +1469,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Varsti ei ole enam võimalik Signalist SMS-sõnumeid saata. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signalist ei ole enam võimalik SMS-sõnumeid saata. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signalist ei ole enam võimalik SMS-sõnumeid saata. Kutsu %1$s Signalisse ja jätkake vestlust siin.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Makse: %1$s</string>
 
@@ -5561,26 +5561,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal ei toeta enam varsti SMS-sõnumeid</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal ei toeta enam varsti SMS-sõnumeid</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ei toeta enam SMS-sõnumeid</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ei toeta enam SMS-sõnumeid</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal lõpetab varsti SMS-sõnumite toetamise, sest Signali sõnumid on otspunktkrüptitud ja neil on tugev privaatsuskaitse, mis SMS-sõnumitel puudub. See võimaldab meil parandada Signali sõnumite kasutuskogemust.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal lõpetab varsti SMS-sõnumite toetamise, sest Signali sõnumid on otspunktkrüptitud ja neil on tugev privaatsuskaitse, mis SMS-sõnumitel puudub. See võimaldab meil parandada Signali sõnumite kasutuskogemust.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal on lõpetanud SMS-sõnumite toetamise, sest Signali sõnumid on otspunktkrüptitud ja neil on tugev privaatsuskaitse, mis SMS-sõnumitel puudub. See võimaldab meil parandada Signali sõnumite kasutuskogemust.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal on lõpetanud SMS-sõnumite toetamise, sest Signali sõnumid on otspunktkrüptitud ja neil on tugev privaatsuskaitse, mis SMS-sõnumitel puudub. See võimaldab meil parandada Signali sõnumite kasutuskogemust.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Ekspordi SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Ekspordi SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Tuleta hiljem meelde</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Tuleta hiljem meelde</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Rohkem teavet</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Rohkem teavet</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS-sõnumite toetamine lõpeb</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS-sõnumite toetamine lõpeb</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ära muretse, krüptitud Signali sõnumeid saad samamoodi edasi saata.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ära muretse, krüptitud Signali sõnumeid saad samamoodi edasi saata.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Jätka</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Jätka</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Eksportimine lõpule viidud</string>
     <!-- Button to continue to next screen -->
@@ -5705,17 +5705,17 @@
     <string name="ChatFilter__tip_pull_down">Filtreerimiseks tõmba mööda vestluste ajalugu sõrmega alla</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS-sõnumite toetamine lõpeb</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS-sõnumite toetamine lõpeb</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1_s">SMS-sõnumite toetamine Signali rakenduses lõpeb %1$s.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_s">SMS-sõnumite toetamine Signali rakenduses lõpeb %1$s.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS-sõnumid erinevad Signali sõnumitest. <b>See ei mõjuta krüptitud Signali sõnumeid, mida saad samamoodi edasi saata.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS-sõnumid erinevad Signali sõnumitest. <b>See ei mõjuta krüptitud Signali sõnumeid, mida saad samamoodi edasi saata.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Sul on võimalik oma SMS-sõnumid teise SMS-rakendusse ümber kolida.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Sul on võimalik oma SMS-sõnumid teise SMS-rakendusse ümber kolida.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal on lõpetanud SMS-sõnumite saatmise toetamise.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal on lõpetanud SMS-sõnumite saatmise toetamise.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Ekspordi SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Ekspordi SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

@@ -371,19 +371,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Als Spam gemeldet und blockiert.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Die SMS-Nachrichtübermittlung ist derzeit deaktiviert. Du kannst deine Nachrichten in eine andere App auf deinem Smartphone exportieren.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Die SMS-Nachrichtübermittlung ist derzeit deaktiviert. Du kannst deine Nachrichten in eine andere App auf deinem Smartphone exportieren.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt. Du kannst deine Nachrichten in eine andere App auf deinem Smartphone exportieren.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt. Du kannst deine Nachrichten in eine andere App auf deinem Smartphone exportieren.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">SMS-Nachrichten exportieren</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">SMS-Nachrichten exportieren</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Die SMS-Nachrichtübermittlung ist derzeit deaktiviert. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Die SMS-Nachrichtübermittlung ist derzeit deaktiviert. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Zu Signal einladen</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Du wirst bald erneut daran erinnert.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Du wirst bald erneut daran erinnert.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Formatierten Text senden</string>
@@ -1070,7 +1070,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Antippen und halten zur Aufnahme einer Sprachnachricht, loslassen zum Senden</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Die SMS-Nachrichtübermittlung wird in Signal nicht länger unterstützt.</string> -->
 
     <!-- InviteActivity -->
     <string name="InviteActivity_share">Teilen</string>
@@ -1469,7 +1469,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Du wirst bald keine SMS-Nachrichten mehr von Signal aus versenden können. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Du kannst in Signal keine SMS-Nachrichten mehr versenden. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Du kannst in Signal keine SMS-Nachrichten mehr versenden. Lade %1$s zu Signal ein, damit die Unterhaltung hier weitergeht.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Zahlung: %1$s</string>
 
@@ -5561,26 +5561,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal wird SMS nicht länger unterstützen</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal wird SMS nicht länger unterstützen</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal unterstützt keine SMS mehr</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal unterstützt keine SMS mehr</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal wird bald den Support für das Versenden von SMS-Nachrichten entfernen, da Signal-Nachrichten eine Ende-zu-Ende-Verschlüsselung und einen starken Datenschutz bieten, den SMS-Nachrichten nicht haben. Dadurch können wir auch die Signal-Nachrichtenübermittlung verbessern.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal wird bald den Support für das Versenden von SMS-Nachrichten entfernen, da Signal-Nachrichten eine Ende-zu-Ende-Verschlüsselung und einen starken Datenschutz bieten, den SMS-Nachrichten nicht haben. Dadurch können wir auch die Signal-Nachrichtenübermittlung verbessern.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal hat den Support für das Versenden von SMS-Nachrichten entfernt, da Signal-Nachrichten eine Ende-zu-Ende-Verschlüsselung und einen starken Datenschutz bieten, den SMS-Nachrichten nicht haben. Dadurch können wir auch die Signal-Nachrichtenübermittlung verbessern.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal hat den Support für das Versenden von SMS-Nachrichten entfernt, da Signal-Nachrichten eine Ende-zu-Ende-Verschlüsselung und einen starken Datenschutz bieten, den SMS-Nachrichten nicht haben. Dadurch können wir auch die Signal-Nachrichtenübermittlung verbessern.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">SMS exportieren</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">SMS exportieren</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Später erinnern</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Später erinnern</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Mehr erfahren</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Mehr erfahren</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS-Support wird eingestellt</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS-Support wird eingestellt</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Keine Sorge, verschlüsselten Signal-Nachrichten werden weiterhin funktionieren.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Keine Sorge, verschlüsselten Signal-Nachrichten werden weiterhin funktionieren.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Fortfahren</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Fortfahren</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Export abgeschlossen</string>
     <!-- Button to continue to next screen -->
@@ -5705,17 +5705,17 @@
     <string name="ChatFilter__tip_pull_down">Tipp: Ziehe die Unterhaltungsliste nach unten, um zu filtern</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS-Support wird eingestellt</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS-Support wird eingestellt</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1_s">SMS-Messaging in der Signal-App wird ab %1$s nicht mehr unterstützt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_s">SMS-Messaging in der Signal-App wird ab %1$s nicht mehr unterstützt.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS-Nachrichten sind anders als Signal-Nachrichten. <b>Dies hat keine Auswirkungen auf verschlüsselte Signal-Nachrichten, die weiterhin funktionieren werden.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS-Nachrichten sind anders als Signal-Nachrichten. <b>Dies hat keine Auswirkungen auf verschlüsselte Signal-Nachrichten, die weiterhin funktionieren werden.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Du kannst deine SMS-Nachrichten exportieren und eine neue SMS-App festlegen.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Du kannst deine SMS-Nachrichten exportieren und eine neue SMS-App festlegen.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal hat die Unterstützung für das Senden von SMS-Nachrichten abgeschafft.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal hat die Unterstützung für das Senden von SMS-Nachrichten abgeschafft.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">SMS exportieren</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">SMS exportieren</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

@@ -371,19 +371,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Đã chặn và báo cáo spam.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Tính năng nhắn tin SMS hiện đã khóa. Bạn có thể xuất tin nhắn sang một ứng dụng khác trên điện thoại của bạn.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Tính năng nhắn tin SMS hiện đã khóa. Bạn có thể xuất tin nhắn sang một ứng dụng khác trên điện thoại của bạn.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Việc nhắn tin SMS không còn được hỗ trợ trên Signal. Bạn có thể xuất tin nhắn sang một ứng dụng khác trên điện thoại của bạn.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Việc nhắn tin SMS không còn được hỗ trợ trên Signal. Bạn có thể xuất tin nhắn sang một ứng dụng khác trên điện thoại của bạn.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Xuất tin nhắn SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Xuất tin nhắn SMS</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Tính năng nhắn tin SMS hiện đã khóa. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Tính năng nhắn tin SMS hiện đã khóa. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Việc nhắn tin SMS không còn được hỗ trợ trên Signal. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Việc nhắn tin SMS không còn được hỗ trợ trên Signal. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Mời dùng Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Bạn sẽ được nhắc lại sớm.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Bạn sẽ được nhắc lại sớm.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Đang gửi văn bản được định dạng</string>
@@ -1035,7 +1035,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Nhấn và giữ để ghi âm tin nhắn thoại, thả ra để gửi</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Việc nhắn tin SMS không còn được hỗ trợ trên Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Việc nhắn tin SMS không còn được hỗ trợ trên Signal.</string> -->
 
     <!-- InviteActivity -->
     <string name="InviteActivity_share">Chia sẻ</string>
@@ -1418,7 +1418,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Sắp tới bạn sẽ không thể gửi tin nhắn SMS từ Signal được nữa. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Bạn không thể gửi tin nhắn SMS từ Signal được nữa. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Bạn không thể gửi tin nhắn SMS từ Signal được nữa. Mời %1$s sử dụng Signal để tiếp tục cuộc trò chuyện ở đây.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Thanh toán: %1$s</string>
 
@@ -5446,26 +5446,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal sẽ không hỗ trợ SMS nữa</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal sẽ không hỗ trợ SMS nữa</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal không còn hỗ trợ SMS nữa</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal không còn hỗ trợ SMS nữa</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal sẽ sớm không hỗ trợ việc gửi tin nhắn SMS nữa vì tin nhắn Signal được mã hóa hai chiều và độ riêng tư cao, những điều mà tin nhắn SMS không đảm bảo được. Điều này cũng cho phép chúng tôi cải thiện trải nghiệm nhắn tin của Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal sẽ sớm không hỗ trợ việc gửi tin nhắn SMS nữa vì tin nhắn Signal được mã hóa hai chiều và độ riêng tư cao, những điều mà tin nhắn SMS không đảm bảo được. Điều này cũng cho phép chúng tôi cải thiện trải nghiệm nhắn tin của Signal.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal đã lược bỏ việc hỗ trợ gửi tin nhắn SMS vì tin nhắn Signal được mã hóa hai chiều và độ riêng tư cao, những điều mà tin nhắn SMS không đảm bảo được. Điều này cũng cho phép chúng tôi cải thiện trải nghiệm nhắn tin của Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal đã lược bỏ việc hỗ trợ gửi tin nhắn SMS vì tin nhắn Signal được mã hóa hai chiều và độ riêng tư cao, những điều mà tin nhắn SMS không đảm bảo được. Điều này cũng cho phép chúng tôi cải thiện trải nghiệm nhắn tin của Signal.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Xuất SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Xuất SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Nhắc tôi sau</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Nhắc tôi sau</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Tìm hiểu thêm</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Tìm hiểu thêm</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS sẽ sớm không còn được hỗ trợ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS sẽ sớm không còn được hỗ trợ</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Đừng lo lắng, tin nhắn được mã hóa của Signal sẽ vẫn tiếp tục hoạt động.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Đừng lo lắng, tin nhắn được mã hóa của Signal sẽ vẫn tiếp tục hoạt động.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Tiếp tục</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Tiếp tục</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Xuất thành công</string>
     <!-- Button to continue to next screen -->
@@ -5587,17 +5587,17 @@
     <string name="ChatFilter__tip_pull_down">Mẹo: Kéo danh sách cuộc trò chuyện xuống để lọc</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS sẽ sớm không còn được hỗ trợ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS sẽ sớm không còn được hỗ trợ</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1_s">Tin nhắn SMS trong ứng dụng Signal sẽ không còn được hỗ trợ từ ngày %1$s.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_s">Tin nhắn SMS trong ứng dụng Signal sẽ không còn được hỗ trợ từ ngày %1$s.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">Tin nhắn SMS khác với tin nhắn Signal. <b>Điều này không ảnh hưởng đến hoạt động nhắn tin được mã hóa của Signal.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">Tin nhắn SMS khác với tin nhắn Signal. <b>Điều này không ảnh hưởng đến hoạt động nhắn tin được mã hóa của Signal.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Bạn có thể xuất các tin nhắn SMS và lựa chọn ứng dụng nhắn tin SMS mới.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Bạn có thể xuất các tin nhắn SMS và lựa chọn ứng dụng nhắn tin SMS mới.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal đã ngừng hỗ trợ việc gửi tin nhắn SMS.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal đã ngừng hỗ trợ việc gửi tin nhắn SMS.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Xuất SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Xuất SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

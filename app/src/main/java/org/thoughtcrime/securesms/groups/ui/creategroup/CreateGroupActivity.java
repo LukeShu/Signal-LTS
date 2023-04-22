@@ -26,6 +26,7 @@ import org.thoughtcrime.securesms.keyvalue.SignalStore;
 import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.recipients.RecipientId;
 import org.thoughtcrime.securesms.util.FeatureFlags;
+import org.thoughtcrime.securesms.util.Util;
 import org.signal.core.util.Stopwatch;
 import org.thoughtcrime.securesms.util.views.SimpleProgressDialog;
 
@@ -51,7 +52,7 @@ public class CreateGroupActivity extends ContactSelectionActivity {
     intent.putExtra(ContactSelectionListFragment.REFRESHABLE, false);
     intent.putExtra(ContactSelectionActivity.EXTRA_LAYOUT_RES_ID, R.layout.create_group_activity);
 
-    boolean smsEnabled = SignalStore.misc().getSmsExportPhase().allowSmsFeatures();
+    boolean smsEnabled = Util.isDefaultSmsProvider(context);
     int displayMode = smsEnabled ? ContactSelectionDisplayMode.FLAG_SMS | ContactSelectionDisplayMode.FLAG_PUSH
                                  : ContactSelectionDisplayMode.FLAG_PUSH;
 

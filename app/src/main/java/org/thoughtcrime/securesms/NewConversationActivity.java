@@ -52,6 +52,7 @@ import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.recipients.RecipientId;
 import org.thoughtcrime.securesms.util.CommunicationActions;
 import org.thoughtcrime.securesms.util.FeatureFlags;
+import org.thoughtcrime.securesms.util.Util;
 import org.signal.core.util.concurrent.LifecycleDisposable;
 import org.thoughtcrime.securesms.util.views.SimpleProgressDialog;
 
@@ -103,7 +104,7 @@ public class NewConversationActivity extends ContactSelectionActivity
 
   @Override
   public void onBeforeContactSelected(boolean isFromUnknownSearchKey, @NonNull Optional<RecipientId> recipientId, String number, @NonNull Consumer<Boolean> callback) {
-    boolean smsSupported = SignalStore.misc().getSmsExportPhase().allowSmsFeatures();
+    boolean smsSupported = Util.isDefaultSmsProvider(this);
 
     if (recipientId.isPresent()) {
       launch(Recipient.resolved(recipientId.get()));
@@ -277,7 +278,7 @@ public class NewConversationActivity extends ContactSelectionActivity
       return null;
     }
 
-    if (recipient.isRegistered() || (SignalStore.misc().getSmsExportPhase().allowSmsFeatures())) {
+    if (recipient.isRegistered() || Util.isDefaultSmsProvider(this)) {
       return new ActionItem(
           R.drawable.ic_phone_right_24,
           getString(R.string.NewConversationActivity__audio_call),
