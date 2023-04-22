@@ -147,7 +147,6 @@ import org.thoughtcrime.securesms.megaphone.Megaphone;
 import org.thoughtcrime.securesms.megaphone.MegaphoneActionController;
 import org.thoughtcrime.securesms.megaphone.MegaphoneViewBuilder;
 import org.thoughtcrime.securesms.megaphone.Megaphones;
-import org.thoughtcrime.securesms.megaphone.SmsExportMegaphoneActivity;
 import org.thoughtcrime.securesms.mms.GlideApp;
 import org.thoughtcrime.securesms.notifications.MarkReadReceiver;
 import org.thoughtcrime.securesms.notifications.profiles.NotificationProfile;
@@ -689,15 +688,6 @@ public class ConversationListFragment extends MainFragment implements ActionMode
 
   @Override
   public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-    if (requestCode == SmsExportMegaphoneActivity.REQUEST_CODE) {
-      ApplicationDependencies.getMegaphoneRepository().markSeen(Megaphones.Event.SMS_EXPORT);
-      if (resultCode == RESULT_CANCELED) {
-        Snackbar.make(fab, R.string.ConversationActivity__you_will_be_reminded_again_soon, Snackbar.LENGTH_LONG).show();
-      } else {
-        SmsExportDialogs.showSmsRemovalDialog(requireContext(), fab);
-      }
-    }
-
     if (resultCode == RESULT_OK && requestCode == CreateSvrPinActivity.REQUEST_NEW_PIN) {
       Snackbar.make(fab, R.string.ConfirmKbsPinFragment__pin_created, Snackbar.LENGTH_LONG).show();
       viewModel.onMegaphoneCompleted(Megaphones.Event.PINS_FOR_ALL);

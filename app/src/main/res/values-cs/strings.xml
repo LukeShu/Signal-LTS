@@ -422,19 +422,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Nahlášeno jako spam a zablokováno.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Odesílání SMS zpráv není v současné době dostupné. Zprávy můžete exportovat do jiné aplikace v telefonu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Odesílání SMS zpráv není v současné době dostupné. Zprávy můžete exportovat do jiné aplikace v telefonu.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Zasílání SMS zpráv již není aplikací Signal podporováno. Zprávy můžete exportovat do jiné aplikace v telefonu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Zasílání SMS zpráv již není aplikací Signal podporováno. Zprávy můžete exportovat do jiné aplikace v telefonu.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Exportovat SMS zprávy</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Exportovat SMS zprávy</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Odesílání SMS zpráv není v současné době dostupné. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Odesílání SMS zpráv není v současné době dostupné. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Zasílání SMS zpráv již není aplikací Signal podporováno. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Zasílání SMS zpráv již není aplikací Signal podporováno. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Pozvat do Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Brzy vám to znovu připomeneme.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Brzy vám to znovu připomeneme.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Odeslat formátovaný text</string>
@@ -1219,7 +1219,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Držte pro nahrání hlasové zprávy, pusťte pro odeslání</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Zasílání SMS zpráv již není aplikací Signal podporováno.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Zasílání SMS zpráv již není aplikací Signal podporováno.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">Upravit zprávu</string>
 
@@ -1647,7 +1647,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Zprávy SMS již brzy nebude možné z aplikace Signal posílat. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">V aplikaci Signal již nelze odesílat zprávy SMS. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">V aplikaci Signal již nelze odesílat zprávy SMS. Pozvěte kontakt %1$s do aplikace Signal a pokračujte v konverzaci zde.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Platba: %1$s</string>
 
@@ -6082,26 +6082,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal již nebude podporovat zprávy SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal již nebude podporovat zprávy SMS</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal již nepodporuje zprávy SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal již nepodporuje zprávy SMS</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal brzy ukončí podporu posílání SMS zpráv, protože zprávy Signal poskytují koncové šifrování a silnou ochranu soukromí, což zprávy SMS nemají. Díky tomu budeme moci dál vylepšovat prostředí pro zasílání zpráv Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal brzy ukončí podporu posílání SMS zpráv, protože zprávy Signal poskytují koncové šifrování a silnou ochranu soukromí, což zprávy SMS nemají. Díky tomu budeme moci dál vylepšovat prostředí pro zasílání zpráv Signal.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal ukončil podporu posílání SMS zpráv, protože zprávy Signal poskytují koncové šifrování a silnou ochranu soukromí, což zprávy SMS nemají. Díky tomu budeme moci dál vylepšovat prostředí pro zasílání zpráv Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal ukončil podporu posílání SMS zpráv, protože zprávy Signal poskytují koncové šifrování a silnou ochranu soukromí, což zprávy SMS nemají. Díky tomu budeme moci dál vylepšovat prostředí pro zasílání zpráv Signal.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Exportovat SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Exportovat SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Připomenout později</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Připomenout později</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Více informací</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Více informací</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">Podpora SMS končí.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">Podpora SMS končí.</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Nebojte se, šifrované zprávy Signal budou fungovat i nadále.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Nebojte se, šifrované zprávy Signal budou fungovat i nadále.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Pokračovat</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Pokračovat</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Export dokončen</string>
     <!-- Button to continue to next screen -->
@@ -6232,17 +6232,17 @@
     <string name="ChatFilter__tip_pull_down">Tip: Přetažením dolů můžete seznam chatů filtrovat</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">Podpora SMS zpráv končí</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">Podpora SMS zpráv končí</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Zasílání SMS zpráv v aplikaci Signal již brzy nebude podporováno.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Zasílání SMS zpráv v aplikaci Signal již brzy nebude podporováno.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">Zprávy SMS jsou jiné než zprávy aplikace Signal. <b>To se netýká šifrovaných zpráv Signal, které budou fungovat i nadále.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">Zprávy SMS jsou jiné než zprávy aplikace Signal. <b>To se netýká šifrovaných zpráv Signal, které budou fungovat i nadále.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">SMS zprávy můžete exportovat a vybrat si novou aplikaci pro SMS.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">SMS zprávy můžete exportovat a vybrat si novou aplikaci pro SMS.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Služba Signal ukončila podporu pro odesílání SMS zpráv.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Služba Signal ukončila podporu pro odesílání SMS zpráv.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Exportovat SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Exportovat SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

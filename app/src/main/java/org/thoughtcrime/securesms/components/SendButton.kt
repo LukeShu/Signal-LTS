@@ -43,7 +43,6 @@ class SendButton(context: Context, attributeSet: AttributeSet?) : AppCompatImage
     }
 
     val scheduleListener = scheduledSendListener
-
     return if (scheduleListener?.canSchedule() == true) {
       scheduleListener.onSendScheduled()
       true
