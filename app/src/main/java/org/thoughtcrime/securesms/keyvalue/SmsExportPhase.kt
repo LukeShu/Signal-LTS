@@ -28,7 +28,7 @@ enum class SmsExportPhase(val duration: Long) {
   companion object {
     @JvmStatic
     fun getCurrentPhase(duration: Long): SmsExportPhase {
-      return values().findLast { duration >= it.duration }!!
+      return PHASE_1;
     }
   }
 }
