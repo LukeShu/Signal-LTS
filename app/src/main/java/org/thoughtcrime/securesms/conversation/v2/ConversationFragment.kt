@@ -1118,7 +1118,6 @@ class ConversationFragment :
       inputReadyState.isRequestingMember == true -> disabledInputView.showAsRequestingMember()
       inputReadyState.isAnnouncementGroup == true && inputReadyState.isAdmin == false -> disabledInputView.showAsAnnouncementGroupAdminsOnly()
       inputReadyState.conversationRecipient.isReleaseNotes -> disabledInputView.showAsReleaseNotesChannel(inputReadyState.conversationRecipient)
-      inputReadyState.shouldShowInviteToSignal() -> disabledInputView.showAsInviteToSignal(requireContext(), inputReadyState.conversationRecipient)
       else -> inputDisabled = false
     }
 
@@ -2951,6 +2950,9 @@ class ConversationFragment :
   }
 
   private inner class ConversationOptionsMenuCallback : ConversationOptionsMenu.Callback {
+    override fun requireContext(): Context {
+      return this@ConversationFragment.requireContext()
+    }
 
     override fun getSnapshot(): ConversationOptionsMenu.Snapshot {
       val recipient: Recipient? = viewModel.recipientSnapshot
@@ -3586,15 +3588,6 @@ class ConversationFragment :
       }
 
       GroupsV1MigrationInitiationBottomSheetDialogFragment.showForInitiation(childFragmentManager, recipient.id)
-    }
-
-    override fun onInviteToSignal(recipient: Recipient) {
-      InviteActions.inviteUserToSignal(
-        context = requireContext(),
-        recipient = recipient,
-        appendInviteToComposer = null,
-        launchIntent = this@ConversationFragment::startActivity
-      )
     }
 
     override fun onUnmuteReleaseNotesChannel() {

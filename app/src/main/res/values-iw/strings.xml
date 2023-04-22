@@ -422,19 +422,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">דווח/ה כדואר זבל ונחסם/ה.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">הודעות SMS מושבתות כעת. אפשר לייצא את ההודעות שלך לאפליקציה אחרת בטלפון שלך.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">הודעות SMS מושבתות כעת. אפשר לייצא את ההודעות שלך לאפליקציה אחרת בטלפון שלך.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">הודעות SMS כבר לא נתמכות ב–Signal. אפשר לייצא את ההודעות שלך לאפליקציה אחרת בטלפון שלך.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">הודעות SMS כבר לא נתמכות ב–Signal. אפשר לייצא את ההודעות שלך לאפליקציה אחרת בטלפון שלך.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">ייצוא הודעות SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">ייצוא הודעות SMS</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">הודעות SMS מושבתות כעת. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">הודעות SMS מושבתות כעת. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">הודעות SMS כבר לא נתמכות ב–Signal. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">הודעות SMS כבר לא נתמכות ב–Signal. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">הזמנה אל Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">נזכיר לך שוב בקרוב.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">נזכיר לך שוב בקרוב.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">שליחת טקסט מעוצב</string>
@@ -1209,7 +1209,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">צריך ללחוץ ולהחזיק להקלטת הודעה קולית, ולשחרר כדי לשלוח</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">הודעות SMS כבר לא נתמכות ב–Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">הודעות SMS כבר לא נתמכות ב–Signal.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">עריכת הודעה</string>
 
@@ -1637,7 +1637,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">בקרוב לא תהיה לך יותר אפשרות לשלוח הודעות SMS מ–Signal. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">אין לך יותר אפשרות לשלוח הודעות SMS ב–Signal. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">אין לך יותר אפשרות לשלוח הודעות SMS ב–Signal. אפשר להזמין את %1$s ל–Signal כדי להשאיר את השיחה כאן.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">תשלום: %1$s</string>
 
@@ -6070,26 +6070,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal לא תתמוך עוד ב–SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal לא תתמוך עוד ב–SMS</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal כבר לא תומכת ב–SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal כבר לא תומכת ב–SMS</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal תסיר בקרוב את התמיכה בשליחת הודעות SMS מכיוון שהודעות Signal מספקות הצפנה מקצה לקצה ופרטיות חזקה שאין להודעות SMS. זה יאפשר לנו גם לשפר את חוויית שליחת ההודעות ב–Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal תסיר בקרוב את התמיכה בשליחת הודעות SMS מכיוון שהודעות Signal מספקות הצפנה מקצה לקצה ופרטיות חזקה שאין להודעות SMS. זה יאפשר לנו גם לשפר את חוויית שליחת ההודעות ב–Signal.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal הסירה את התמיכה בשליחת הודעות SMS מכיוון שהודעות Signal מספקות הצפנה מקצה לקצה ופרטיות חזקה שאין להודעות SMS. זה יאפשר לנו גם לשפר את חוויית שליחת ההודעות ב–Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal הסירה את התמיכה בשליחת הודעות SMS מכיוון שהודעות Signal מספקות הצפנה מקצה לקצה ופרטיות חזקה שאין להודעות SMS. זה יאפשר לנו גם לשפר את חוויית שליחת ההודעות ב–Signal.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">ייצוא SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">ייצוא SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">הזכירו לי מאוחר יותר</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">הזכירו לי מאוחר יותר</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">למידע נוסף</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">למידע נוסף</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">נפרדים מהתמיכה ב–SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">נפרדים מהתמיכה ב–SMS</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">אל דאגה, הודעות Signal מוצפנות ימשיכו לפעול.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">אל דאגה, הודעות Signal מוצפנות ימשיכו לפעול.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">המשך</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">המשך</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">הייצוא הושלם</string>
     <!-- Button to continue to next screen -->
@@ -6220,17 +6220,17 @@
     <string name="ChatFilter__tip_pull_down">טיפ: אפשר לגרור למטה את רשימת הצ׳אטים כדי לסנן</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">נפרדים מהתמיכה ב–SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">נפרדים מהתמיכה ב–SMS</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">בקרוב לא תהיה תמיכה בהודעות SMS באפליקציית Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">בקרוב לא תהיה תמיכה בהודעות SMS באפליקציית Signal.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">הודעות SMS שונות מהודעות Signal. <b>זה לא ישפיע על שליחת הודעות מוצפנת ב–Signal, שתמשיך לפעול.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">הודעות SMS שונות מהודעות Signal. <b>זה לא ישפיע על שליחת הודעות מוצפנת ב–Signal, שתמשיך לפעול.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">אפשר לייצא את הודעות ה–SMS שלך ולבחור אפליקציית SMS חדשה.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">אפשר לייצא את הודעות ה–SMS שלך ולבחור אפליקציית SMS חדשה.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal הסירה את התמיכה בשליחת הודעות SMS.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal הסירה את התמיכה בשליחת הודעות SMS.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">ייצוא SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">ייצוא SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

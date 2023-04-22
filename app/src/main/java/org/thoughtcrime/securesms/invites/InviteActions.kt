@@ -5,7 +5,6 @@ import android.content.Intent
 import android.widget.Toast
 import androidx.annotation.MainThread
 import org.thoughtcrime.securesms.R
-import org.thoughtcrime.securesms.keyvalue.SignalStore
 import org.thoughtcrime.securesms.recipients.Recipient
 import org.thoughtcrime.securesms.util.CommunicationActions
 import org.thoughtcrime.securesms.util.Util
@@ -34,7 +33,7 @@ object InviteActions {
       context.getString(R.string.install_url)
     )
 
-    if (appendInviteToComposer != null && Util.isDefaultSmsProvider(context) && SignalStore.misc().smsExportPhase.isSmsSupported()) {
+    if (appendInviteToComposer != null && Util.isDefaultSmsProvider(context)) {
       appendInviteToComposer(inviteText)
     } else if (recipient.hasSmsAddress()) {
       launchIntent(

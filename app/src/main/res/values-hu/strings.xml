@@ -416,19 +416,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Megjelölve kéretlen üzenetként és letiltva.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Az SMS-szolgáltatás jelenleg ki van kapcsolva. Üzeneteidet a telefonodon megtalálható másik alkalmazásba exportálhatod.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Az SMS-szolgáltatás jelenleg ki van kapcsolva. Üzeneteidet a telefonodon megtalálható másik alkalmazásba exportálhatod.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">A Signal már nem támogatja az SMS-ek küldését. Üzeneteidet a telefonodon megtalálható másik alkalmazásba exportálhatod.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">A Signal már nem támogatja az SMS-ek küldését. Üzeneteidet a telefonodon megtalálható másik alkalmazásba exportálhatod.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">SMS-ek exportálása</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">SMS-ek exportálása</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Az SMS-szolgáltatás jelenleg ki van kapcsolva. Hívd meg %1$s ismerősöd a Signalba, és beszélgessetek itt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Az SMS-szolgáltatás jelenleg ki van kapcsolva. Hívd meg %1$s ismerősöd a Signalba, és beszélgessetek itt.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">A Signal már nem támogatja az SMS-ek küldését. Hívd meg %1$s ismerősöd a Signal-szolgáltatásba, és beszélgessetek itt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">A Signal már nem támogatja az SMS-ek küldését. Hívd meg %1$s ismerősöd a Signal-szolgáltatásba, és beszélgessetek itt.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Meghívás a Signalra</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Hamarosan ismét kapsz egy emlékeztetőt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Hamarosan ismét kapsz egy emlékeztetőt.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Formázott szöveg küldése</string>
@@ -1133,7 +1133,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Nyomd le hangüzenet rögzítéséhez, küldéshez engedd el</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">A Signal már nem támogatja az SMS-ek küldését.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">A Signal már nem támogatja az SMS-ek küldését.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">Üzenet szerkesztése</string>
 
@@ -1529,7 +1529,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Hamarosan többé nem fogsz tudni SMS-eket küldeni a Signalból. Hívd meg %1$s ismerősöd a Signal-szolgáltatásba, és beszélgessetek itt.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">A továbbiakban nem küldhetsz SMS-eket a Signal-alkalmazásban. Hívd meg %1$s ismerősöd a Signal-szolgáltatásba, és beszélgessetek itt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">A továbbiakban nem küldhetsz SMS-eket a Signal-alkalmazásban. Hívd meg %1$s ismerősöd a Signal-szolgáltatásba, és beszélgessetek itt.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Fizetés: %1$s</string>
 
@@ -5816,26 +5816,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">A Signal többé nem támogatja az SMS-eket</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">A Signal többé nem támogatja az SMS-eket</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">A Signal többé nem támogatja az SMS-eket</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">A Signal többé nem támogatja az SMS-eket</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">A Signal hamarosan megszünteti az SMS-ek küldésének támogatását, mivel a Signal-üzenetek olyan végpontok közötti titkosítást és erős adatvédelmet biztosítanak, amilyet az SMS-ek nem. Ez azt is lehetővé teszi számunkra, hogy javítsuk a Signal által nyújtott üzenetküldési élményt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">A Signal hamarosan megszünteti az SMS-ek küldésének támogatását, mivel a Signal-üzenetek olyan végpontok közötti titkosítást és erős adatvédelmet biztosítanak, amilyet az SMS-ek nem. Ez azt is lehetővé teszi számunkra, hogy javítsuk a Signal által nyújtott üzenetküldési élményt.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">A Signal megszüntette az SMS-ek küldésének támogatását, mivel a Signal-üzenetek olyan végpontok közötti titkosítást és erős adatvédelmet biztosítanak, amilyet az SMS-ek nem. Ez azt is lehetővé teszi számunkra, hogy javítsuk a Signal által biztosított üzenetküldési élményt.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">A Signal megszüntette az SMS-ek küldésének támogatását, mivel a Signal-üzenetek olyan végpontok közötti titkosítást és erős adatvédelmet biztosítanak, amilyet az SMS-ek nem. Ez azt is lehetővé teszi számunkra, hogy javítsuk a Signal által biztosított üzenetküldési élményt.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">SMS-exportálás</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">SMS-exportálás</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Emlékeztess később</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Emlékeztess később</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Tudj meg többet!</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Tudj meg többet!</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">Az SMS-támogatás megszűnik</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">Az SMS-támogatás megszűnik</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ne aggódj, a titkosított Signal-üzenetek továbbra is működni fognak.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ne aggódj, a titkosított Signal-üzenetek továbbra is működni fognak.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Tovább</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Tovább</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Exportálás kész</string>
     <!-- Button to continue to next screen -->
@@ -5960,17 +5960,17 @@
     <string name="ChatFilter__tip_pull_down">Tipp: a szűréshez húzd le a csevegőlistát</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">Az SMS-támogatás megszűnik</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">Az SMS-támogatás megszűnik</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Hamarosan megszűnik az SMS-ek támogatása a Signal-alkalmazásban.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Hamarosan megszűnik az SMS-ek támogatása a Signal-alkalmazásban.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">Az SMS-ek eltérnek a Signal-üzenetektől. <b>Ez nincs hatással a titkosított Signal-üzenetküldési szolgáltatásra, amely továbbra is működik.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">Az SMS-ek eltérnek a Signal-üzenetektől. <b>Ez nincs hatással a titkosított Signal-üzenetküldési szolgáltatásra, amely továbbra is működik.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Exportálhatod az SMS-eidet, és választhatsz egy új SMS-alkalmazást.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Exportálhatod az SMS-eidet, és választhatsz egy új SMS-alkalmazást.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">A Signal megszüntette az SMS-ek küldésének támogatását.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">A Signal megszüntette az SMS-ek küldésének támogatását.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">SMS-exportálás</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">SMS-exportálás</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->
