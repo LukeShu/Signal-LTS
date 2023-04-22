@@ -6,13 +6,11 @@ import android.view.View
 import android.view.View.OnLongClickListener
 import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatImageButton
-import com.google.android.material.snackbar.Snackbar
 import org.signal.core.util.logging.Log
 import org.thoughtcrime.securesms.R
 import org.thoughtcrime.securesms.components.menu.ActionItem
 import org.thoughtcrime.securesms.components.menu.SignalContextMenu
 import org.thoughtcrime.securesms.conversation.MessageSendType
-import org.thoughtcrime.securesms.keyvalue.SignalStore
 import org.thoughtcrime.securesms.util.ViewUtil
 import java.lang.AssertionError
 import java.util.concurrent.CopyOnWriteArrayList
@@ -157,9 +155,6 @@ class SendButton(context: Context, attributeSet: AttributeSet?) : AppCompatImage
 
   fun showSendTypeMenu(): Boolean {
     return if (availableSendTypes.size == 1) {
-      if (scheduledSendListener == null && snackbarContainer != null && !SignalStore.misc().smsExportPhase.allowSmsFeatures()) {
-        Snackbar.make(snackbarContainer!!, R.string.InputPanel__sms_messaging_is_no_longer_supported_in_signal, Snackbar.LENGTH_SHORT).show()
-      }
       false
     } else {
       showSendTypeContextMenu(false)
@@ -176,9 +171,6 @@ class SendButton(context: Context, attributeSet: AttributeSet?) : AppCompatImage
     if (availableSendTypes.size == 1) {
       return if (scheduleListener?.canSchedule() == true && selectedSendType.transportType != MessageSendType.TransportType.SMS) {
         scheduleListener.onSendScheduled()
-        true
-      } else if (snackbarContainer != null && !SignalStore.misc().smsExportPhase.allowSmsFeatures()) {
-        Snackbar.make(snackbarContainer!!, R.string.InputPanel__sms_messaging_is_no_longer_supported_in_signal, Snackbar.LENGTH_SHORT).show()
         true
       } else {
         false

@@ -27,12 +27,6 @@ class InputReadyState(
   val isAdmin: Boolean? = selfMemberLevel?.equals(GroupTable.MemberLevel.ADMINISTRATOR)
   val isRequestingMember: Boolean? = selfMemberLevel?.equals(GroupTable.MemberLevel.REQUESTING_MEMBER)
 
-  fun shouldShowInviteToSignal(): Boolean {
-    return !conversationRecipient.isGroup &&
-      !conversationRecipient.isRegistered &&
-      !conversationRecipient.isReleaseNotes
-  }
-
   override fun equals(other: Any?): Boolean {
     if (this === other) return true
     if (javaClass != other?.javaClass) return false
