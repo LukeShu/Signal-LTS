@@ -1,9 +1,18 @@
 root = true
 
 [*.{kt,kts}]
+indent_style = space
 indent_size = 2
 ij_kotlin_allow_trailing_comma_on_call_site = false
 ij_kotlin_allow_trailing_comma = false
 ktlint_code_style = intellij_idea
 twitter_compose_allowed_composition_locals=LocalExtendedColors
 ktlint_standard_class-naming = disabled
+
+[*.java]
+indent_style = space
+indent_size = 2
+
+[*.gradle]
+indent_style = space
+indent_size = 4
