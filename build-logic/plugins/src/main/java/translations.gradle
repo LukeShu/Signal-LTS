@@ -135,7 +135,7 @@ task postTranslateIpFetch {
             ext.content_proxy_ips='${staticIpResolver.resolveToBuildConfig("contentproxy.signal.org")}'
             ext.svr2_ips='${staticIpResolver.resolveToBuildConfig("svr2.signal.org")}'
             ext.cdsi_ips='${staticIpResolver.resolveToBuildConfig("cdsi.signal.org")}'
-        """.stripIndent().trim()
+        """.stripIndent().trim() + "\n"
     }
 }
 
