@@ -403,19 +403,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Ni-report bilang spam at na-block na.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Disabled sa ngayon ang SMS messaging. Pwede mong i-export ang iyong messages sa ibang app sa phone mo.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Disabled sa ngayon ang SMS messaging. Pwede mong i-export ang iyong messages sa ibang app sa phone mo.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Hindi na suportado sa Signal ang SMS messaging. Pwede mong i-export ang iyong messages sa ibang app sa phone mo.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Hindi na suportado sa Signal ang SMS messaging. Pwede mong i-export ang iyong messages sa ibang app sa phone mo.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">I-export ang SMS messages</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">I-export ang SMS messages</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Disabled sa ngayon ang SMS messaging. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Disabled sa ngayon ang SMS messaging. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Hindi na suportado sa Signal ang SMS messaging. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Hindi na suportado sa Signal ang SMS messaging. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Imbitahan sa Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">I-re-remind ka ulit sa susunod tungkol dito.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">I-re-remind ka ulit sa susunod tungkol dito.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Nagse-send ng formatted text</string>
@@ -1115,7 +1115,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Tap &amp; hold para mag-record ng audio, i-release to send</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Hindi na suportado sa Signal ang SMS messaging.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Hindi na suportado sa Signal ang SMS messaging.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">I-edit ang message</string>
 
@@ -1511,7 +1511,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Malapit ka nang hindi makapag-send ng SMS messages mula sa Signal. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Hindi ka na pwedeng mag-send ng SMS messages sa Signal. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Hindi ka na pwedeng mag-send ng SMS messages sa Signal. I-invite si %1$s sa Signal para mapanatili ang convo niyo dito.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Payment: %1$s</string>
 
@@ -5746,26 +5746,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Hindi na susuportahan ng Signal ang SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Hindi na susuportahan ng Signal ang SMS</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Hindi na suportado ng Signal ang SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Hindi na suportado ng Signal ang SMS</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Malapit nang tanggalin ng Signal ang pag-send ng SMS messages dahil ang Signal messages ay nagbibigay ng end-to-end encryption and malakas privacy na wala sa SMS messages. Makatutulong ang hakbang na ito para mas mapaganda ang Signal messaging experience mo.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Malapit nang tanggalin ng Signal ang pag-send ng SMS messages dahil ang Signal messages ay nagbibigay ng end-to-end encryption and malakas privacy na wala sa SMS messages. Makatutulong ang hakbang na ito para mas mapaganda ang Signal messaging experience mo.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Tinanggal na ng Signal ang pagsuporta sa pag-send ng SMS messages dahil ang Signal messages ay nagbibigay ng end-to-end encryption and malakas privacy na wala sa SMS messages. Makatutulong ang hakbang na ito para mas mapaganda ang Signal messaging experience mo.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Tinanggal na ng Signal ang pagsuporta sa pag-send ng SMS messages dahil ang Signal messages ay nagbibigay ng end-to-end encryption and malakas privacy na wala sa SMS messages. Makatutulong ang hakbang na ito para mas mapaganda ang Signal messaging experience mo.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">I-export ang SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">I-export ang SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Paalalahanan ako sa ibang pagkakataon</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Paalalahanan ako sa ibang pagkakataon</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Matuto pa</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Matuto pa</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">Mawawala na ang SMS support</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">Mawawala na ang SMS support</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">\'Wag kang mag-alala, patuloy na gagana ang encrypted Signal messages.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">\'Wag kang mag-alala, patuloy na gagana ang encrypted Signal messages.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Magpatuloy</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Magpatuloy</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Tapos na ang pag-export</string>
     <!-- Button to continue to next screen -->
@@ -5890,17 +5890,17 @@
     <string name="ChatFilter__tip_pull_down">Tip: I-drag pababa ang chat list para mag-filter</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">Mawawala na ang SMS support</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">Mawawala na ang SMS support</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Hindi na susuportahan sa hinaharap ang SMS messaging sa Signal app.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Hindi na susuportahan sa hinaharap ang SMS messaging sa Signal app.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">Iba sa Signal messages ang SMS messages. <b>Hindi nito maaapektuhan ang encrypted Signal messaging na patuloy na gagana.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">Iba sa Signal messages ang SMS messages. <b>Hindi nito maaapektuhan ang encrypted Signal messaging na patuloy na gagana.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Pwede mong i-export ang iyong SMS messages at pumili ng bagong SMS app.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Pwede mong i-export ang iyong SMS messages at pumili ng bagong SMS app.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Tinanggal na ng Signal ang pagsuporta sa pag-send ng SMS messages.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Tinanggal na ng Signal ang pagsuporta sa pag-send ng SMS messages.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">I-export ang SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">I-export ang SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

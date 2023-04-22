@@ -121,7 +121,7 @@ public class InviteActivity extends PassphraseRequiredActivity implements Contac
     smsSendButton.setOnClickListener(new SmsSendClickListener());
     contactFilter.setOnFilterChangedListener(new ContactFilterChangedListener());
 
-    if (Util.isDefaultSmsProvider(this) && SignalStore.misc().getSmsExportPhase().isSmsSupported()) {
+    if (Util.isDefaultSmsProvider(this)) {
       shareButton.setOnClickListener(new ShareClickListener());
       smsButton.setOnClickListener(new SmsClickListener());
     } else {

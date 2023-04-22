@@ -403,19 +403,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">As gemorspos gerapporteer en versper.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS-boodskappe is tans gedeaktiveer. Jy kan jou boodskappe na \'n ander toepassing op jou foon uitvoer.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS-boodskappe is tans gedeaktiveer. Jy kan jou boodskappe na \'n ander toepassing op jou foon uitvoer.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">SMS-boodskappe word nie meer in Signal ondersteun nie. Jy kan jou boodskappe na \'n ander toepassing op jou foon uitvoer.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">SMS-boodskappe word nie meer in Signal ondersteun nie. Jy kan jou boodskappe na \'n ander toepassing op jou foon uitvoer.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Voer SMS-boodskappe uit</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Voer SMS-boodskappe uit</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-boodskappe is tans gedeaktiveer. Nooi %1$s na Signal om die gesprek hier te hou.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-boodskappe is tans gedeaktiveer. Nooi %1$s na Signal om die gesprek hier te hou.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-boodskappe word nie meer in Signal ondersteun nie. Nooi %1$s na Signal om die gesprek hier te hou.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">SMS-boodskappe word nie meer in Signal ondersteun nie. Nooi %1$s na Signal om die gesprek hier te hou.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Nooi na Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Jy sal binnekort weer hieraan herinner word.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Jy sal binnekort weer hieraan herinner word.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Stuur tans geformateerde teks</string>
@@ -1115,7 +1115,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Tik en hou om stemboodskap op te neem, los om te stuur</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">SMS-boodskappe word nie meer in Signal ondersteun nie.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">SMS-boodskappe word nie meer in Signal ondersteun nie.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">Wysig boodskap</string>
 
@@ -1511,7 +1511,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Jy sal binnekort nie meer SMS-boodskappe vanaf Signal kan stuur nie. Nooi %1$s na Signal om die gesprek hier te hou.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Jy kan nie meer SMS-boodskappe in Signal stuur nie. Nooi %1$s na Signal om die gesprek hier te hou.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Jy kan nie meer SMS-boodskappe in Signal stuur nie. Nooi %1$s na Signal om die gesprek hier te hou.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Betaling: %1$s</string>
 
@@ -5746,26 +5746,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal sal nie meer SMS ondersteun nie</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal sal nie meer SMS ondersteun nie</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ondersteun nie meer SMS\'e nie</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ondersteun nie meer SMS\'e nie</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal sal binnekort ondersteuning vir die stuur van SMS-boodskappe verwyder, want Signal-boodskappe bied end-tot-end-enkriptering en sterk privaatheid wat SMS-boodskappe nie doen nie. Dit sal ons ook in staat stel om die Signal-boodskapervaring te verbeter.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal sal binnekort ondersteuning vir die stuur van SMS-boodskappe verwyder, want Signal-boodskappe bied end-tot-end-enkriptering en sterk privaatheid wat SMS-boodskappe nie doen nie. Dit sal ons ook in staat stel om die Signal-boodskapervaring te verbeter.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal het ondersteuning vir die stuur van SMS-boodskappe verwyder, want Signal-boodskappe bied end-tot-end-enkriptering en sterk privaatheid wat SMS-boodskappe nie doen nie. Dit sal ons ook in staat stel om die Signal-boodskapervaring te verbeter.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal het ondersteuning vir die stuur van SMS-boodskappe verwyder, want Signal-boodskappe bied end-tot-end-enkriptering en sterk privaatheid wat SMS-boodskappe nie doen nie. Dit sal ons ook in staat stel om die Signal-boodskapervaring te verbeter.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Voer SMS uit</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Voer SMS uit</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Herinner my later</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Herinner my later</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Vind meer uit</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Vind meer uit</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS-ondersteuning gaan beëindig word</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS-ondersteuning gaan beëindig word</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Moenie bekommerd wees nie, geënkripteerde Signal-boodskappe sal steeds werk.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Moenie bekommerd wees nie, geënkripteerde Signal-boodskappe sal steeds werk.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Gaan voort</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Gaan voort</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Uitvoer voltooi</string>
     <!-- Button to continue to next screen -->
@@ -5890,17 +5890,17 @@
     <string name="ChatFilter__tip_pull_down">Wenk: Trek ondertoe op die kletslys om te filtreer</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS-ondersteuning gaan beëindig word</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS-ondersteuning gaan beëindig word</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">SMS-boodskappe in die Signal-toepassing sal binnekort nie meer ondersteun word nie.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">SMS-boodskappe in die Signal-toepassing sal binnekort nie meer ondersteun word nie.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS-boodskappe verskil van Signal-boodskappe. <b>Dit beïnvloed nie geënkripteerde Signal-boodskappe nie, wat steeds sal werk.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS-boodskappe verskil van Signal-boodskappe. <b>Dit beïnvloed nie geënkripteerde Signal-boodskappe nie, wat steeds sal werk.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Jy kan jou SMS-boodskappe uitvoer en \'n nuwe SMS-toepassing kies.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Jy kan jou SMS-boodskappe uitvoer en \'n nuwe SMS-toepassing kies.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal het ondersteuning vir die stuur van SMS-boodskappe verwyder.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal het ondersteuning vir die stuur van SMS-boodskappe verwyder.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Voer SMS\'e uit</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Voer SMS\'e uit</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

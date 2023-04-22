@@ -403,19 +403,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">ಸ್ಪ್ಯಾಮ್ ಎಂದು ವರದಿ ಮಾಡಲಾಗಿದೆ ಮತ್ತು ಬ್ಲಾಕ್ ಮಾಡಲಾಗಿದೆ.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಪ್ರಸ್ತುತ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಫೋನ್ ನಲ್ಲಿನ ಇನ್ನೊಂದು ಆ್ಯಪ್ ಗೆ ನಿಮ್ಮ ಮೆಸೇಜ್ ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಪ್ರಸ್ತುತ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ನಿಮ್ಮ ಫೋನ್ ನಲ್ಲಿನ ಇನ್ನೊಂದು ಆ್ಯಪ್ ಗೆ ನಿಮ್ಮ ಮೆಸೇಜ್ ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ನಿಮ್ಮ ಫೋನ್ ನಲ್ಲಿನ ಇನ್ನೊಂದು ಆ್ಯಪ್ ಗೆ ನಿಮ್ಮ ಮೆಸೇಜ್ ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ನಿಮ್ಮ ಫೋನ್ ನಲ್ಲಿನ ಇನ್ನೊಂದು ಆ್ಯಪ್ ಗೆ ನಿಮ್ಮ ಮೆಸೇಜ್ ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">ಎಸ್ಎಂಎಸ್ ಸಂದೇಶಗಳನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">ಎಸ್ಎಂಎಸ್ ಸಂದೇಶಗಳನ್ನು ಎಕ್ಸ್‌ಪೋರ್ಟ್ ಮಾಡಿ</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಪ್ರಸ್ತುತ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಪ್ರಸ್ತುತ ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗಿದೆ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Signal ಗೆ ಆಮಂತ್ರಿಸಿ</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">ಶೀಘ್ರದಲ್ಲೇ ನಿಮಗೆ ಮತ್ತೆ ನೆನೆಪಿಸಲಾಗುತ್ತದೆ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">ಶೀಘ್ರದಲ್ಲೇ ನಿಮಗೆ ಮತ್ತೆ ನೆನೆಪಿಸಲಾಗುತ್ತದೆ.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಿದ ಟೆಕ್ಸ್ಟ್ ಅನ್ನು ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ</string>
@@ -1115,7 +1115,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">ಧ್ವನಿ ಸಂದೇಶ ರೆಕಾರ್ಡ್‌ಗಾಗಿ ಟ್ಯಾಪ್ ಹಿಡಿಯಿರಿ, ಕಳಿಸಲು ಬಿಡಿ</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು Signal ಇನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">ಮೆಸೇಜ್ ಎಡಿಟ್ ಮಾಡಿ</string>
 
@@ -1511,7 +1511,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">ಶೀಘ್ರದಲ್ಲೇ Signal ನಿಂದ SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸಲು ನಿಮಗೆ ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signal ನಲ್ಲಿ SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸಲು ನಿಮಗೆ ಇನ್ನು ಸಾಧ್ಯವಿಲ್ಲ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signal ನಲ್ಲಿ SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸಲು ನಿಮಗೆ ಇನ್ನು ಸಾಧ್ಯವಿಲ್ಲ. ಇಲ್ಲಿ ಸಂಭಾಷಣೆಯನ್ನು ಉಳಿಸಿಕೊಳ್ಳಲು %1$s ಅವರನ್ನು Signal ಗೆ ಆಹ್ವಾನಿಸಿ.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">ಪಾವತಿ: %1$s</string>
 
@@ -5746,26 +5746,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal ಇನ್ನು SMS ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal ಇನ್ನು SMS ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ಇನ್ನು SMS ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal ಇನ್ನು SMS ಅನ್ನು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸಲು ಶೀಘ್ರದಲ್ಲೇ Signal ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಲಿದೆ, ಯಾಕೆಂದರೆ Signal ಮೆಸೇಜ್ ‍ಗಳು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು SMS ಮೆಸೇಜ್ ಗಳು ಹೊಂದಿರದ ಬಲಿಷ್ಠ ಗೌಪ್ಯತೆಯನ್ನು ಹೊಂದಿವೆ. ಇದು Signal ಮೆಸೇಜಿಂಗ್ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕೂಡಾ ನಮಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸಲು ಶೀಘ್ರದಲ್ಲೇ Signal ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಲಿದೆ, ಯಾಕೆಂದರೆ Signal ಮೆಸೇಜ್ ‍ಗಳು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು SMS ಮೆಸೇಜ್ ಗಳು ಹೊಂದಿರದ ಬಲಿಷ್ಠ ಗೌಪ್ಯತೆಯನ್ನು ಹೊಂದಿವೆ. ಇದು Signal ಮೆಸೇಜಿಂಗ್ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕೂಡಾ ನಮಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸುವ Signal ನ ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಿದೆ, ಯಾಕೆಂದರೆ Signal ಮೆಸೇಜ್ ‍ಗಳು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು SMS ಮೆಸೇಜ್ ಗಳು ಹೊಂದಿರದ ಬಲಿಷ್ಠ ಗೌಪ್ಯತೆಯನ್ನು ಹೊಂದಿವೆ. ಇದು Signal ಮೆಸೇಜಿಂಗ್ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕೂಡಾ ನಮಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">SMS ಮೆಸೇಜ್ ಗಳನ್ನು ಕಳುಹಿಸುವ Signal ನ ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಿದೆ, ಯಾಕೆಂದರೆ Signal ಮೆಸೇಜ್ ‍ಗಳು ಎಂಡ್-ಟು-ಎಂಡ್ ಎನ್ಕ್ರಿಪ್ಷನ್ ಅನ್ನು ಒದಗಿಸುತ್ತವೆ ಮತ್ತು SMS ಮೆಸೇಜ್ ಗಳು ಹೊಂದಿರದ ಬಲಿಷ್ಠ ಗೌಪ್ಯತೆಯನ್ನು ಹೊಂದಿವೆ. ಇದು Signal ಮೆಸೇಜಿಂಗ್ ಅನುಭವವನ್ನು ಸುಧಾರಿಸಲು ಕೂಡಾ ನಮಗೆ ಅನುಮತಿಸುತ್ತದೆ.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">SMS ರಫ್ತು ಮಾಡಿ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">SMS ರಫ್ತು ಮಾಡಿ</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">ನನಗೆ ನಂತರ ನೆನಪಿಸು</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">ನನಗೆ ನಂತರ ನೆನಪಿಸು</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS ಬೆಂಬಲ ಇಲ್ಲವಾಗುತ್ತಿದೆ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS ಬೆಂಬಲ ಇಲ್ಲವಾಗುತ್ತಿದೆ</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">ಚಿಂತಿಸಬೇಡಿ, ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ Signal ಮೆಸೇಜ್‌ಗಳು ಕೆಲಸ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸುತ್ತವೆ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">ಚಿಂತಿಸಬೇಡಿ, ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ Signal ಮೆಸೇಜ್‌ಗಳು ಕೆಲಸ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸುತ್ತವೆ.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">ಮುಂದುವರಿಸಿ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">ಮುಂದುವರಿಸಿ</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">ರಫ್ತು ಪೂರ್ಣಗೊಂಡಿದೆ</string>
     <!-- Button to continue to next screen -->
@@ -5890,17 +5890,17 @@
     <string name="ChatFilter__tip_pull_down">ಸಲಹೆ: ಫಿಲ್ಟರ್ ಮಾಡಲು ಚಾಟ್ ಪಟ್ಟಿ ಕೆಳಕ್ಕೆ ಎಳೆಯಿರಿ</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS ಬೆಂಬಲ ಇಲ್ಲವಾಗುತ್ತಿದೆ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS ಬೆಂಬಲ ಇಲ್ಲವಾಗುತ್ತಿದೆ</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Signal ಆ್ಯಪ್‌ನಲ್ಲಿ SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಇನ್ನು ಮುಂದೆ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Signal ಆ್ಯಪ್‌ನಲ್ಲಿ SMS ಮೆಸೇಜಿಂಗ್ ಅನ್ನು ಇನ್ನು ಮುಂದೆ ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS ಮೆಸೇಜ್‌ಗಳು Signal ಮೆಸೇಜ್‌ಗಳಿಗಿಂತ ಭಿನ್ನವಾಗಿವೆ. <b>ಇದು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ Signal ಮೆಸೇಜಿಂಗ್‌ಗೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ, ಇದು ಕೆಲಸ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸುತ್ತದೆ.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS ಮೆಸೇಜ್‌ಗಳು Signal ಮೆಸೇಜ್‌ಗಳಿಗಿಂತ ಭಿನ್ನವಾಗಿವೆ. <b>ಇದು ಎನ್‌ಕ್ರಿಪ್ಟ್ ಆಗಿರುವ Signal ಮೆಸೇಜಿಂಗ್‌ಗೆ ಪರಿಣಾಮ ಬೀರುವುದಿಲ್ಲ, ಇದು ಕೆಲಸ ಮಾಡುವುದನ್ನು ಮುಂದುವರಿಸುತ್ತದೆ.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">ನಿಮ್ಮ SMS ಮೆಸೇಜ್‌ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು ಮತ್ತು ಹೊಸ SMS ಆ್ಯಪ್‌ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">ನಿಮ್ಮ SMS ಮೆಸೇಜ್‌ಗಳನ್ನು ನೀವು ರಫ್ತು ಮಾಡಬಹುದು ಮತ್ತು ಹೊಸ SMS ಆ್ಯಪ್‌ ಅನ್ನು ಆಯ್ಕೆ ಮಾಡಬಹುದು.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">SMS ಮೆಸೇಜ್‌ಗಳನ್ನು ಕಳುಹಿಸಲು Signal ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಿದೆ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">SMS ಮೆಸೇಜ್‌ಗಳನ್ನು ಕಳುಹಿಸಲು Signal ಬೆಂಬಲವನ್ನು ತೆಗೆದುಹಾಕಿದೆ.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">SMS ರಫ್ತು ಮಾಡಿ</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">SMS ರಫ್ತು ಮಾಡಿ</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

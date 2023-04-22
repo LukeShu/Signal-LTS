@@ -30902,7 +30902,6 @@ PLorg/thoughtcrime/securesms/keyvalue/LongValue;->setValue$Signal_Android_playPr
 PLorg/thoughtcrime/securesms/keyvalue/LongValue;->setValue$Signal_Android_playProdBenchmark(Lorg/thoughtcrime/securesms/keyvalue/KeyValueStore;Ljava/lang/Object;)V
 PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->getLastForegroundTime()J
 PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->getShouldShowLinkedDevicesReminder()Z
-PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->getSmsExportPhase()Lorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;
 PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->hasEverHadAnAvatar()Z
 PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->isChangeNumberLocked()Z
 PLorg/thoughtcrime/securesms/keyvalue/MiscellaneousValues;->setLastForegroundTime(J)V
@@ -30947,16 +30946,6 @@ PLorg/thoughtcrime/securesms/keyvalue/SignalStore;->phoneNumberPrivacy()Lorg/tho
 PLorg/thoughtcrime/securesms/keyvalue/SignalStore;->rateLimit()Lorg/thoughtcrime/securesms/keyvalue/RateLimitValues;
 PLorg/thoughtcrime/securesms/keyvalue/SignalStore;->uiHints()Lorg/thoughtcrime/securesms/keyvalue/UiHints;
 PLorg/thoughtcrime/securesms/keyvalue/SignalStoreValues;->getList(Ljava/lang/String;Lorg/signal/core/util/StringSerializer;)Ljava/util/List;
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase$Companion;-><init>()V
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase$Companion;->getCurrentPhase(J)Lorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;->$values()[Lorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;-><clinit>()V
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;-><init>(Ljava/lang/String;IJ)V
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;->allowSmsFeatures()Z
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;->getCurrentPhase(J)Lorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;->getDuration()J
-PLorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;->values()[Lorg/thoughtcrime/securesms/keyvalue/SmsExportPhase;
 PLorg/thoughtcrime/securesms/keyvalue/StorageServiceValues;->needsAccountRestore()Z
 PLorg/thoughtcrime/securesms/keyvalue/StoryValues$StorySendSerializer;-><clinit>()V
 PLorg/thoughtcrime/securesms/keyvalue/StoryValues$StorySendSerializer;-><init>()V
@@ -31223,11 +31212,6 @@ PLorg/thoughtcrime/securesms/megaphone/RemoteMegaphoneRepository;->getRemoteMega
 PLorg/thoughtcrime/securesms/megaphone/RemoteMegaphoneRepository;->hasRemoteMegaphoneToShow(Z)Z
 PLorg/thoughtcrime/securesms/megaphone/SignalPinReminderSchedule;-><init>()V
 PLorg/thoughtcrime/securesms/megaphone/SignalPinReminderSchedule;->shouldDisplay(IJJJ)Z
-PLorg/thoughtcrime/securesms/megaphone/SmsExportReminderSchedule$Companion;-><init>()V
-PLorg/thoughtcrime/securesms/megaphone/SmsExportReminderSchedule$Companion;-><init>(Lkotlin/jvm/internal/DefaultConstructorMarker;)V
-PLorg/thoughtcrime/securesms/megaphone/SmsExportReminderSchedule;-><clinit>()V
-PLorg/thoughtcrime/securesms/megaphone/SmsExportReminderSchedule;-><init>(Landroid/content/Context;)V
-PLorg/thoughtcrime/securesms/megaphone/SmsExportReminderSchedule;->shouldDisplay(IJJJ)Z
 PLorg/thoughtcrime/securesms/messagerequests/GroupInfo;-><clinit>()V
 PLorg/thoughtcrime/securesms/messagerequests/GroupInfo;-><init>(IILjava/lang/String;)V
 PLorg/thoughtcrime/securesms/messagerequests/GroupInfo;->getDescription()Ljava/lang/String;

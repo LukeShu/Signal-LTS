@@ -403,19 +403,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Spam gisa salatu, eta blokeatu egin da.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Une honetan SMS mezuak desgaituta daude. Mezuak telefonoko beste aplikazio batera esporta ditzakezu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Une honetan SMS mezuak desgaituta daude. Mezuak telefonoko beste aplikazio batera esporta ditzakezu.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal-en jada ez dira onartzen SMS mezuak. Mezuak telefonoko beste aplikazio batera esporta ditzakezu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal-en jada ez dira onartzen SMS mezuak. Mezuak telefonoko beste aplikazio batera esporta ditzakezu.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Esportatu SMS mezuak</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Esportatu SMS mezuak</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Une honetan SMS mezuak desgaituta daude. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Une honetan SMS mezuak desgaituta daude. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal-en jada ez dira onartzen SMS mezuak. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal-en jada ez dira onartzen SMS mezuak. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Gonbidatu Signal erabiltzera</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Laster gogoraraziko zaizu berriro.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Laster gogoraraziko zaizu berriro.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Formateatutako testua bidaltzen</string>
@@ -1115,7 +1115,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Sakatu ahots mezu bat grabatzeko; jaregin bidaltzeko</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal-en jada ez dira onartzen SMS mezuak.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal-en jada ez dira onartzen SMS mezuak.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">Editatu mezua</string>
 
@@ -1511,7 +1511,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Laster, ezin izango duzu SMS mezurik bidali Signal-etik. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Jada ezin duzu SMS mezurik bidali Signal-en. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Jada ezin duzu SMS mezurik bidali Signal-en. %1$s(r)ekin duzun elkarrizketa mantentzeko, gonbida ezazu Signal-era.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Ordainketa: %1$s</string>
 
@@ -5746,26 +5746,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal-ek SMSak onartzeari utziko dio</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal-ek SMSak onartzeari utziko dio</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal-ek jada ez ditu onartzen SMSak</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal-ek jada ez ditu onartzen SMSak</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal-ek SMS mezuak bidaltzeko aukera emateari utziko dio laster, Signal-eko mezuek muturretik muturrerako enkriptatzea eta pribatutasun sendoa eskaintzen baitute, SMS mezuek ez bezala. Horrela, gainera, Signal-eko mezularitza-esperientzia hobetzeko aukera izango dugu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal-ek SMS mezuak bidaltzeko aukera emateari utziko dio laster, Signal-eko mezuek muturretik muturrerako enkriptatzea eta pribatutasun sendoa eskaintzen baitute, SMS mezuek ez bezala. Horrela, gainera, Signal-eko mezularitza-esperientzia hobetzeko aukera izango dugu.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal-ek SMS mezuak bidaltzeko aukera emateari utzi dio, Signal-eko mezuek muturretik muturrerako enkriptatzea eta pribatutasun sendoa eskaintzen baitute, SMS mezuek ez bezala. Horrela, gainera, Signal-eko mezularitza-esperientzia hobetzeko aukera izango dugu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal-ek SMS mezuak bidaltzeko aukera emateari utzi dio, Signal-eko mezuek muturretik muturrerako enkriptatzea eta pribatutasun sendoa eskaintzen baitute, SMS mezuek ez bezala. Horrela, gainera, Signal-eko mezularitza-esperientzia hobetzeko aukera izango dugu.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Esportatu SMSak</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Esportatu SMSak</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Gogorarazi iezadazu beranduago</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Gogorarazi iezadazu beranduago</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Informazio gehiago</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Informazio gehiago</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMSak erabiltzeko aukera desagertu egingo da</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMSak erabiltzeko aukera desagertu egingo da</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ez kezkatu, Signal-eko mezu enkriptatuek funtzionatzen jarraituko dute.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Ez kezkatu, Signal-eko mezu enkriptatuek funtzionatzen jarraituko dute.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Jarraitu</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Jarraitu</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Osatu da esportazioa</string>
     <!-- Button to continue to next screen -->
@@ -5890,17 +5890,17 @@
     <string name="ChatFilter__tip_pull_down">Aholkua: iragazteko, tiratu beherantz txat-zerrendan</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">Laster, ezingo dira SMSak erabili</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">Laster, ezingo dira SMSak erabili</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Laster, SMS mezuak ez dira onartuko Signal aplikazioan.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Laster, SMS mezuak ez dira onartuko Signal aplikazioan.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS mezuak ez dira Signal-eko mezuen berdinak. <b>Honek ez die eragingo Signal-eko mezu enkriptatuei; beti bezala funtzionatzen dute. </b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS mezuak ez dira Signal-eko mezuen berdinak. <b>Honek ez die eragingo Signal-eko mezu enkriptatuei; beti bezala funtzionatzen dute. </b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">SMS mezuak esportatu, eta SMSetarako aplikazio berri bat aukera dezakezu.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">SMS mezuak esportatu, eta SMSetarako aplikazio berri bat aukera dezakezu.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal-ek SMS mezuak bidaltzeko aukera kendu du.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal-ek SMS mezuak bidaltzeko aukera kendu du.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Esportatu SMSak</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Esportatu SMSak</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

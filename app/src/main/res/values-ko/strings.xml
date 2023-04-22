@@ -401,19 +401,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">스팸으로 신고하고 차단했습니다.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS 메시지를 현재 사용할 수 없습니다. 메시지를 휴대폰의 다른 앱으로 내보낼 수 있습니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS 메시지를 현재 사용할 수 없습니다. 메시지를 휴대폰의 다른 앱으로 내보낼 수 있습니다.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다. 메시지를 휴대폰의 다른 앱으로 내보낼 수 있습니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다. 메시지를 휴대폰의 다른 앱으로 내보낼 수 있습니다.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">SMS 메시지 내보내기</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">SMS 메시지 내보내기</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS 메시지를 현재 사용할 수 없습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS 메시지를 현재 사용할 수 없습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Signal로 초대</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">알림이 곧 다시 표시됩니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">알림이 곧 다시 표시됩니다.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">서식 지정 텍스트 보내기</string>
@@ -1078,7 +1078,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">길게 탭하여 음성 메시지를 녹음하고, 손을 떼어 보내기</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Signal에서 더 이상 SMS 메시지를 지원하지 않습니다.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">메시지 수정</string>
 
@@ -1458,7 +1458,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">곧 Signal에서 SMS 메시지를 보낼 수 없게 됩니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signal에서 더 이상 SMS 메시지를 보낼 수 없습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Signal에서 더 이상 SMS 메시지를 보낼 수 없습니다. %1$s 님을 Signal로 초대하여 대화를 이어가세요.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">결제: %1$s</string>
 
@@ -5626,26 +5626,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal SMS 서비스가 곧 중단됩니다</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal SMS 서비스가 곧 중단됩니다</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal SMS 서비스가 곧 중단됩니다</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal SMS 서비스가 곧 중단됩니다</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal 메시지는 종단 간 암호화와 강력한 개인정보 보호를 제공하지만 SMS 메시지는 그렇지 못합니다. 따라서 Signal은 당사 메시지 환경을 개선하기 위해 SMS 메시지 발송에 대한 지원을 곧 중단합니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal 메시지는 종단 간 암호화와 강력한 개인정보 보호를 제공하지만 SMS 메시지는 그렇지 못합니다. 따라서 Signal은 당사 메시지 환경을 개선하기 위해 SMS 메시지 발송에 대한 지원을 곧 중단합니다.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal 메시지는 종단 간 암호화와 강력한 개인정보보호를 제공하지만 SMS 메시지는 그렇지 못합니다. 따라서 Signal은 당사 메시지 환경을 개선하기 위해 SMS 메시지 발송에 대한 지원을 곧 중단합니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal 메시지는 종단 간 암호화와 강력한 개인정보보호를 제공하지만 SMS 메시지는 그렇지 못합니다. 따라서 Signal은 당사 메시지 환경을 개선하기 위해 SMS 메시지 발송에 대한 지원을 곧 중단합니다.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">SMS 내보내기</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">SMS 내보내기</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">나중에 알림</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">나중에 알림</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">자세히 알아보기</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">자세히 알아보기</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">SMS 지원 중단 예정</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">SMS 지원 중단 예정</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">걱정 마세요, 암호화된 Signal 메시지는 계속 작동합니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">걱정 마세요, 암호화된 Signal 메시지는 계속 작동합니다.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">계속</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">계속</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">내보내기 완료</string>
     <!-- Button to continue to next screen -->
@@ -5767,17 +5767,17 @@
     <string name="ChatFilter__tip_pull_down">팁: 아래로 당겨서 대화 목록을 필터링하세요.</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS 지원이 곧 중단됩니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS 지원이 곧 중단됩니다.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Signal 앱의 SMS 메시지에 대한 지원이 곧 중단됩니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Signal 앱의 SMS 메시지에 대한 지원이 곧 중단됩니다.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS 메시지는 Signal 메시지와 다릅니다. <b>이 결정은 암호화된 Signal 메시지에는 영향을 미치지 않으며, 이 기능은 계속해서 작동합니다.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS 메시지는 Signal 메시지와 다릅니다. <b>이 결정은 암호화된 Signal 메시지에는 영향을 미치지 않으며, 이 기능은 계속해서 작동합니다.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">SMS 메시지를 내보내고 새로운 SMS 앱을 선택할 수 있습니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">SMS 메시지를 내보내고 새로운 SMS 앱을 선택할 수 있습니다.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal이 SMS 메시지 보내기에 대한 지원을 중단했습니다.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal이 SMS 메시지 보내기에 대한 지원을 중단했습니다.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">SMS 내보내기</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">SMS 내보내기</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

@@ -2566,6 +2566,9 @@ class ConversationFragment :
   }
 
   private inner class ConversationOptionsMenuCallback : ConversationOptionsMenu.Callback {
+    override fun requireContext(): Context {
+      return this@ConversationFragment.requireContext()
+    }
 
     override fun getSnapshot(): ConversationOptionsMenu.Snapshot {
       val recipient: Recipient? = viewModel.recipientSnapshot
