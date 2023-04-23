@@ -9,7 +9,10 @@ won't lag behind so much that things stop working.
 
 ## User-visible differences from the standard version of Signal
 
-(TODO)
+Bug fixes:
+
+ - Non-UTF-8 locales now work correctly.  Or at least the tests pass
+   for non-UTF-8 locales.
 
 ## Switching from the standard version of Signal
 
@@ -46,6 +49,10 @@ won't lag behind so much that things stop working.
    will have larger files to download; but, F-Droid doesn't support
    split APKs, so this is necessary for being able to publish it as an
    F-Droid repo.
+
+ - `./gradlew qa` now works and passes on non-UTF-8 locales (a notable
+   instance of which is the reproducible-builds Docker image), so that
+   you can get better automated feedback.
 
 # Original Signal README
 
