@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
 
 public final class SemanticVersion implements Comparable<SemanticVersion> {
 
-  private static final Pattern VERSION_PATTERN = Pattern.compile("^([0-9]+)\\.([0-9]+)\\.([0-9]+)$");
+  private static final Pattern VERSION_PATTERN = Pattern.compile("^([0-9]+)\\.([0-9]+)\\.([0-9]+)([.-].*)?$");
 
   private static final Comparator<SemanticVersion> MAJOR_COMPARATOR = (s1, s2) -> Integer.compare(s1.major, s2.major);
   private static final Comparator<SemanticVersion> MINOR_COMPARATOR = (s1, s2) -> Integer.compare(s1.minor, s2.minor);
