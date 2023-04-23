@@ -235,15 +235,6 @@ android {
         resourceConfigurations += []
 
 
-        splits {
-            abi {
-                enable !project.hasProperty('generateBaselineProfile')
-                reset()
-                include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
-                universalApk true
-            }
-        }
-
         testInstrumentationRunner "org.thoughtcrime.securesms.testing.SignalTestRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
     }
