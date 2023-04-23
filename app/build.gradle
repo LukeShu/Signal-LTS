@@ -417,8 +417,9 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.each { output ->
+            def postFix = 0
             if (output.baseName.contains('nightly')) {
-                output.versionCodeOverride = canonicalVersionCode * postFixSize + 5
+                postFix = 5
                 def tag = getCurrentGitTag()
                 if (tag != null && tag.length() > 0) {
                     if (tag.startsWith("v")) {
@@ -429,12 +430,12 @@ android {
             } else {
                 output.outputFileName = output.outputFileName.replace(".apk", "-${variant.versionName}.apk")
                 def abiName = output.getFilter("ABI") ?: 'universal'
-                def postFix = abiPostFix.get(abiName, 0)
-
-                if (postFix >= postFixSize) throw new AssertionError("postFix is too large")
-
-                output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
+                postFix = abiPostFix.get(abiName, 0)
             }
+
+            if (postFix >= postFixSize)
+                throw new AssertionError("postFix is too large")
+            output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
         }
     }
 
