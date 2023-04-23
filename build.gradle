@@ -56,7 +56,7 @@ subprojects {
         task qa {
             group 'Verification'
             description 'Quality Assurance. Run before pushing'
-            dependsOn 'clean', 'testReleaseUnitTest', 'lintRelease'
+            dependsOn 'testReleaseUnitTest', 'lintRelease'
         }
     }
 }
@@ -72,8 +72,7 @@ task buildQa {
 task qa {
     group 'Verification'
     description 'Quality Assurance. Run before pushing.'
-    dependsOn 'clean',
-            'buildQa',
+    dependsOn 'buildQa',
             ':Signal-Android:testPlayProdReleaseUnitTest',
             ':Signal-Android:lintPlayProdRelease',
             'Signal-Android:ktlintCheck',
