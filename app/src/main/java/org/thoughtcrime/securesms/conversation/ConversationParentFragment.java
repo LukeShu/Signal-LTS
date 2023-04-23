@@ -214,7 +214,6 @@ import org.thoughtcrime.securesms.keyboard.sticker.StickerKeyboardPageFragment;
 import org.thoughtcrime.securesms.keyboard.sticker.StickerSearchDialogFragment;
 import org.thoughtcrime.securesms.keyvalue.PaymentsValues;
 import org.thoughtcrime.securesms.keyvalue.SignalStore;
-import org.thoughtcrime.securesms.keyvalue.SmsExportPhase;
 import org.thoughtcrime.securesms.linkpreview.LinkPreview;
 import org.thoughtcrime.securesms.linkpreview.LinkPreviewRepository;
 import org.thoughtcrime.securesms.linkpreview.LinkPreviewViewModel;
@@ -403,7 +402,6 @@ public class ConversationParentFragment extends Fragment
   private   TextView                     charactersLeft;
   private   ConversationFragment         fragment;
   private   Button                       unblockButton;
-  private   Stub<View>                   smsExportStub;
   private   Button                       registerButton;
   private   InputAwareLayout             container;
   protected Stub<ReminderView>           reminderView;
@@ -1851,7 +1849,6 @@ public class ConversationParentFragment extends Fragment
     emojiDrawerStub          = ViewUtil.findStubById(view, R.id.emoji_drawer_stub);
     attachmentKeyboardStub   = ViewUtil.findStubById(view, R.id.attachment_keyboard_stub);
     unblockButton            = view.findViewById(R.id.unblock_button);
-    smsExportStub            = ViewUtil.findStubById(view, R.id.sms_export_stub);
     registerButton           = view.findViewById(R.id.register_button);
     container                = view.findViewById(R.id.layout_container);
     reminderView             = ViewUtil.findStubById(view, R.id.reminder_stub);
@@ -2026,9 +2023,7 @@ public class ConversationParentFragment extends Fragment
       int toolbarTextAndIconColor = getResources().getColor(R.color.signal_colorNeutralInverse);
       toolbar.setTitleTextColor(toolbarTextAndIconColor);
       setToolbarActionItemTint(toolbar, toolbarTextAndIconColor);
-      if (!smsExportStub.resolved()) {
-        WindowUtil.setNavigationBarColor(requireActivity(), getResources().getColor(R.color.conversation_navigation_wallpaper));
-      }
+      WindowUtil.setNavigationBarColor(requireActivity(), getResources().getColor(R.color.conversation_navigation_wallpaper));
     } else {
       wallpaper.setImageDrawable(null);
       wallpaperDim.setVisibility(View.GONE);
@@ -2041,7 +2036,7 @@ public class ConversationParentFragment extends Fragment
       int toolbarTextAndIconColor = getResources().getColor(R.color.signal_colorOnSurface);
       toolbar.setTitleTextColor(toolbarTextAndIconColor);
       setToolbarActionItemTint(toolbar, toolbarTextAndIconColor);
-      if (!releaseChannelUnmute.resolved() && !smsExportStub.resolved()) {
+      if (!releaseChannelUnmute.resolved()) {
         WindowUtil.setNavigationBarColor(requireActivity(), getResources().getColor(R.color.signal_colorBackground));
       }
     }
@@ -2590,38 +2585,10 @@ public class ConversationParentFragment extends Fragment
     if (!conversationSecurityInfo.isPushAvailable() && isPushGroupConversation()) {
       unblockButton.setVisibility(View.GONE);
       inputPanel.setHideForBlockedState(true);
-      smsExportStub.setVisibility(View.GONE);
       registerButton.setVisibility(View.VISIBLE);
-    } else if (!conversationSecurityInfo.isPushAvailable() && !(SignalStore.misc().getSmsExportPhase().isSmsSupported() && conversationSecurityInfo.isDefaultSmsApplication()) && (recipient.hasSmsAddress() || recipient.isMmsGroup())) {
-      unblockButton.setVisibility(View.GONE);
-      inputPanel.setHideForBlockedState(true);
-      smsExportStub.setVisibility(View.VISIBLE);
-      registerButton.setVisibility(View.GONE);
-
-      int color = ContextCompat.getColor(requireContext(), recipient.hasWallpaper() ? R.color.wallpaper_bubble_color : R.color.signal_colorBackground);
-      smsExportStub.get().setBackgroundColor(color);
-      WindowUtil.setNavigationBarColor(requireActivity(), color);
-
-      TextView       message      = smsExportStub.get().findViewById(R.id.export_sms_message);
-      MaterialButton actionButton = smsExportStub.get().findViewById(R.id.export_sms_button);
-      boolean        isPhase1     = SignalStore.misc().getSmsExportPhase() == SmsExportPhase.PHASE_1;
-
-      if (conversationSecurityInfo.getHasUnexportedInsecureMessages()) {
-        message.setText(isPhase1 ? R.string.ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone
-                                 : R.string.ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone);
-        actionButton.setText(R.string.ConversationActivity__export_sms_messages);
-        actionButton.setOnClickListener(v -> startActivity(SmsExportActivity.createIntent(requireContext())));
-      } else {
-        message.setText(requireContext().getString(isPhase1 ? R.string.ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here
-                                                            : R.string.ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here,
-                                                   recipient.getDisplayName(requireContext())));
-        actionButton.setText(R.string.ConversationActivity__invite_to_signal);
-        actionButton.setOnClickListener(v -> handleInviteLink());
-      }
     } else if (recipient.isReleaseNotes() && !recipient.isBlocked()) {
       unblockButton.setVisibility(View.GONE);
       inputPanel.setHideForBlockedState(true);
-      smsExportStub.setVisibility(View.GONE);
       registerButton.setVisibility(View.GONE);
 
       if (recipient.isMuted()) {
@@ -2638,7 +2605,6 @@ public class ConversationParentFragment extends Fragment
       boolean inactivePushGroup = isPushGroupConversation() && !recipient.isActiveGroup();
       inputPanel.setHideForBlockedState(inactivePushGroup);
       unblockButton.setVisibility(View.GONE);
-      smsExportStub.setVisibility(View.GONE);
       registerButton.setVisibility(View.GONE);
     }
 
