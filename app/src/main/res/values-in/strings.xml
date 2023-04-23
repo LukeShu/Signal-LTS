@@ -4035,7 +4035,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Hapus pesan SMS dari Signal untuk mengosongkan ruang penyimpanan.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Dukungan untuk SMS akan segera dihentikan demi fokus pada pengiriman pesan terenkripsi.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Dukungan untuk SMS akan segera dihentikan demi fokus pada pengiriman pesan terenkripsi.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Pesan</string>

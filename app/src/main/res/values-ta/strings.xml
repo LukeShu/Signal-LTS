@@ -4125,7 +4125,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">சேமிப்பிடத்தை அழிக்க Signal இல் இருந்து SMS மெசேஜ்களை அகற்றவும்.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">மறைகுறியாக்கப்பட்ட மெசேஜிங்கில் கவனம் செலுத்த SMS ஆதரவு விரைவில் அகற்றப்படும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">மறைகுறியாக்கப்பட்ட மெசேஜிங்கில் கவனம் செலுத்த SMS ஆதரவு விரைவில் அகற்றப்படும்.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">செய்திகள்</string>

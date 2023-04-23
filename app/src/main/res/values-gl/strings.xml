@@ -4125,7 +4125,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Elimina mensaxes SMS de Signal para liberar espazo de almacenamento.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">A función de mensaxes SMS eliminarase pronto para centrármonos na mensaxería encriptada.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">A función de mensaxes SMS eliminarase pronto para centrármonos na mensaxería encriptada.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Mensaxes</string>

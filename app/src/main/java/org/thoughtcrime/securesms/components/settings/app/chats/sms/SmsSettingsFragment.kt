@@ -60,15 +60,6 @@ class SmsSettingsFragment : DSLSettingsFragment(R.string.preferences__sms_mms) {
 
   private fun getConfiguration(state: SmsSettingsState): DSLConfiguration {
     return configure {
-      if (state.useAsDefaultSmsApp) {
-        customPref(
-          OutlinedLearnMore.Model(
-            summary = DSLSettingsText.from(R.string.SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging),
-            learnMoreUrl = getString(R.string.sms_export_url)
-          )
-        )
-      }
-
       when (state.smsExportState) {
         SmsExportState.FETCHING -> Unit
         SmsExportState.HAS_UNEXPORTED_MESSAGES -> {
@@ -107,16 +98,13 @@ class SmsSettingsFragment : DSLSettingsFragment(R.string.preferences__sms_mms) {
         SmsExportState.NOT_AVAILABLE -> Unit
       }
 
-      if (state.useAsDefaultSmsApp) {
-        @Suppress("DEPRECATION")
-        clickPref(
-          title = DSLSettingsText.from(R.string.SmsSettingsFragment__use_as_default_sms_app),
-          summary = DSLSettingsText.from(R.string.arrays__enabled),
-          onClick = {
-            startDefaultAppSelectionIntent()
-          }
-        )
-      }
+      clickPref(
+        title = DSLSettingsText.from(R.string.SmsSettingsFragment__use_as_default_sms_app),
+        summary = DSLSettingsText.from(R.string.arrays__enabled),
+        onClick = {
+          startDefaultAppSelectionIntent()
+        }
+      )
 
       switchPref(
         title = DSLSettingsText.from(R.string.preferences__sms_delivery_reports),
