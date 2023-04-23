@@ -56,6 +56,10 @@ def abiPostFix = ['universal'   : 0,
                   'x86'         : 3,
                   'x86_64'      : 4]
 
+def ltsPostFix = 1
+def ltsPostFixSize = 10
+canonicalVersionName += "." + ltsPostFix
+
 def keystores = [ 'debug'  : loadKeystoreProperties('keystore.debug.properties') ]
 
 def selectableVariants = [
@@ -419,6 +423,12 @@ android {
                 def abiName = output.getFilter("ABI") ?: 'universal'
                 postFix = abiPostFix.get(abiName, 0)
             }
+
+            if (postFix >= postFixSize / ltsPostFixSize)
+                throw new AssertionError("postFix is too large")
+            if (ltsPostFix >= ltsPostFixSize)
+                throw new AssertionError("ltsPostFix is too large")
+            postFix += ltsPostFix * postFixSize / ltsPostFixSize
 
             if (postFix >= postFixSize)
                 throw new AssertionError("postFix is too large")
