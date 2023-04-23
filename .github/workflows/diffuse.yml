@@ -59,7 +59,10 @@ jobs:
 
     - name: Copy base apk
       if: steps.cache-base.outputs.cache-hit != 'true'
-      run: mv app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-base.apk
+      run: |
+        find -name '*.apk'
+        mv --verbose app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-base.apk ||
+        mv --verbose app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-new.apk
 
     - uses: actions/checkout@v3
       with:
@@ -69,7 +72,9 @@ jobs:
       run: ./gradlew assemblePlayProdRelease --parallel
 
     - name: Copy PR apk
-      run: mv app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-new.apk
+      run: |
+        find -name '*.apk'
+        mv --verbose app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-new.apk
 
     - id: diffuse
       uses: usefulness/diffuse-action@v1
