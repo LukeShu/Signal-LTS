@@ -4371,7 +4371,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Tárhely felszabadításához eltávolíthatod az SMS-eket a Signalból.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Az SMS-támogatás hamarosan megszűnik, hogy a titkosított üzenetküldésre összpontosíthassunk.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Az SMS-támogatás hamarosan megszűnik, hogy a titkosított üzenetküldésre összpontosíthassunk.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Üzenetek</string>

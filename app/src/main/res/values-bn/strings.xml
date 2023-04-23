@@ -4371,7 +4371,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">স্টোরেজ খালি করতে Signal বার্তা থেকে SMS বার্তা সরিয়ে ফেলুন।</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">এনক্রিপ্ট করা মেসেজিং-এ অধিক গুরুত্ব দেওয়ার উদ্দেশ্যে শীঘ্রই SMS সহায়তা বাদ দেওয়া হবে।</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">এনক্রিপ্ট করা মেসেজিং-এ অধিক গুরুত্ব দেওয়ার উদ্দেশ্যে শীঘ্রই SMS সহায়তা বাদ দেওয়া হবে।</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">বার্তাসমূহ</string>

@@ -4371,7 +4371,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Verwyder SMS-boodskappe uit Signal om stoorruimte beskikbaar te stel.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">SMS-ondersteuning sal binnekort verwyder word om op geënkripteerde boodskappe te fokus.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">SMS-ondersteuning sal binnekort verwyder word om op geënkripteerde boodskappe te fokus.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Boodskappe</string>
