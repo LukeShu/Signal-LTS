@@ -54,6 +54,9 @@ Developer experience:
  - `./gradlew test` now works, so you can get better automated
    feedback.
 
+ - `./gradlew qa` no longer depends on `clean`, so it won't take
+   forever anymore.
+
 # Original Signal README
 
 ## Signal Android
