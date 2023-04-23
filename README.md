@@ -35,10 +35,19 @@ won't lag behind so much that things stop working.
 
 ## Differences from the standard version of Signal
 
+Bug fixes:
+
+ - Non-UTF-8 locales now work correctly.  Or at least the tests pass
+   for non-UTF-8 locales.
+
 Developer experience:
 
  - Stricter `.editorconfig`, and compliance with it; so that you don't
    need to reconfigure your editor on a file-by-file basis.
+
+ - `./gradlew qa` now works and passes on non-UTF-8 locales (a notable
+   instance of which is the reproducible-builds Docker image), so that
+   you can get better automated feedback.
 
 # Original Signal README
 
