@@ -1,5 +1,13 @@
 root = true
 
+[*]
+end_of_line = lf
+
 [*.kt]
+indent_style = space
 indent_size = 2
 twitter_compose_allowed_composition_locals=LocalExtendedColors
+
+[*.java]
+indent_style = space
+indent_size = 2

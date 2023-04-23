@@ -56,6 +56,10 @@ def abiPostFix = ['universal'   : 0,
                   'x86'         : 3,
                   'x86_64'      : 4]
 
+def ltsPostFix = 1
+def ltsPostFixSize = 10
+canonicalVersionName += "." + ltsPostFix
+
 def keystores = [ 'debug'  : loadKeystoreProperties('keystore.debug.properties') ]
 
 def selectableVariants = [
@@ -229,15 +233,6 @@ android {
         }
 
         resConfigs autoResConfig()
-
-        splits {
-            abi {
-                enable !project.hasProperty('generateBaselineProfile')
-                reset()
-                include 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
-                universalApk true
-            }
-        }
 
         testInstrumentationRunner "org.thoughtcrime.securesms.testing.SignalTestRunner"
         testInstrumentationRunnerArguments clearPackageData: 'true'
@@ -413,8 +408,9 @@ android {
 
     android.applicationVariants.all { variant ->
         variant.outputs.each { output ->
+            def postFix = 0
             if (output.baseName.contains('nightly')) {
-                output.versionCodeOverride = canonicalVersionCode * postFixSize + 5
+                postFix = 5
                 def tag = getCurrentGitTag()
                 if (tag != null && tag.length() > 0) {
                     if (tag.startsWith("v")) {
@@ -425,12 +421,18 @@ android {
             } else {
                 output.outputFileName = output.outputFileName.replace(".apk", "-${variant.versionName}.apk")
                 def abiName = output.getFilter("ABI") ?: 'universal'
-                def postFix = abiPostFix.get(abiName, 0)
-
-                if (postFix >= postFixSize) throw new AssertionError("postFix is too large")
-
-                output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
+                postFix = abiPostFix.get(abiName, 0)
             }
+
+            if (postFix >= postFixSize / ltsPostFixSize)
+                throw new AssertionError("postFix is too large")
+            if (ltsPostFix >= ltsPostFixSize)
+                throw new AssertionError("ltsPostFix is too large")
+            postFix += ltsPostFix * postFixSize / ltsPostFixSize
+
+            if (postFix >= postFixSize)
+                throw new AssertionError("postFix is too large")
+            output.versionCodeOverride = canonicalVersionCode * postFixSize + postFix
         }
     }
 
