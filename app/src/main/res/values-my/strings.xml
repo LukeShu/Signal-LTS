@@ -4221,7 +4221,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">သိုလှောင်မှု နေရာလွတ်ကို ရှင်းရန် Signal မှ SMS မက်ဆေ့ချ်များကို ဖယ်ရှားပါ။</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">စာဝှက်စနစ်သုံးထားသော မက်ဆေ့ချ်လုပ်ဆောင်ချက်အပေါ် အာရုံစိုက်နိုင်ရန် SMS ပံ့ပိုးမှုကို မကြာမီ ဖယ်ရှားပါတော့မည်။</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">စာဝှက်စနစ်သုံးထားသော မက်ဆေ့ချ်လုပ်ဆောင်ချက်အပေါ် အာရုံစိုက်နိုင်ရန် SMS ပံ့ပိုးမှုကို မကြာမီ ဖယ်ရှားပါတော့မည်။</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">မက်ဆေ့ချ်များ</string>

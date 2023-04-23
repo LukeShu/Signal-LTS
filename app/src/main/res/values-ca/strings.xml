@@ -4316,7 +4316,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Esborrar els missatges SMS de Signal per a alliberar espai d\'emmagatzematge.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Els SMS aviat no seran compatibles, ja que ha arribat l\'hora de centrar-nos en la missatgeria encriptada.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Els SMS aviat no seran compatibles, ja que ha arribat l\'hora de centrar-nos en la missatgeria encriptada.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Missatges</string>

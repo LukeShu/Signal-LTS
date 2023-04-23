@@ -4316,7 +4316,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">स्टोरेज स्थान खाली करने के लिए Signal से SMS संदेश हटाएँ।</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">एनक्रिप्टेड संदेश सेवा पर फ़ोकस करने के लिए जल्द ही SMS सेवा का समर्थन हटा दिया जाएगा।</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">एनक्रिप्टेड संदेश सेवा पर फ़ोकस करने के लिए जल्द ही SMS सेवा का समर्थन हटा दिया जाएगा।</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">मेसेज</string>
