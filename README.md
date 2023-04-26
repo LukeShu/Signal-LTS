@@ -49,6 +49,9 @@ Developer experience:
    instance of which is the reproducible-builds Docker image), so that
    you can get better automated feedback.
 
+ - `./gradlew test` now works, so you can get better automated
+   feedback.
+
 # Original Signal README
 
 ## Signal Android
