@@ -9,6 +9,7 @@ bin/
 gen/
 .idea/
 *.iml
+*.log
 out
 tests
 local.properties
