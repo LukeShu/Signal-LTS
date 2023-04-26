@@ -37,6 +37,8 @@ won't lag behind so much that things stop working.
 
 Bug fixes:
 
+ - Fix a bug where certain MMS senders can crash Signal.
+
  - Non-UTF-8 locales now work correctly.  Or at least the tests pass
    for non-UTF-8 locales.
 
