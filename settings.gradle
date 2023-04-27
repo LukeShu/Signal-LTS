@@ -24,8 +24,6 @@ dependencyResolutionManagement {
     }
 }
 
-enableFeaturePreview('VERSION_CATALOGS')
-
 include ':app'
 include ':libsignal-service'
 include ':lintchecks'
