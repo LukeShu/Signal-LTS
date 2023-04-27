@@ -584,9 +584,7 @@ dependencies {
         exclude group: 'com.google.protobuf', module: 'protobuf-java'
     }
     testImplementation testLibs.robolectric.shadows.multidex
-    testImplementation (testLibs.bouncycastle.bcprov.jdk15on) {
-        force = true
-    }
+    testImplementation testLibs.bouncycastle.bcprov.jdk15on
     testImplementation testLibs.hamcrest.hamcrest
     testImplementation testLibs.mockk
 

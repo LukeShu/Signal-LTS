@@ -179,7 +179,7 @@ dependencyResolutionManagement {
             alias('mockito-android').to('org.mockito:mockito-android:4.6.1')
             alias('robolectric-robolectric').to('org.robolectric', 'robolectric').versionRef('robolectric')
             alias('robolectric-shadows-multidex').to('org.robolectric', 'shadows-multidex').versionRef('robolectric')
-            alias('bouncycastle-bcprov-jdk15on').to('org.bouncycastle:bcprov-jdk15on:1.70')
+            alias('bouncycastle-bcprov-jdk15on').to('org.bouncycastle:bcprov-jdk15on:1.70!!')
             alias('hamcrest-hamcrest').to('org.hamcrest:hamcrest:2.2')
             alias('assertj-core').to('org.assertj:assertj-core:3.11.1')
             alias('square-okhttp-mockserver').to('com.squareup.okhttp3:mockwebserver:3.12.13')
