@@ -42,6 +42,10 @@ ktlint {
     }
 }
 
+tasks.named('runKtlintCheckOverMainSourceSet') {
+    dependsOn 'generateMainProtos'
+}
+
 dependencies {
     implementation libs.google.protobuf.javalite
     api libs.google.libphonenumber
