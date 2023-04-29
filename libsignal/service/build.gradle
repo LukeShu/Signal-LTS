@@ -1,4 +1,5 @@
 plugins {
+    // Third-party plugins
     id 'java-library'
     id 'org.jetbrains.kotlin.jvm'
     id 'java-test-fixtures'
@@ -6,8 +7,10 @@ plugins {
     id 'maven-publish'
     id 'signing'
     id 'idea'
-    id 'org.jlleitschuh.gradle.ktlint'
     id 'com.squareup.wire'
+
+    // Plugins from Signal's own `build-logic`
+    id 'ktlint'
 }
 
 archivesBaseName = "signal-service-java"
@@ -31,17 +34,6 @@ compileJava {
 
 configurations {
     ideaTestFixturesImplementation { extendsFrom testFixturesImplementation; canBeConsumed false; canBeResolved true }
-}
-
-ktlint {
-    // Use a newer version to resolve https://github.com/JLLeitschuh/ktlint-gradle/issues/507
-    version.set("0.47.1")
-
-    filter {
-        exclude { entry ->
-            entry.file.toString().contains("build/generated/source/wire")
-        }
-    }
 }
 
 tasks.named('runKtlintCheckOverMainSourceSet') {
