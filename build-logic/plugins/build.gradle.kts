@@ -1,9 +1,7 @@
-
-
 plugins {
     `kotlin-dsl`
     id("groovy-gradle-plugin")
-    id("org.jlleitschuh.gradle.ktlint") version "11.1.0"
+    id("org.jlleitschuh.gradle.ktlint")
 }
 
 java {

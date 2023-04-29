@@ -61,8 +61,6 @@ dependencies {
     implementation(libs.androidx.multidex)
     implementation(libs.kotlin.stdlib.jdk8)
 
-    ktlintRuleset(libs.ktlint.twitter.compose)
-
     testImplementation(testLibs.junit.junit)
     testImplementation(testLibs.mockito.core)
     testImplementation(testLibs.mockito.android)

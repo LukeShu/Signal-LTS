@@ -1,17 +1,20 @@
 import com.android.build.api.dsl.ManagedVirtualDevice
 
 plugins {
+    // Third-party plugins
     id 'com.android.application'
     id 'kotlin-android'
     id 'com.google.protobuf'
     id 'androidx.navigation.safeargs'
-    id 'org.jlleitschuh.gradle.ktlint'
     id 'org.jetbrains.kotlin.android'
     id 'app.cash.exhaustive'
     id 'kotlin-parcelize'
     id 'com.squareup.wire'
+
+    // Plugins from Signal's own `build-logic`
     id 'android-constants'
     id 'translations'
+    id 'ktlint'
 }
 
 apply from: 'static-ips.gradle'
@@ -39,11 +42,6 @@ wire {
     sourcePath {
         srcDir 'src/main/protowire'
     }
-}
-
-ktlint {
-    // Use a newer version to resolve https://github.com/JLLeitschuh/ktlint-gradle/issues/507
-    version = "0.47.1"
 }
 
 def canonicalVersionCode = 1247
@@ -617,7 +615,6 @@ dependencies {
     androidTestUtil testLibs.androidx.test.orchestrator
 
     implementation project(':core-ui')
-    ktlintRuleset libs.ktlint.twitter.compose
 }
 
 def getLastCommitTimestamp() {
