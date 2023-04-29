@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     setContentView(R.layout.activity_main)
 
-    findViewById<Button>(R.id.contact_list_button).setOnClickListener { v ->
+    findViewById<Button>(R.id.contact_list_button).setOnClickListener {
       if (hasPermission(Manifest.permission.READ_CONTACTS) && hasPermission(Manifest.permission.WRITE_CONTACTS)) {
         startActivity(Intent(this, ContactListActivity::class.java))
       } else {
@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
       }
     }
 
-    findViewById<Button>(R.id.contact_lookup_button).setOnClickListener { v ->
+    findViewById<Button>(R.id.contact_lookup_button).setOnClickListener {
       if (hasPermission(Manifest.permission.READ_CONTACTS) && hasPermission(Manifest.permission.WRITE_CONTACTS)) {
         startActivity(Intent(this, ContactLookupActivity::class.java))
       } else {
@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
       }
     }
 
-    findViewById<Button>(R.id.link_contacts_button).setOnClickListener { v ->
+    findViewById<Button>(R.id.link_contacts_button).setOnClickListener {
       val startTime = System.currentTimeMillis()
       if (hasPermission(Manifest.permission.READ_CONTACTS) && hasPermission(Manifest.permission.WRITE_CONTACTS)) {
         SimpleTask.run({
@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
       }
     }
 
-    findViewById<Button>(R.id.unlink_contact_button).setOnClickListener { v ->
+    findViewById<Button>(R.id.unlink_contact_button).setOnClickListener {
       val startTime = System.currentTimeMillis()
       if (hasPermission(Manifest.permission.READ_CONTACTS) && hasPermission(Manifest.permission.WRITE_CONTACTS)) {
         SimpleTask.run({

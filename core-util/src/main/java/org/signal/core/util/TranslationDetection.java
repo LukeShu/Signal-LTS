@@ -64,16 +64,19 @@ public final class TranslationDetection {
   }
 
   protected boolean configSupportsEnglish() {
-    if (configurationLocal.locale.getLanguage().equals("en")) {
-      return true;
-    }
-
     if (Build.VERSION.SDK_INT >= 24) {
       Locale firstMatch = configurationLocal.getLocales().getFirstMatch(new String[]{"en"});
-
       return firstMatch != null && firstMatch.getLanguage().equals("en");
+    } else {
+      return configSupportsEnglishPre24();
     }
+  }
 
-    return false;
+  /**
+   * Node: This is only ever called in API 23 and less.
+   */
+  @SuppressWarnings("deprecation")
+  private boolean configSupportsEnglishPre24() {
+      return configurationLocal.locale.getLanguage().equals("en");
   }
 }

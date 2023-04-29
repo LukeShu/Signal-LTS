@@ -50,6 +50,7 @@ public final class EditTextUtil {
    * Note: This is only ever called in API 28 and less.
    */
   @SuppressLint("SoonBlockedPrivateApi")
+  @SuppressWarnings("deprecation")
   private static void setCursorColorViaReflection(EditText editText, int color) {
     try {
       Field fCursorDrawableRes = TextView.class.getDeclaredField("mCursorDrawableRes");

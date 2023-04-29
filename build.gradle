@@ -33,7 +33,9 @@ allprojects {
     gradle.projectsEvaluated {
         tasks.withType(JavaCompile) {
             options.compilerArgs << "-Werror"
-            options.compilerArgs << "-Xlint:all"
+            options.compilerArgs << "-Xlint:deprecation"
+            //options.compilerArgs << "-Xlint:all"
+            //options.compilerArgs << "-Xlint:-cast" // https://github.com/protocolbuffers/protobuf/issues/5139
         }
         tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
             kotlinOptions {

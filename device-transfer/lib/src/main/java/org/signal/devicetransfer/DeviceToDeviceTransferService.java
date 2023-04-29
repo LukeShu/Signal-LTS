@@ -146,8 +146,8 @@ public class DeviceToDeviceTransferService extends Service implements ShutdownCa
     switch (action) {
       case ACTION_START_SERVER: {
         if (server == null) {
-          notificationData = intent.getParcelableExtra(EXTRA_NOTIFICATION);
-          pendingIntent    = intent.getParcelableExtra(EXTRA_PENDING_INTENT);
+          notificationData = intent.getParcelableExtra(EXTRA_NOTIFICATION, TransferNotificationData.class);
+          pendingIntent    = intent.getParcelableExtra(EXTRA_PENDING_INTENT, PendingIntent.class);
           server           = new DeviceTransferServer(getApplicationContext(),
                                                       (ServerTask) Objects.requireNonNull(intent.getSerializableExtra(EXTRA_TASK)),
                                                       this);
