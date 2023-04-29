@@ -1,0 +1,26 @@
+buildscript {
+    ext.kotlinVersion = "1.7.20"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
+    }
+}
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Werror"
+            options.compilerArgs << "-Xlint:all"
+        }
+        tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+            kotlinOptions {
+                allWarningsAsErrors = true
+            }
+        }
+    }
+}
