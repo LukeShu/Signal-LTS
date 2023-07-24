@@ -1,4 +1,52 @@
-# Signal Android 
+# Signal-LTS: Luke T. Shumaker's modified version of Signal private messenger
+
+Hi, I'm Luke T. Shumaker.  This is my modified version of Signal
+private messenger.
+
+I use this as my daily driver; so even if I lag behind a bit on
+merging new versions of Signal, you can be reasonably confident that I
+won't lag behind so much that things stop working.
+
+## User-visible differences from the standard version of Signal
+
+(TODO)
+
+## Switching from the standard version of Signal
+
+1. Install the F-Droid app store from f-droid.org
+
+2. In F-Droid, go to "Settings" (lower-right) -> "Repositories" (near
+   the top) -> "+" in the upper right, and enter
+   https://fdroid.lukeshu.com/repo
+
+3. In Signal, go to hamburger -> "Settings" -> "Chats" -> "Backups"
+   and make a backup, and ensure you know what the backup password is
+   and what your PIN is.
+
+4. Uninstall Signal.
+
+5. In F-Droid, do a search for Signal, and Signal-LTS should show
+   up.  Install it.
+
+6. Open Signal, and restore from the backup.
+
+7. In the Signal app info (from Android settings, or by long-holding
+   on the Signal app icon), set it to be the default SMS app.  There
+   is currently **not** an option to do that from within Signal itself
+   (TODO).
+
+8. (maybe?) If you had any connected devices, you may need to set
+   those back up??
+
+## Developer-visible differences from the standard version of Signal
+
+(TODO)
+
+# Original Signal README
+
+---
+
+## Signal Android
 
 Signal is a simple, powerful, and secure messenger.
 
@@ -8,12 +56,12 @@ Currently available on the Play Store and [signal.org](https://signal.org/androi
 
 <a href='https://play.google.com/store/apps/details?id=org.thoughtcrime.securesms&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' height='80px'/></a>
 
-## Contributing Bug reports
+### Contributing Bug reports
 We use GitHub for bug tracking. Please search the existing issues for your bug and create a new one if the issue is not yet tracked!
 
 https://github.com/signalapp/Signal-Android/issues
 
-## Joining the Beta
+### Joining the Beta
 Want to live life on the bleeding edge and help out with testing?
 
 You can subscribe to Signal Android Beta releases here:
@@ -21,29 +69,29 @@ https://play.google.com/apps/testing/org.thoughtcrime.securesms
 
 If you're interested in a life of peace and tranquility, stick with the standard releases.
 
-## Contributing Code
+### Contributing Code
 
 If you're new to the Signal codebase, we recommend going through our issues and picking out a simple bug to fix (check the "easy" label in our issues) in order to get yourself familiar. Also please have a look at the [CONTRIBUTING.md](https://github.com/signalapp/Signal-Android/blob/main/CONTRIBUTING.md), that might answer some of your questions.
 
 For larger changes and feature ideas, we ask that you propose it on the [unofficial Community Forum](https://community.signalusers.org) for a high-level discussion with the wider community before implementation.
 
-## Contributing Ideas
+### Contributing Ideas
 Have something you want to say about Signal projects or want to be part of the conversation? Get involved in the [community forum](https://community.signalusers.org).
 
-Help
-====
-## Support
+## Help
+
+### Support
 For troubleshooting and questions, please visit our support center!
 
 https://support.signal.org/
 
-## Documentation
+### Documentation
 Looking for documentation? Check out the wiki!
 
 https://github.com/signalapp/Signal-Android/wiki
 
-# Legal things
-## Cryptography Notice
+## Legal things
+### Cryptography Notice
 
 This distribution includes cryptographic software. The country in which you currently reside may have restrictions on the import, possession, use, and/or re-export to another country, of encryption software.
 BEFORE using any encryption software, please check your country's laws, regulations and policies concerning the import, possession, or use, and re-export of encryption software, to see if this is permitted.
@@ -52,7 +100,7 @@ See <http://www.wassenaar.org/> for more information.
 The U.S. Government Department of Commerce, Bureau of Industry and Security (BIS), has classified this software as Export Commodity Control Number (ECCN) 5D002.C.1, which includes information security software using or performing cryptographic functions with asymmetric algorithms.
 The form and manner of this distribution makes it eligible for export under the License Exception ENC Technology Software Unrestricted (TSU) exception (see the BIS Export Administration Regulations, Section 740.13) for both object code and source code.
 
-## License
+### License
 
 Copyright 2013-2023 Signal
 
