@@ -35,7 +35,10 @@ won't lag behind so much that things stop working.
 
 ## Differences from the standard version of Signal
 
-(TODO)
+Developer experience:
+
+ - Stricter `.editorconfig`, and compliance with it; so that you don't
+   need to reconfigure your editor on a file-by-file basis.
 
 # Original Signal README
 
