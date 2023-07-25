@@ -35,6 +35,10 @@ won't lag behind so much that things stop working.
 
 ## Differences from the standard version of Signal
 
+Features / User experience:
+
+ - SMS/MMS support isn't going away.
+
 Bug fixes:
 
  - Fix a bug where certain MMS senders can crash Signal.
