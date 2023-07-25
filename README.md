@@ -7,6 +7,19 @@ I use this as my daily driver; so even if I lag behind a bit on
 merging new versions of Signal, you can be reasonably confident that I
 won't lag behind so much that things stop working.
 
+## User-visible differences from the standard version of Signal
+
+Features:
+
+ - SMS/MMS support isn't going away.
+
+Bug fixes:
+
+ - Fix a bug where certain MMS senders can crash Signal.
+
+ - Non-UTF-8 locales now work correctly.  Or at least the tests pass
+   for non-UTF-8 locales.
+
 ## Switching from the standard version of Signal
 
 1. Install the F-Droid app store from f-droid.org
@@ -31,20 +44,10 @@ won't lag behind so much that things stop working.
    is currently **not** an option to do that from within Signal itself
    (TODO).
 
-8. (maybe?) If you had any connected devices, you may need to set those back up??
+8. (maybe?) If you had any connected devices, you may need to set
+   those back up??
 
-## Differences from the standard version of Signal
-
-Features / User experience:
-
- - SMS/MMS support isn't going away.
-
-Bug fixes:
-
- - Fix a bug where certain MMS senders can crash Signal.
-
- - Non-UTF-8 locales now work correctly.  Or at least the tests pass
-   for non-UTF-8 locales.
+## Developer-visible differences from the standard version of Signal
 
 Developer experience:
 
@@ -69,6 +72,8 @@ Developer experience:
    F-Droid repo.
 
 # Original Signal README
+
+---
 
 ## Signal Android
 
