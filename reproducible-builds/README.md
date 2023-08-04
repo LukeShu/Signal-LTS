@@ -18,7 +18,7 @@ docker build --tag=signal-android .
 cd ..
 
 # Build using the Docker environment
-docker run --rm --volume=$PWD:/project --workdir=/project signal-android ./gradlew clean assemblePlayProdRelease
+docker run --rm --user=$UID --volume=$PWD:/project --workdir=/project signal-android ./gradlew clean assemblePlayProdRelease
 
 # Verify the APKs
 python3 apkdiff/apkdiff.py app/build/outputs/apks/project-release-unsigned.apk path/to/SignalFromPlay.apk
@@ -202,7 +202,7 @@ cd ~/reproducible-signal/signal-source
 To build with the docker image you just built (`signal-android`), run:
 
 ```
-docker run --rm --volume=$PWD:/project --workdir=/project signal-android ./gradlew clean assemblePlayProdRelease
+docker run --rm --user=$UID --volume=$PWD:/project --workdir=/project signal-android ./gradlew clean assemblePlayProdRelease
 ```
 
 This will take a few minutes :sleeping:
