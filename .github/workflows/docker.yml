@@ -1,8 +1,13 @@
 name: Reproducible Build Check
 
 on:
-  schedule:
-    - cron: '0 5 * * *'
+  pull_request:
+  push:
+    branches:
+    - 'main'
+    - '**/main'
+    - '4.**'
+    - '5.**'
 
 permissions:
   contents: read # to fetch code (actions/checkout)
