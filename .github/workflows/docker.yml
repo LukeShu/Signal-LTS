@@ -1,8 +1,13 @@
 name: Reproducible Build Check
 
 on:
-  schedule:
-    - cron: '0 5 * * *'
+  pull_request:
+  push:
+    branches:
+    - 'main'
+    - '**/main'
+    - '4.**'
+    - '5.**'
 
 permissions:
   contents: read # to fetch code (actions/checkout)
@@ -13,9 +18,28 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: Setup swap space
+      # We want some more usable memory; GHA's free runners have 7GiB
+      # of memory, and (by default) 3 GiB of swap space.
+      # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+      #
+      # All variables are in kiB.
+      run: |
+        want=$((12*1024*1024)) # 12GiB
+
+        have=$(awk '$1 == "MemAvailable:" || $1 == "SwapFree:" {mem += $2} END {print mem}' /proc/meminfo)
+        swap=$((want - have))
+        if [[ $swap -gt 0 ]]; then
+            sudo fallocate --length=$((swap*1024)) /swap
+            sudo chmod 600 /swap
+            sudo mkswap /swap
+            sudo swapon /swap
+        fi
+        free -h
+
     - uses: actions/checkout@v3
     - name: Build image
       run: cd reproducible-builds && docker build -t signal-android . && cd ..
 
     - name: Test build
-      run: docker run --rm -v $(pwd):/project -w /project signal-android ./gradlew clean assemblePlayProdRelease
+      run: docker run --rm --user=$UID --volume=$PWD:/project --workdir=/project signal-android ./gradlew clean assemblePlayProdRelease

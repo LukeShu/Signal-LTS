@@ -9,10 +9,28 @@ permissions:
 
 jobs:
   assemble-base:
-    if: ${{ github.repository != 'signalapp/Signal-Android' }}
-    runs-on: ubuntu-latest-8-cores
+    runs-on: ubuntu-latest
     
     steps:
+    - name: Setup swap space
+      # We want some more usable memory; GHA's free runners have 7GiB
+      # of memory, and (by default) 3 GiB of swap space.
+      # https://docs.github.com/en/actions/using-github-hosted-runners/about-github-hosted-runners#supported-runners-and-hardware-resources
+      #
+      # All variables are in kiB.
+      run: |
+        want=$((12*1024*1024)) # 12GiB
+
+        have=$(awk '$1 == "MemAvailable:" || $1 == "SwapFree:" {mem += $2} END {print mem}' /proc/meminfo)
+        swap=$((want - have))
+        if [[ $swap -gt 0 ]]; then
+            sudo fallocate --length=$((swap*1024)) /swap
+            sudo chmod 600 /swap
+            sudo mkswap /swap
+            sudo swapon /swap
+        fi
+        free -h
+
     - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.pull_request.base.sha }}
@@ -41,7 +59,7 @@ jobs:
 
     - name: Copy base apk
       if: steps.cache-base.outputs.cache-hit != 'true'
-      run: mv app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-base.apk
+      run: mv app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-base.apk
 
     - uses: actions/checkout@v3
       with:
@@ -51,7 +69,7 @@ jobs:
       run: ./gradlew assemblePlayProdRelease --parallel
 
     - name: Copy PR apk
-      run: mv app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-new.apk
+      run: mv app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-new.apk
 
     - id: diffuse
       uses: usefulness/diffuse-action@v1
