@@ -43,6 +43,9 @@ Bug fixes:
 
 ## Developer-visible differences from the standard version of Signal
 
+ - Stricter `.editorconfig`, and compliance with it; so that you don't
+   need to reconfigure your editor on a file-by-file basis.
+
  - `./gradlew qa` now works and passes on non-UTF-8 locales (a notable
    instance of which is the reproducible-builds Docker image), so that
    you can get better automated feedback.
