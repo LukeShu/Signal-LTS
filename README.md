@@ -56,6 +56,13 @@ Bug fixes:
  - `./gradlew qa` no longer depends on `clean`, so it won't take
    forever anymore.
 
+ - Can now be published to an F-Droid repo.  It now builds a universal
+   APK rather than building separate APKs for each CPU architecture.
+   This is arguably a downgrade for the user-experience, as the user
+   will have larger files to download; but, F-Droid doesn't support
+   split APKs, so this is necessary for being able to publish it as an
+   F-Droid repo.
+
 # Original Signal README
 
 ---
