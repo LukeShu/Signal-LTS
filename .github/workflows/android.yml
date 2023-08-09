@@ -25,7 +25,7 @@ jobs:
       #
       # All variables are in kiB.
       run: |
-        want=$((12*1024*1024)) # 12GiB
+        want=$((13*1024*1024)) # 13GiB
 
         have=$(awk '$1 == "MemAvailable:" || $1 == "SwapFree:" {mem += $2} END {print mem}' /proc/meminfo)
         swap=$((want - have))
