@@ -2819,7 +2819,7 @@ open class MessageTable(context: Context?, databaseHelper: SignalDatabase) : Dat
         READ to if (Util.isDefaultSmsProvider(context)) 0 else 1,
         SMS_SUBSCRIPTION_ID to subscriptionId
       )
-      .run(SQLiteDatabase.CONFLICT_IGNORE)
+      .run()
 
     return Pair(messageId, threadId)
   }
