@@ -74,24 +74,29 @@ public class MmsReceiveJob extends BaseJob {
 
     if (isNotification(pdu) && isBlocked(pdu)) {
       Log.w(TAG, "Received an MMS from a blocked user. Ignoring.");
-    } else if (isNotification(pdu) && isSelf(pdu)) {
-      Log.w(TAG, "Received an MMS from ourselves! Ignoring.");
-    } else if (isNotification(pdu)) {
-      MessageTable     database           = SignalDatabase.messages();
-      Pair<Long, Long> messageAndThreadId = database.insertMessageInbox((NotificationInd)pdu, subscriptionId);
-
-      if (messageAndThreadId.first() > 0) {
-        Log.i(TAG, "Inserted received MMS notification...");
-
-        ApplicationDependencies.getJobManager().add(new MmsDownloadJob(messageAndThreadId.first(),
-                                                                       messageAndThreadId.second(),
-                                                                       true));
-      } else {
-        Log.w(TAG, "Did not insert MMS because it was a duplicate!");
-      }
-    } else {
-      Log.w(TAG, "Unable to process MMS.");
+      return;
     }
+    if (isNotification(pdu) && isSelf(pdu)) {
+      Log.w(TAG, "Received an MMS from ourselves! Ignoring.");
+      return;
+    }
+    if (!isNotification(pdu)) {
+      Log.w(TAG, "Unable to process MMS.");
+      return;
+    }
+
+    MessageTable database = SignalDatabase.messages();
+
+    Pair<Long, Long> messageAndThreadId = database.insertMessageInbox((NotificationInd)pdu, subscriptionId);
+    long messageId = messageAndThreadId.first();
+    long threadId  = messageAndThreadId.second();
+    if (messageId <= 0) {
+      Log.w(TAG, "Did not insert MMS because it was a duplicate!");
+      return;
+    }
+
+    Log.i(TAG, "Inserted received MMS notification...");
+    ApplicationDependencies.getJobManager().add(new MmsDownloadJob(messageId, threadId, true));
   }
 
   @Override
