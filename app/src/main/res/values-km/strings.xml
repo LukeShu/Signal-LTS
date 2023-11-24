@@ -4723,22 +4723,22 @@
     <string name="MySupportPreference__please_contact_support">សូមទាក់ទងទៅកាន់សេវាគាំទ្រ</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">ដំឡើង Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">ដំឡើង Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">កំណែ Signal នេះបានផុតកំណត់ហើយ។ ដំឡើងកំណែឥឡូវនេះដើម្បីបន្តប្រើប្រាស់ Signal។</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">កំណែ Signal នេះបានផុតកំណត់ហើយ។ ដំឡើងកំណែឥឡូវនេះដើម្បីបន្តប្រើប្រាស់ Signal។</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">បច្ចុប្បន្នភាព</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">បច្ចុប្បន្នភាព</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">បោះបង់</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">បោះបង់</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">ឧបករណ៍មិនបានចុះឈ្មោះទេ</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">ឧបករណ៍មិនបានចុះឈ្មោះទេ</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">លែងចុះឈ្មោះឧបករណ៍នេះទៀតហើយ។ ចុះឈ្មោះឡើងវិញដើម្បីបន្តប្រើប្រាស់ Signal នៅលើឧបករណ៍នេះ។</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">លែងចុះឈ្មោះឧបករណ៍នេះទៀតហើយ។ ចុះឈ្មោះឡើងវិញដើម្បីបន្តប្រើប្រាស់ Signal នៅលើឧបករណ៍នេះ។</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">ចុះឈ្មោះម្តងទៀត</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">ចុះឈ្មោះម្តងទៀត</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">បោះបង់</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">បោះបង់</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">ស្លាកទ្រទ្រង់បានផុតកំណត់</string>

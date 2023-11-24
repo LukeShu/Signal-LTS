@@ -4831,22 +4831,22 @@
     <string name="MySupportPreference__please_contact_support">Ota yhteys tukeen.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Päivitä Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Päivitä Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Tämä Signal-versio on vanhentunut. Päivitä nyt jatkaaksesi Signalin käyttöä.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Tämä Signal-versio on vanhentunut. Päivitä nyt jatkaaksesi Signalin käyttöä.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Päivitä</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Päivitä</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Peruuta</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Peruuta</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Laitetta ei ole rekisteröity</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Laitetta ei ole rekisteröity</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Tämä laite ei ole enää rekisteröity. Rekisteröi uudelleen jatkaaksesi Signalin käyttöä tällä laitteella.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Tämä laite ei ole enää rekisteröity. Rekisteröi uudelleen jatkaaksesi Signalin käyttöä tällä laitteella.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Rekisteröidy uudelleen</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Rekisteröidy uudelleen</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Peruuta</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Peruuta</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Boost-merkki on vanhentunut</string>

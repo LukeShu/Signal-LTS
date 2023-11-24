@@ -4831,22 +4831,22 @@
     <string name="MySupportPreference__please_contact_support">براہ کرم معاونت سے رابطہ کریں۔</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Signal اپ ڈیٹ کریں</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Signal اپ ڈیٹ کریں</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Signal کا یہ ورژن زائد المیعاد ہو گیا ہے۔ Signal کا استعمال جاری رکھنے کے لیے ابھی اپ ڈیٹ کریں۔</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Signal کا یہ ورژن زائد المیعاد ہو گیا ہے۔ Signal کا استعمال جاری رکھنے کے لیے ابھی اپ ڈیٹ کریں۔</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">اَپ ڈیٹ</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">اَپ ڈیٹ</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">منسوخ کریں</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">منسوخ کریں</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">ڈیوائس رجسٹر شدہ نہیں ہے</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">ڈیوائس رجسٹر شدہ نہیں ہے</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">یہ ڈیوائس اب مزید رجسٹر شدہ نہیں ہے۔ اس ڈیوائس پر Signal کا استعمال جاری رکھنے کے لیے دوبارہ رجسٹر کریں۔</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">یہ ڈیوائس اب مزید رجسٹر شدہ نہیں ہے۔ اس ڈیوائس پر Signal کا استعمال جاری رکھنے کے لیے دوبارہ رجسٹر کریں۔</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">دوبارہ رجسٹر کریں</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">دوبارہ رجسٹر کریں</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">منسوخ کریں</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">منسوخ کریں</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">بوسٹ بیج زائد المیعاد ہو گیا</string>

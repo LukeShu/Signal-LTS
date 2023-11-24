@@ -4831,22 +4831,22 @@
     <string name="MySupportPreference__please_contact_support">Παρακαλώ επικοινώνησε με την υποστήριξη.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Αναβάθμιση του Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Αναβάθμιση του Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Αυτή η έκδοση Signal έχει λήξει. Αναβάθμισε τώρα για να συνεχίσεις να χρησιμοποιείς το Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Αυτή η έκδοση Signal έχει λήξει. Αναβάθμισε τώρα για να συνεχίσεις να χρησιμοποιείς το Signal.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Ενημέρωση</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Ενημέρωση</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Ακύρωση</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Ακύρωση</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Η συσκευή δεν είναι καταχωρημένη</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Η συσκευή δεν είναι καταχωρημένη</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Αυτή η συσκευή δεν είναι πλέον καταχωρημένη. Κάνε επανεγγραφή για να συνεχίσεις να χρησιμοποιείς το Signal σε αυτήν τη συσκευή.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Αυτή η συσκευή δεν είναι πλέον καταχωρημένη. Κάνε επανεγγραφή για να συνεχίσεις να χρησιμοποιείς το Signal σε αυτήν τη συσκευή.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Επανεγγραφή</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Επανεγγραφή</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Ακύρωση</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Ακύρωση</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Το σήμα Boost έληξε</string>
