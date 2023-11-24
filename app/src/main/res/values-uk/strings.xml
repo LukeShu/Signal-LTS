@@ -4990,22 +4990,22 @@
     <string name="MySupportPreference__please_contact_support">Будь ласка, зверніться до служби підтримки.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Оновити Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Оновити Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Ця версія Signal застаріла. Оновіть версію, щоб і надалі користуватися застосунком.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Ця версія Signal застаріла. Оновіть версію, щоб і надалі користуватися застосунком.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Оновити</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Оновити</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Скасувати</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Скасувати</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Пристрій не зареєстровано</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Пристрій не зареєстровано</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Цей пристрій більше не зареєстровано. Перереєструйтеся, щоб і надалі використовувати Signal на цьому пристрої.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Цей пристрій більше не зареєстровано. Перереєструйтеся, щоб і надалі використовувати Signal на цьому пристрої.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Перереєструватись</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Перереєструватись</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Скасувати</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Скасувати</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Термін дії Значка підтримки скінчився</string>

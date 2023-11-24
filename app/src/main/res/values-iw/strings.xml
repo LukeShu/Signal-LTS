@@ -4990,22 +4990,22 @@
     <string name="MySupportPreference__please_contact_support">אנא צור קשר עם התמיכה.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">עדכן את Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">עדכן את Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">גרסה זו של Signal כבר לא בתוקף. אפשר לעדכן עכשיו כדי להמשיך להשתמש ב–Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">גרסה זו של Signal כבר לא בתוקף. אפשר לעדכן עכשיו כדי להמשיך להשתמש ב–Signal.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">עדכן</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">עדכן</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">ביטול</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">ביטול</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">המכשיר לא רשום</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">המכשיר לא רשום</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">המכשיר הזה כבר לא רשום. אפשר לרשום אותו מחדש כדי להמשיך להשתמש ב–Signal במכשיר הזה.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">המכשיר הזה כבר לא רשום. אפשר לרשום אותו מחדש כדי להמשיך להשתמש ב–Signal במכשיר הזה.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">רשום מחדש</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">רשום מחדש</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">ביטול</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">ביטול</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">פג התוקף של תג בוסט</string>

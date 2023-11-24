@@ -4788,22 +4788,22 @@
     <string name="MySupportPreference__please_contact_support">Palun võta ühendust kasutajatoega.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Uuenda Signalit</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Uuenda Signalit</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">See Signali versioon on aegunud. Signali kasutamise jätkamiseks uuenda nüüd.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">See Signali versioon on aegunud. Signali kasutamise jätkamiseks uuenda nüüd.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Uuenda</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Uuenda</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Loobu</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Loobu</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Seade ei ole registreeritud</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Seade ei ole registreeritud</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">See seade ei ole enam registreeritud. Registreeri uuesti, et jätkata Signali kasutamist selles seadmes.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">See seade ei ole enam registreeritud. Registreeri uuesti, et jätkata Signali kasutamist selles seadmes.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Eemalda registreerimine</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Eemalda registreerimine</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Loobu</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Loobu</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Toetaja märk on aegunud</string>
