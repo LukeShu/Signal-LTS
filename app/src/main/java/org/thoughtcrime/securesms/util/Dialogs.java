@@ -24,7 +24,6 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 
 import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.keyvalue.SignalStore;
-import org.thoughtcrime.securesms.registration.RegistrationNavigationActivity;
 
 public class Dialogs {
   public static void showAlertDialog(Context context, String title, String message) {
@@ -64,28 +63,6 @@ public class Dialogs {
         .setPositiveButton(R.string.SendingEditMessageBetaOnlyDialog_send, (d, w) -> {
           SignalStore.uiHints().markHasSeenEditMessageBetaAlert();
           onSendAnyway.run();
-        })
-        .show();
-  }
-
-  public static void showUpgradeSignalDialog(@NonNull Context context) {
-    new MaterialAlertDialogBuilder(context)
-        .setTitle(R.string.UpdateSignalExpiredDialog__title)
-        .setMessage(R.string.UpdateSignalExpiredDialog__message)
-        .setNegativeButton(R.string.UpdateSignalExpiredDialog__cancel_action, null)
-        .setPositiveButton(R.string.UpdateSignalExpiredDialog__update_action, (d, w) -> {
-          PlayStoreUtil.openPlayStoreOrOurApkDownloadPage(context);
-        })
-        .show();
-  }
-
-  public static void showReregisterSignalDialog(@NonNull Context context) {
-    new MaterialAlertDialogBuilder(context)
-        .setTitle(R.string.ReregisterSignalDialog__title)
-        .setMessage(R.string.ReregisterSignalDialog__message)
-        .setNegativeButton(R.string.ReregisterSignalDialog__cancel_action, null)
-        .setPositiveButton(R.string.ReregisterSignalDialog__reregister_action, (d, w) -> {
-          context.startActivity(RegistrationNavigationActivity.newIntentForReRegistration(context));
         })
         .show();
   }

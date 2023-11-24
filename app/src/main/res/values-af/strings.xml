@@ -4843,22 +4843,22 @@
     <string name="MySupportPreference__please_contact_support">Kontak asb. ondersteuning.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Werk Signal by</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Werk Signal by</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Hierdie weergawe van Signal het verval. Doen nou opdatering om voort te gaan om Signal te gebruik.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Hierdie weergawe van Signal het verval. Doen nou opdatering om voort te gaan om Signal te gebruik.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Werk by</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Werk by</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Kanselleer</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Kanselleer</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Toestel nie geregistreer nie</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Toestel nie geregistreer nie</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Hierdie toestel is nie meer geregistreer nie. Herregistreer om voort te gaan om Signal op hierdie toestel te gebruik.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Hierdie toestel is nie meer geregistreer nie. Herregistreer om voort te gaan om Signal op hierdie toestel te gebruik.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Herregistreer</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Herregistreer</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Kanselleer</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Kanselleer</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Hupstoot-wapen het verval</string>

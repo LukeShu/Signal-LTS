@@ -4735,22 +4735,22 @@
     <string name="MySupportPreference__please_contact_support">အကူအညီရယူရန် ဆက်သွယ်ပါ။</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Signal ကို အပ်ဒိတ်လုပ်ပါ။</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Signal ကို အပ်ဒိတ်လုပ်ပါ။</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">ဤ Signal ဗားရှင်းသည် သက်တမ်းကုန်သွားပါပြီ။ Signal ကို ဆက်လက်သုံးစွဲရန် ယခု အပ်ဒိတ်လုပ်ပေးပါ။</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">ဤ Signal ဗားရှင်းသည် သက်တမ်းကုန်သွားပါပြီ။ Signal ကို ဆက်လက်သုံးစွဲရန် ယခု အပ်ဒိတ်လုပ်ပေးပါ။</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">အပ်ဒိတ်မယ်</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">အပ်ဒိတ်မယ်</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">မလုပ်တော့ပါ</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">မလုပ်တော့ပါ</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">စက်ကို မှတ်ပုံမတင်ထားပါ</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">စက်ကို မှတ်ပုံမတင်ထားပါ</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">ဤစက်ကို မှတ်ပုံတင်ထားခြင်း မရှိတော့ပါ။ ဤစက်တွင် Signal ဆက်သုံးရန် ပြန်လည်၍မှတ်ပုံတင်ပါ။</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">ဤစက်ကို မှတ်ပုံတင်ထားခြင်း မရှိတော့ပါ။ ဤစက်တွင် Signal ဆက်သုံးရန် ပြန်လည်၍မှတ်ပုံတင်ပါ။</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">ပြန်လည်၍မှတ်ပုံတင်ခြင်းပြုလုပ်မည်</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">ပြန်လည်၍မှတ်ပုံတင်ခြင်းပြုလုပ်မည်</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">မလုပ်တော့ပါ</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">မလုပ်တော့ပါ</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Boost ဘဲ့ဂျ် သက်တမ်းကုန်ပါပြီ</string>

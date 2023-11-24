@@ -4843,22 +4843,22 @@
     <string name="MySupportPreference__please_contact_support">దయచేసి సపోర్ట్‌ని సంప్రదించండి.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Signal ను నవీకరించండి</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Signal ను నవీకరించండి</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Signal యొక్క ఈ వెర్షన్ గడువు తీరింది. Signal ఉపయోగించడం కొనసాగించడానికి ఇప్పుడు అప్‌డేట్ చేయండి.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Signal యొక్క ఈ వెర్షన్ గడువు తీరింది. Signal ఉపయోగించడం కొనసాగించడానికి ఇప్పుడు అప్‌డేట్ చేయండి.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">నవీకరణ</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">నవీకరణ</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">రద్దు చేయండి</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">రద్దు చేయండి</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">పరికరం నమోదు చేయబడలేదు</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">పరికరం నమోదు చేయబడలేదు</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">ఈ పరికరం ఇకపై నమోదు చేయబడలేదు. ఈ పరికరంపై Signal ఉపయోగించడం కొనసాగించేందుకు మళ్ళీ నమోదు చేసుకోండి.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">ఈ పరికరం ఇకపై నమోదు చేయబడలేదు. ఈ పరికరంపై Signal ఉపయోగించడం కొనసాగించేందుకు మళ్ళీ నమోదు చేసుకోండి.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">మల్లి నమోదుచేయుత </string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">మల్లి నమోదుచేయుత </string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">రద్దు చేయండి</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">రద్దు చేయండి</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">బూస్ట్ బ్యాడ్జి గడువు తీరింది</string>

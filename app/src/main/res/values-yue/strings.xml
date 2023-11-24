@@ -4735,22 +4735,22 @@
     <string name="MySupportPreference__please_contact_support">請聯絡支援。</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">更新 Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">更新 Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">呢個 Signal 版本已經過咗期。即刻更新嚟繼續用 Signal 啦。</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">呢個 Signal 版本已經過咗期。即刻更新嚟繼續用 Signal 啦。</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">更新</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">更新</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">取消</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">取消</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">部機未註冊</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">部機未註冊</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">呢部機嘅註冊已經失效。重新註冊嚟喺呢部機度繼續用 Signal 啦。</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">呢部機嘅註冊已經失效。重新註冊嚟喺呢部機度繼續用 Signal 啦。</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">重新註冊</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">重新註冊</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">取消</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">取消</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">「集氣」襟章已經褪色夠鐘換喇</string>

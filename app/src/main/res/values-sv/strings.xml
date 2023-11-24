@@ -4843,22 +4843,22 @@
     <string name="MySupportPreference__please_contact_support">Kontakta supporten.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Uppdatera Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Uppdatera Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Denna version av Signal har upphört att gälla. Uppdatera nu för att fortsätta använda Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Denna version av Signal har upphört att gälla. Uppdatera nu för att fortsätta använda Signal.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Uppdatera</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Uppdatera</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Avbryt</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Avbryt</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Enheten är inte registrerad</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Enheten är inte registrerad</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Den här enheten är inte längre registrerad. Registrera om för att fortsätta använda Signal på den här enheten.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Den här enheten är inte längre registrerad. Registrera om för att fortsätta använda Signal på den här enheten.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Registrera igen</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Registrera igen</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Avbryt</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Avbryt</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Boost-märket har upphört att gälla</string>

@@ -4843,22 +4843,22 @@
     <string name="MySupportPreference__please_contact_support">Молимо контактирајте подршку.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Ажурирај Signal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Ажурирај Signal</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Ова верзија Signal-а је истекла. Ажурирајте апликацију сада да наставите да користите Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Ова верзија Signal-а је истекла. Ажурирајте апликацију сада да наставите да користите Signal.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Сачувај</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Сачувај</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">Откажи</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">Откажи</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Уређај није регистрован</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Уређај није регистрован</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Овај уређај више није регистрован. Поново се региструјте да бисте наставили да користите Signal на овом уређају.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Овај уређај више није регистрован. Поново се региструјте да бисте наставили да користите Signal на овом уређају.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Поново региструј</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Поново региструј</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">Откажи</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">Откажи</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Значка подршке је истекла</string>

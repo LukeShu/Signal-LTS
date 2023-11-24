@@ -4843,22 +4843,22 @@
     <string name="MySupportPreference__please_contact_support">Lütfen destek ekibiyle iletişime geç.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Signal\'i Güncelle</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Signal\'i Güncelle</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Signal\'in bu sürümü kullanım dışı kaldı. Signal\'i kullanmaya devam etmek için şimdi güncelle.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Signal\'in bu sürümü kullanım dışı kaldı. Signal\'i kullanmaya devam etmek için şimdi güncelle.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">Güncelle</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">Güncelle</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">İptal</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">İptal</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">Cihaz kayıtlı değil</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">Cihaz kayıtlı değil</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">Bu cihaz artık kayıtlı değil. Signal\'i bu cihazda kullanmaya devam etmek için yeniden kaydol.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">Bu cihaz artık kayıtlı değil. Signal\'i bu cihazda kullanmaya devam etmek için yeniden kaydol.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">Tekrar kaydet</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">Tekrar kaydet</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">İptal</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">İptal</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">Boost Rozetinin Süresi Doldu</string>
