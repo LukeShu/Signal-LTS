@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Това устройство не поддържа Play услуги. Натиснете, за да изключите оптимизациите на батерията, за да преустановите опитите на Signal да изтегля съобщения, когато не е активен.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Тази версия на Signal е изтекла. Обновете сега, за да можете да получавате и изпращате съобщения.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Тази версия на Signal е изтекла. Обновете сега, за да можете да получавате и изпращате съобщения.</string> -->
     <string name="ExpiredBuildReminder_update_now">Обнови сега</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Обнови сега</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Тази версия на Signal ще изтече днес. Актуализирайте до най-новата версия.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Тази версия на Signal ще изтече утре. Актуализирайте до най-новата версия.</item>
         <item quantity="other">Тази версия на Signal ще изтече след %1$d дни. Актуализирайте до най-новата версия.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Въведете паролата</string>

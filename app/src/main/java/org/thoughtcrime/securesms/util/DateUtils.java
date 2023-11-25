@@ -452,4 +452,21 @@ public class DateUtils {
 
     return format;
   }
+
+  /**
+   * The one true instant formatter.  Everything should use this.
+   */
+  public static @NonNull String ltsFormatInstant(@NonNull final Context context, @NonNull final Locale locale, @NonNull final Instant when) {
+    Instant now = Instant.now();
+
+    // "at 9:20 am"
+    // FIXME: Figure out how to pass `now` to this.
+    CharSequence abs = android.text.format.DateUtils.getRelativeTimeSpanString(context, when.toEpochMilli(), true);
+
+    // "32 minutes ago"
+    CharSequence rel = android.text.format.DateUtils.getRelativeTimeSpanString(when.toEpochMilli(), now.toEpochMilli(), 0, 0);
+
+    // Join them.
+    return abs + " (" + rel + ")";
+  }
 }

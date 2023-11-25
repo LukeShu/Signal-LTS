@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Este dispositivo non é compatible con Servizos Play. Toca para desactivar as optimizacións da batería do sistema que evitan que Signal recupere mensaxes mentres está inactivo.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Esta versión de Signal caducou. Actualiza para poder enviar e recibir mensaxes.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Esta versión de Signal caducou. Actualiza para poder enviar e recibir mensaxes.</string> -->
     <string name="ExpiredBuildReminder_update_now">Actualiza</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Actualiza</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Esta versión de Signal caduca hoxe. Actualízate á versión máis recente.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Esta versión de Signal caduca mañá. Actualízate á versión máis recente.</item>
         <item quantity="other">Esta versión de Signal caduca en %1$d días. Actualízate á versión máis recente.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Inserir frase de acceso</string>

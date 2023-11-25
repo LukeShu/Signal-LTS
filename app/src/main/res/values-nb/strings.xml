@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Denne enheten støtter ikke Play-tjenester. Trykk én gang for å slå av batterioptimalisering som kan hindre Signal i å motta meldinger når det kjører i bakgrunnen.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Din versjon av Signal er utløpt. Vennligst oppdater for å sende ytterligere meldinger.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Din versjon av Signal er utløpt. Vennligst oppdater for å sende ytterligere meldinger.</string> -->
     <string name="ExpiredBuildReminder_update_now">Oppdater nå</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Oppdater nå</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Denne versjonen av Signal går ut på dato i dag. Oppgrader til nyeste versjon.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Denne versjonen av Signal vil utløpe i morgen. Husk å oppdatere til den nyeste versjonen.</item>
         <item quantity="other">Denne versjonen av Signal vil utløpe om %1$d dager. Husk å oppdatere til den nyeste versjonen.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Skriv inn passord</string>

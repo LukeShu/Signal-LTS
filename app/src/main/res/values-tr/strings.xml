@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Bu cihaz Play Hizmetlerini desteklemiyor. Signal etkin değilken ileti almasını engelleyebilecek pil iyileştirmelerini devre dışı bırakmak için dokunun.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal\'in bu sürümü kullanım dışı kaldı. İleti gönderip alabilmek için şimdi güncelleyin.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal\'in bu sürümü kullanım dışı kaldı. İleti gönderip alabilmek için şimdi güncelleyin.</string> -->
     <string name="ExpiredBuildReminder_update_now">Şimdi güncelle</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Şimdi güncelle</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal\'in bu sürümü bugün kullanım dışı kalacak. En yeni sürüme güncelleyin.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal\'in bu sürümü yarın kullanım dışı kalacak. En yeni sürüme güncelle.</item>
         <item quantity="other">Signal\'in bu sürümü %1$d gün içinde kullanım dışı kalacak. En yeni sürüme güncelle.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Parola girin</string>

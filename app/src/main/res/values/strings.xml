@@ -744,7 +744,8 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">This device does not support Play Services. Tap to disable system battery optimizations that prevent Signal from retrieving messages while inactive.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">This version of Signal has expired. Update now to send and receive messages.</string>
+    <!-- Argument is one of the `DeprecationReason_` strings. -->
+    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired2">This version of Signal has expired (%s). Update now to send and receive messages.</string>
     <string name="ExpiredBuildReminder_update_now">Update now</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1584,11 +1585,9 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Update now</string>
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
-        <item quantity="zero">This version of Signal will expire today. Update to the most recent version.</item>
-        <item quantity="one">This version of Signal will expire tomorrow. Update to the most recent version.</item>
-        <item quantity="other">This version of Signal will expire in %d days. Update to the most recent version.</item>
-    </plurals>
+    <!-- The first argument is a string like "on October 23rd (in 3 days)" or "at 09:23:41 (in 2 hours)". -->
+    <!-- The second argument is one of the `DeprecationReason_` strings. -->
+    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire">This version of Signal will expire %1$s (%2$s). Update to the most recent version.</string>
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Enter passphrase</string>

@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">এই ডিভাইস প্লে সার্ভিস সমর্থন করে না। সিস্টেম ব্যাটারি অপ্টিমাইজেশন অক্ষম করতে আলতো চাপুন, যা নিষ্ক্রিয় অবস্থায় বার্তা পুনরুদ্ধার থেকে Signal -কে বাধা দেয়।</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">আপনার Signal সংস্করণটির মেয়াদ শেষ হয়ে গেছে। বার্তা প্রেরণ এবং গ্রহণ করতে এখনই আপডেট করুন।</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">আপনার Signal সংস্করণটির মেয়াদ শেষ হয়ে গেছে। বার্তা প্রেরণ এবং গ্রহণ করতে এখনই আপডেট করুন।</string> -->
     <string name="ExpiredBuildReminder_update_now">আপডেট করুন</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">আপডেট করুন</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal-এর এই সংস্করণটির মেয়াদ আজ শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-এর এই সংস্করণটির মেয়াদ আগামীকাল শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</item>
         <item quantity="other">Signal-এর এই সংস্করণটির মেয়াদ %1$d দিনের মধ্যে শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">পাসফ্রেজ প্রবেশ করান</string>

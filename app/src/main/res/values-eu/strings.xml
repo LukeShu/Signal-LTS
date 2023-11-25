@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Gailu honek ez du onartzen Play Services. Signal inaktibo dagoenean mezuak eskuratzea galarazten dioten sistemaren bateria-optimizazioak desgaitzeko, sakatu hau.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signalen bertsio hau iraungi da. Eguneratu orain mezuak bidali eta jaso ahal izateko.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signalen bertsio hau iraungi da. Eguneratu orain mezuak bidali eta jaso ahal izateko.</string> -->
     <string name="ExpiredBuildReminder_update_now">Eguneratu orain</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Eguneratu orain</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Singalen bertsio hau gaur iraungiko da. Eguneratu azken bertsiora.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-en bertsio hau bihar iraungiko da. Eguneratu azken bertsiora.</item>
         <item quantity="other">Signal-en bertsio hau %1$d egun barru iraungiko da. Eguneratu azken bertsiora.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Pasaesaldia idatzi</string>

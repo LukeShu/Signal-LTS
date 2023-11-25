@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Ang device na ito ay walang suporta para sa Play Services. Pindutin upang i-disable ang mga pang-sistemang optimisasyon ng baterya na pumipigil sa Signal na kuhanin ang mga mensahe habang hindi ito aktibo.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Itong version ng Signal ay expired na. Mag-update ngayon para makapag-send at makapag-receive ng messages</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Itong version ng Signal ay expired na. Mag-update ngayon para makapag-send at makapag-receive ng messages</string> -->
     <string name="ExpiredBuildReminder_update_now">I-update na</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">I-update na</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Itong version ng Signal ay mage-expire ngayon. Mag-update sa most recent version.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Mag-e-expire na bukas ang version na ito ng Signal. Mag-update sa pinakabagong version.</item>
         <item quantity="other">Mag-e-expire na ang version na ito ng Signal pagkatapos ng %1$d araw. Mag-update sa pinakabagong version.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Ilagay ang passphrase</string>

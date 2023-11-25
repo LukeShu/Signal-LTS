@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">ഈ ഉപകരണം Play Services പിന്തുണയ്ക്കുന്നില്ല. നിഷ്‌ക്രിയമായിരിക്കുമ്പോൾ സന്ദേശങ്ങൾ വീണ്ടെടുക്കുന്നതിൽ നിന്ന് Signal നെ തടയുന്ന സിസ്റ്റം ബാറ്ററി ഒപ്റ്റിമൈസേഷനുകൾ പ്രവർത്തനരഹിതമാക്കാൻ ടാപ്പുചെയ്യുക.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-ന്റെ ഈ പതിപ്പ് കാലഹരണപ്പെട്ടു. സന്ദേശങ്ങൾ അയയ്‌ക്കുന്നതിനും സ്വീകരിക്കുന്നതിനും ഇപ്പോൾ തന്നെ പുതുക്കുക.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-ന്റെ ഈ പതിപ്പ് കാലഹരണപ്പെട്ടു. സന്ദേശങ്ങൾ അയയ്‌ക്കുന്നതിനും സ്വീകരിക്കുന്നതിനും ഇപ്പോൾ തന്നെ പുതുക്കുക.</string> -->
     <string name="ExpiredBuildReminder_update_now">ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal - ന്റെ ഈ പതിപ്പ് ഇന്ന് കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റുചെയ്യുക.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-ന്റെ ഈ പതിപ്പ് നാളെ കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുക.</item>
         <item quantity="other">Signal-ന്റെ ഈ പതിപ്പ് %1$d ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുക.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">രഹസ്യവാചകം നൽകുക</string>

@@ -19,8 +19,13 @@ import java.util.List;
 public class ExpiredBuildReminder extends Reminder {
 
   public ExpiredBuildReminder(final Context context) {
-    super(R.string.ExpiredBuildReminder_this_version_of_signal_has_expired);
     addAction(new Action(R.string.ExpiredBuildReminder_update_now, R.id.reminder_action_update_now));
+  }
+
+  @Override
+  public @NonNull CharSequence getText(@NonNull Context context) {
+    return context.getResources().getString(R.string.ExpiredBuildReminder_this_version_of_signal_has_expired2,
+                                            SignalStore.misc().clientDeprecatedReason());
   }
 
   @Override

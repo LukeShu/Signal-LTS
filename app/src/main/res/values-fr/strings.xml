@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Cet appareil ne prend pas les Services Google Play en charge. Touchez pour désactiver les optimisations système de la batterie/pile qui empêchent à Signal de récupérer les messages lors d’inactivité.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Votre version de Signal est expirée. Mettez-la à jour maintenant afin d’échanger des messages.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Votre version de Signal est expirée. Mettez-la à jour maintenant afin d’échanger des messages.</string> -->
     <string name="ExpiredBuildReminder_update_now">Mettre Signal à jour maintenant</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Mettre Signal à jour maintenant</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Cette version de Signal expirera aujourd’hui. Passez à la version la plus récente.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Cette version de Signal expirera demain. Passez à la version la plus récente.</item>
         <item quantity="other">Cette version de Signal expirera dans %1$d jours. Passez à la version la plus récente.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Saisissez la phrase de passe</string>

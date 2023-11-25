@@ -736,7 +736,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Thiết bị này không hỗ trợ dịch vụ Google Play. Nhấn để tắt tính năng tối ưu hóa pin khiến Signal không thể nhận tin nhắn duới nền.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Phiên bản này của Signal đã hết hạn. Cập nhật ngay để gửi và nhận tin nhắn.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Phiên bản này của Signal đã hết hạn. Cập nhật ngay để gửi và nhận tin nhắn.</string> -->
     <string name="ExpiredBuildReminder_update_now">Cập nhật ngay</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1538,9 +1538,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Cập nhật ngay</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Phiên bản này của Signal sẽ hết hạn hôm nay. Hãy cập nhật lên phiên bản mới nhất.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Phiên bản này của Signal sẽ hết hạn trong vòng %1$d ngày. Hãy cập nhật phiên bản mới nhất.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Điền mật khẩu</string>
