@@ -6,7 +6,7 @@ import org.junit.Test;
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.testutil.EmptyLogger;
 
-import static junit.framework.Assert.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 public class PhoneNumberFormatterTest {
 

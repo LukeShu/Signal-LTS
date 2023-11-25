@@ -1,13 +1,12 @@
 package org.thoughtcrime.securesms.util;
 
-import junit.framework.AssertionFailedError;
-
 import org.junit.Test;
 import org.thoughtcrime.securesms.BaseUnitTest;
 import org.whispersystems.signalservice.api.util.InvalidNumberException;
 import org.whispersystems.signalservice.api.util.PhoneNumberFormatter;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertThrows;
 
 public class PhoneNumberFormatterTest extends BaseUnitTest {
   private static final String LOCAL_NUMBER_US  = "+15555555555";
@@ -28,12 +27,8 @@ public class PhoneNumberFormatterTest extends BaseUnitTest {
 
   @Test
   public void testFormatNumberEmail() throws Exception {
-    try {
-      PhoneNumberFormatter.formatNumber("person@domain.com", LOCAL_NUMBER_US);
-      throw new AssertionFailedError("should have thrown on email");
-    } catch (InvalidNumberException ine) {
-      // success
-    }
+    assertThrows(InvalidNumberException.class, () ->
+                 PhoneNumberFormatter.formatNumber("person@domain.com", LOCAL_NUMBER_US));
   }
 
   @Test
