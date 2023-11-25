@@ -37,25 +37,27 @@ public final class RemoteDeprecation {
       return -1;
     }
 
+    SemanticVersion ourVersion = Objects.requireNonNull(SemanticVersion.parse(currentVersion));
+
+    ClientExpiration[] expirations = null;
     try {
-      SemanticVersion    ourVersion  = Objects.requireNonNull(SemanticVersion.parse(currentVersion));
-      ClientExpiration[] expirations = JsonUtils.fromJson(json, ClientExpiration[].class);
-
-      ClientExpiration expiration = Stream.of(expirations)
-                                          .filter(c -> c.getVersion() != null && c.getExpiration() != -1)
-                                          .filter(c -> c.requireVersion().compareTo(ourVersion) > 0)
-                                          .sortBy(ClientExpiration::getExpiration)
-                                          .findFirst()
-                                          .orElse(null);
-
-      if (expiration != null) {
-        return Math.max(expiration.getExpiration() - currentTime, 0);
-      }
-    } catch (IOException e) {
+      expirations = JsonUtils.fromJson(json, ClientExpiration[].class);
+    } catch (IOException e) { // JsonUtils throws IOException on error
       Log.w(TAG, e);
+      return -1;
     }
 
-    return -1;
+    ClientExpiration expiration = Stream.of(expirations)
+                                        .filter(c -> c.getVersion() != null && c.getExpiration() != -1)
+                                        .filter(c -> c.getVersion().compareTo(ourVersion) > 0)
+                                        .sortBy(ClientExpiration::getExpiration)
+                                        .findFirst()
+                                        .orElse(null);
+    if (expiration == null) {
+      return -1;
+    }
+
+    return Math.max(expiration.getExpiration() - currentTime, 0);
   }
 
   private static final class ClientExpiration {
@@ -74,10 +76,6 @@ public final class RemoteDeprecation {
 
     public @Nullable SemanticVersion getVersion() {
       return SemanticVersion.parse(minVersion);
-    }
-
-    public @NonNull SemanticVersion requireVersion() {
-      return Objects.requireNonNull(getVersion());
     }
 
     public long getExpiration() {
