@@ -9,11 +9,11 @@ import androidx.annotation.StringRes
 import kotlinx.parcelize.Parcelize
 import org.signal.core.util.logging.Log
 import org.thoughtcrime.securesms.R
-import org.thoughtcrime.securesms.keyvalue.SignalStore
 import org.thoughtcrime.securesms.util.CharacterCalculator
 import org.thoughtcrime.securesms.util.MmsCharacterCalculator
 import org.thoughtcrime.securesms.util.PushCharacterCalculator
 import org.thoughtcrime.securesms.util.SmsCharacterCalculator
+import org.thoughtcrime.securesms.util.Util
 import org.thoughtcrime.securesms.util.dualsim.SubscriptionInfoCompat
 import org.thoughtcrime.securesms.util.dualsim.SubscriptionManagerCompat
 import java.lang.IllegalArgumentException
@@ -139,7 +139,7 @@ sealed class MessageSendType(
 
       options += SignalMessageSendType
 
-      if (SignalStore.misc().smsExportPhase.allowSmsFeatures()) {
+      if (Util.isDefaultSmsProvider(context)) {
         try {
           val subscriptions: Collection<SubscriptionInfoCompat> = SubscriptionManagerCompat(context).activeAndReadySubscriptionInfos
 

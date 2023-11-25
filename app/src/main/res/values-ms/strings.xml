@@ -405,19 +405,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">Dilaporkan sebagai spam dan disekat.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Pemesejan SMS dinyahdayakan pada masa ini. Anda boleh mengeksport mesej anda ke aplikasi lain pada telefon anda.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">Pemesejan SMS dinyahdayakan pada masa ini. Anda boleh mengeksport mesej anda ke aplikasi lain pada telefon anda.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Pemesejan SMS tidak lagi disokong dalam Signal. Anda boleh mengeksport mesej anda ke aplikasi lain pada telefon anda.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">Pemesejan SMS tidak lagi disokong dalam Signal. Anda boleh mengeksport mesej anda ke aplikasi lain pada telefon anda.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">Eksport mesej SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">Eksport mesej SMS</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Pemesejan SMS dinyahdayakan pada masa ini. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">Pemesejan SMS dinyahdayakan pada masa ini. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Pemesejan SMS tidak lagi disokong dalam Signal. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">Pemesejan SMS tidak lagi disokong dalam Signal. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Jemput ke Signal</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">Anda akan diingatkan semula tidak lama lagi.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">Anda akan diingatkan semula tidak lama lagi.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">Menghantar teks berformat</string>
@@ -1082,7 +1082,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">Ketik dan tekan rekod mesej audio, lepas untuk hantar</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Pemesejan SMS tidak lagi disokong dalam Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">Pemesejan SMS tidak lagi disokong dalam Signal.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">Edit mesej</string>
 
@@ -1462,7 +1462,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">Anda tidak lagi boleh menghantar mesej SMS daripada Signal tidak lama lagi. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Anda tidak lagi boleh menghantar mesej SMS dalam Signal. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">Anda tidak lagi boleh menghantar mesej SMS dalam Signal. Jemput %1$s ke Signal untuk meneruskan perbualan di sini.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">Pembayaran: %1$s</string>
 
@@ -4221,7 +4221,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">Alih keluar mesej SMS daripada Signal untuk mengosongkan ruang storan.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Sokongan SMS akan dialih keluar tidak lama lagi untuk memberi tumpuan kepada pemesejan yang disulitkan.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">Sokongan SMS akan dialih keluar tidak lama lagi untuk memberi tumpuan kepada pemesejan yang disulitkan.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">Mesej</string>
@@ -5653,26 +5653,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal tidak akan menyokong SMS lagi</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">Signal tidak akan menyokong SMS lagi</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal tidak lagi menyokong SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">Signal tidak lagi menyokong SMS</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal akan mengalih keluar sokongan untuk menghantar mesej SMS kerana mesej Signal menyediakan penyulitan hujung ke hujung dan privasi kukuh yang tidak dilakukan oleh mesej SMS. Ini akan membolehkan kami meningkatkan pengalaman pemesejan Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">Signal akan mengalih keluar sokongan untuk menghantar mesej SMS kerana mesej Signal menyediakan penyulitan hujung ke hujung dan privasi kukuh yang tidak dilakukan oleh mesej SMS. Ini akan membolehkan kami meningkatkan pengalaman pemesejan Signal.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal telah mengalih keluar sokongan untuk menghantar mesej SMS kerana mesej signal menyediakan penyulitan hujung ke hujung dan privasi kukuh yang tidak dilakukan oleh mesej SMS. Ini akan membolehkan kami meningkatkan pengalaman pemesejan Signal.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">Signal telah mengalih keluar sokongan untuk menghantar mesej SMS kerana mesej signal menyediakan penyulitan hujung ke hujung dan privasi kukuh yang tidak dilakukan oleh mesej SMS. Ini akan membolehkan kami meningkatkan pengalaman pemesejan Signal.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">Eksport SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">Eksport SMS</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">Ingatkan saya kemudian</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">Ingatkan saya kemudian</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">Ketahui lebih lanjut</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">Ketahui lebih lanjut</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">Sokongan SMS akan hilang</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">Sokongan SMS akan hilang</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Jangan risau, mesej Signal yang disulitkan akan terus berfungsi.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">Jangan risau, mesej Signal yang disulitkan akan terus berfungsi.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">Teruskan</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">Teruskan</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">Eksport Selesai</string>
     <!-- Button to continue to next screen -->
@@ -5794,17 +5794,17 @@
     <string name="ChatFilter__tip_pull_down">Tip: Tarik ke bawah senarai sembang untuk menapis</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">Sokongan SMS akan dialih keluar</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">Sokongan SMS akan dialih keluar</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Pemesejan SMS dalam aplikasi Signal tidak lagi akan disokong tidak lama lagi.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Pemesejan SMS dalam aplikasi Signal tidak lagi akan disokong tidak lama lagi.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">Mesej SMS adalah berbeza daripada mesej Signal. <b>Ini tidak menjejaskan pemesejan Signal yang disulitkan yang akan terus berfungsi.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">Mesej SMS adalah berbeza daripada mesej Signal. <b>Ini tidak menjejaskan pemesejan Signal yang disulitkan yang akan terus berfungsi.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">Anda boleh mengeksport mesej SMS anda dan memilih aplikasi SMS baru.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">Anda boleh mengeksport mesej SMS anda dan memilih aplikasi SMS baru.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">Signal telah mengalih keluar sokongan untuk menghantar mesej SMS.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">Signal telah mengalih keluar sokongan untuk menghantar mesej SMS.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">Eksport SMS</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">Eksport SMS</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

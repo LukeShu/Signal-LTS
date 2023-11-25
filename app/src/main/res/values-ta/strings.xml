@@ -407,19 +407,19 @@
     <string name="ConversationActivity__reported_as_spam_and_blocked">ஸ்பேம் எனப் புகாரளிக்கப்பட்டு தடுக்கப்பட்டது.</string>
 
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS மெசேஜிங் தற்போது முடக்கப்பட்டுள்ளது. உங்கள் மொபைலில் உள்ள மற்றொரு செயலிக்கு உங்கள் மெசேஜ்களை நீங்கள் ஏற்றுமதி செய்யலாம்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_you_can_export_your_messages_to_another_app_on_your_phone">SMS மெசேஜிங் தற்போது முடக்கப்பட்டுள்ளது. உங்கள் மொபைலில் உள்ள மற்றொரு செயலிக்கு உங்கள் மெசேஜ்களை நீங்கள் ஏற்றுமதி செய்யலாம்.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and they have unexported sms messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது. உங்கள் தொலைபேசியில் உள்ள மற்றொரு ஆப்பிற்கு உங்கள் செய்திகளை ஏற்றுமதி செய்யலாம்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_you_can_export_your_messages_to_another_app_on_your_phone">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது. உங்கள் தொலைபேசியில் உள்ள மற்றொரு ஆப்பிற்கு உங்கள் செய்திகளை ஏற்றுமதி செய்யலாம்.</string> -->
     <!-- Action button shown when in sms conversation, sms is disabled, and unexported sms messages are present -->
-    <string name="ConversationActivity__export_sms_messages">எஸ்.எம்.எஸ் செய்திகளை ஏற்றுமதி செய்</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__export_sms_messages">எஸ்.எம்.எஸ் செய்திகளை ஏற்றுமதி செய்</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS மெசேஜிங் தற்போது முடக்கப்பட்டுள்ளது. உரையாடலை இங்கே தொடர, %1$sஐ Signalக்கு அழைக்கவும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_currently_disabled_invite_s_to_to_signal_to_keep_the_conversation_here">SMS மெசேஜிங் தற்போது முடக்கப்பட்டுள்ளது. உரையாடலை இங்கே தொடர, %1$sஐ Signalக்கு அழைக்கவும்.</string> -->
     <!-- Message shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
-    <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது. உரையாடலை இங்கே தொடர %1$s ஐ சிக்னலுக்கு அழைக்கவும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__sms_messaging_is_no_longer_supported_in_signal_invite_s_to_to_signal_to_keep_the_conversation_here">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது. உரையாடலை இங்கே தொடர %1$s ஐ சிக்னலுக்கு அழைக்கவும்.</string> -->
     <!-- Action button shown when opening an SMS conversation with SMS disabled and there are no exported messages -->
     <string name="ConversationActivity__invite_to_signal">Signalக்கு அழை</string>
     <!-- Snackbar message shown after dismissing the full screen sms export megaphone indicating we\'ll do it again soon -->
-    <string name="ConversationActivity__you_will_be_reminded_again_soon">நீங்கள் விரைவில் மீண்டும் நினைவூட்டப்படுவீர்கள்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ConversationActivity__you_will_be_reminded_again_soon">நீங்கள் விரைவில் மீண்டும் நினைவூட்டப்படுவீர்கள்.</string> -->
 
     <!-- Title for dialog shown when first sending formatted text -->
     <string name="SendingFormattingTextDialog_title">வடிவமைக்கப்பட்ட உரையை அனுப்புகிறது</string>
@@ -1119,7 +1119,7 @@
     <!-- InputPanel -->
     <string name="InputPanel_tap_and_hold_to_record_a_voice_message_release_to_send">குரல் செய்தியை பதிய தட்டிப் பிடி, அனுப்புவதற்கு விடுவி</string>
     <!-- Message shown if the user tries to switch a conversation from Signal to SMS -->
-    <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது.</string>
+  <!-- Removed by excludeNonTranslatables <string name="InputPanel__sms_messaging_is_no_longer_supported_in_signal">சிக்னலில் இனி எஸ்.எம்.எஸ் செய்தியிடல் ஆதரிக்கப்படாது.</string> -->
     <!-- When editing a message, label shown above the text input field in the composer -->
     <string name="InputPanel_edit_message">மெசேஜைத் திருத்தவும்</string>
 
@@ -1515,7 +1515,7 @@
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
     <string name="MessageRecord__you_will_no_longer_be_able_to_send_sms_messages_from_signal_soon">இனி விரைவில் சிக்னலில் இருந்து எஸ்.எம்.எஸ் செய்திகளை அனுப்ப முடியாது. உரையாடலை இங்கே தொடர %1$s ஐ சிக்னலுக்கு அழைக்கவும்.</string>
     <!-- In-conversation update message to indicate that the current contact is sms only and will need to migrate to signal to continue the conversation in signal. -->
-    <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">நீங்கள் இனி சிக்னலில் எஸ்.எம்.எஸ் செய்திகளை அனுப்ப முடியாது. உரையாடலை இங்கே தொடர %1$s ஐ சிக்னலுக்கு அழைக்கவும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="MessageRecord__you_can_no_longer_send_sms_messages_in_signal">நீங்கள் இனி சிக்னலில் எஸ்.எம்.எஸ் செய்திகளை அனுப்ப முடியாது. உரையாடலை இங்கே தொடர %1$s ஐ சிக்னலுக்கு அழைக்கவும்.</string> -->
     <!-- Body for quote when message being quoted is an in-app payment message -->
     <string name="MessageRecord__payment_s">பேமெண்ட்: %1$s</string>
 
@@ -4316,7 +4316,7 @@
     <!-- Description for remove sms preference -->
     <string name="SmsSettingsFragment__remove_sms_messages_from_signal_to_clear_up_storage_space">சேமிப்பிடத்தை அழிக்க Signal இல் இருந்து SMS மெசேஜ்களை அகற்றவும்.</string>
     <!-- Information message shown at the top of sms settings to indicate it is being removed soon. -->
-    <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">மறைகுறியாக்கப்பட்ட மெசேஜிங்கில் கவனம் செலுத்த SMS ஆதரவு விரைவில் அகற்றப்படும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsSettingsFragment__sms_support_will_be_removed_soon_to_focus_on_encrypted_messaging">மறைகுறியாக்கப்பட்ட மெசேஜிங்கில் கவனம் செலுத்த SMS ஆதரவு விரைவில் அகற்றப்படும்.</string> -->
 
     <!-- NotificationsSettingsFragment -->
     <string name="NotificationsSettingsFragment__messages">செய்திகள்</string>
@@ -5773,26 +5773,26 @@
 
     <!-- SmsExportMegaphoneActivity -->
     <!-- Phase 2 title of full screen megaphone indicating sms will no longer be supported in the near future -->
-    <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">சிக்னல் இனி எஸ்.எம்.எஸ்-ஐ ஆதரிக்காது</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_no_longer_support_sms">சிக்னல் இனி எஸ்.எம்.எஸ்-ஐ ஆதரிக்காது</string> -->
     <!-- Phase 3 title of full screen megaphone indicating sms is longer supported  -->
-    <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">சிக்னல் இனி எஸ்.எம்.எஸ்-ஐ ஆதரிக்காது</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_no_longer_supports_sms">சிக்னல் இனி எஸ்.எம்.எஸ்-ஐ ஆதரிக்காது</string> -->
     <!-- Phase 2 message describing that sms is going away soon -->
-    <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal விரைவில் அகற்றும், ஏனெனில் SMS மெசேஜ்கள் அளிக்காத என்ட்-டு-எண்ட் என்க்ரிப்ஷன் மற்றும் வலுவான தனியுரிமையை Signal மெசேஜ்கள் வழங்குகின்றன. இது Signal மெசேஜ் அனுபவத்தை மேம்படுத்தவும் அனுமதிக்கும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_will_soon_remove_support_for_sending_sms_messages">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal விரைவில் அகற்றும், ஏனெனில் SMS மெசேஜ்கள் அளிக்காத என்ட்-டு-எண்ட் என்க்ரிப்ஷன் மற்றும் வலுவான தனியுரிமையை Signal மெசேஜ்கள் வழங்குகின்றன. இது Signal மெசேஜ் அனுபவத்தை மேம்படுத்தவும் அனுமதிக்கும்.</string> -->
     <!-- Phase 3 message describing that sms has gone away -->
-    <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal அகற்றியுள்ளது, ஏனெனில் SMS மெசேஜ்கள் அளிக்காத என்ட்-டு-எண்ட் என்க்ரிப்ஷன் மற்றும் வலுவான தனியுரிமையை Signal மெசேஜ்கள் வழங்குகின்றன. இது Signal மெசேஜ் அனுபவத்தை மேம்படுத்தவும் அனுமதிக்கும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__signal_has_removed_support_for_sending_sms_messages">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal அகற்றியுள்ளது, ஏனெனில் SMS மெசேஜ்கள் அளிக்காத என்ட்-டு-எண்ட் என்க்ரிப்ஷன் மற்றும் வலுவான தனியுரிமையை Signal மெசேஜ்கள் வழங்குகின்றன. இது Signal மெசேஜ் அனுபவத்தை மேம்படுத்தவும் அனுமதிக்கும்.</string> -->
     <!-- The text on a button in a popup that, when clicked, will take the user to a screen to export their SMS messages -->
-    <string name="SmsExportMegaphoneActivity__export_sms">எஸ்எம்எஸ்-ஐ ஏற்றுமதி செய்</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__export_sms">எஸ்எம்எஸ்-ஐ ஏற்றுமதி செய்</string> -->
     <!-- The text on a button in a popup that, when clicked, will dismiss the popup and schedule the prompt to occur at a later time. -->
-    <string name="SmsExportMegaphoneActivity__remind_me_later">பிறகு என்னிடம் ஞாபகபடுத்து</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__remind_me_later">பிறகு என்னிடம் ஞாபகபடுத்து</string> -->
     <!-- The text on a button in a popup that, when clicked, will navigate the user to a web article on SMS removal -->
-    <string name="SmsExportMegaphoneActivity__learn_more">மேலும் அறிக</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphoneActivity__learn_more">மேலும் அறிக</string> -->
 
     <!-- Phase 1 Small megaphone title indicating sms is going away -->
-    <string name="SmsExportMegaphone__sms_support_going_away">எஸ்.எம்.எஸ் ஆதரவு நிறுத்தப்படுகிறது</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__sms_support_going_away">எஸ்.எம்.எஸ் ஆதரவு நிறுத்தப்படுகிறது</string> -->
     <!-- Phase 1 small megaphone description indicating sms is going away -->
-    <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">கவலை வேண்டாம், குறியாக்கம் செய்யப்பட்ட Signal மெசேஜ்கள் தொடர்ந்து வேலை செய்யும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__dont_worry_encrypted_signal_messages_will_continue_to_work">கவலை வேண்டாம், குறியாக்கம் செய்யப்பட்ட Signal மெசேஜ்கள் தொடர்ந்து வேலை செய்யும்.</string> -->
     <!-- Phase 1 small megaphone button that takes the user to the sms export flow -->
-    <string name="SmsExportMegaphone__continue">தொடர்க</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsExportMegaphone__continue">தொடர்க</string> -->
     <!-- Title for screen shown after sms export has completed -->
     <string name="ExportSmsCompleteFragment__export_complete">ஏற்றுமதி முடிந்தது</string>
     <!-- Button to continue to next screen -->
@@ -5917,17 +5917,17 @@
     <string name="ChatFilter__tip_pull_down">உதவிக்குறிப்பு: ஃபில்டர் செய்ய சாட் பட்டியலை கீழே இழுக்கவும்</string>
 
     <!-- Title for screen describing that sms support is going to be removed soon -->
-    <string name="SmsRemoval_title_going_away">SMS ஆதரவு நிறுத்தப்படுகிறது</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_title_going_away">SMS ஆதரவு நிறுத்தப்படுகிறது</string> -->
     <!-- Bullet point message shown on describing screen as first bullet why sms is being removed, placeholder with be date of removal (e.g., March 21st) -->
-    <string name="SmsRemoval_info_bullet_1">Signal செயலியில் SMS மெசேஜ் அனுப்புதலுக்கான ஆதரவு விரைவில் நிறுத்தப்படும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1">Signal செயலியில் SMS மெசேஜ் அனுப்புதலுக்கான ஆதரவு விரைவில் நிறுத்தப்படும்.</string> -->
     <!-- Bullet point message shown on describing screen as second bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_2">SMS மெசேஜ்களும் Signal மெசேஜ்களும் வேறுபட்டவை. <b>இது குறியாக்கம் செய்யப்பட்ட Signal மெசேஜைப் பாதிக்காது, அது தொடர்ந்து செயல்படும்.</b></string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_2">SMS மெசேஜ்களும் Signal மெசேஜ்களும் வேறுபட்டவை. <b>இது குறியாக்கம் செய்யப்பட்ட Signal மெசேஜைப் பாதிக்காது, அது தொடர்ந்து செயல்படும்.</b></string> -->
     <!-- Bullet point message shown on describing screen as third bullet why sms is being removed -->
-    <string name="SmsRemoval_info_bullet_3">உங்கள் SMS மெசேஜ்களை ஏற்றுமதி செய்து புதிய SMS செயலியைத் தேர்வுசெய்யலாம்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_3">உங்கள் SMS மெசேஜ்களை ஏற்றுமதி செய்து புதிய SMS செயலியைத் தேர்வுசெய்யலாம்.</string> -->
     <!-- Bullet point message shown on describing screen as first bullet variant why sms is being removed when user is locked out of sms -->
-    <string name="SmsRemoval_info_bullet_1_phase_3">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal அகற்றியுள்ளது.</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_info_bullet_1_phase_3">SMS மெசேஜ்களை அனுப்புவதற்கான ஆதரவை Signal அகற்றியுள்ளது.</string> -->
     <!-- Button label on sms removal info/megaphone to start the export SMS flow -->
-    <string name="SmsRemoval_export_sms">SMSஐ ஏற்றுமதி செய்</string>
+  <!-- Removed by excludeNonTranslatables <string name="SmsRemoval_export_sms">SMSஐ ஏற்றுமதி செய்</string> -->
 
     <!-- Set up your username megaphone -->
     <!-- Displayed as a title on a megaphone which prompts user to set up a username -->

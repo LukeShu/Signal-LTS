@@ -9,7 +9,13 @@ won't lag behind so much that things stop working.
 
 ## User-visible differences from the standard version of Signal
 
+Features:
+
+ - SMS/MMS support isn't going away.
+
 Bug fixes:
+
+ - Fix a bug where certain MMS senders can crash Signal.
 
  - Non-UTF-8 locales now work correctly.  Or at least the tests pass
    for non-UTF-8 locales.
