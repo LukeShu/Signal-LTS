@@ -1594,7 +1594,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Werk nou by</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Hierdie weergawe van Signal verval vandag. Werk die jongste weergawe by.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Hierdie weergawe van Signal verval vandag. Werk die jongste weergawe by.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Hierdie weergawe van Signal verval môre. Doen \'n bywerking van die jongste weergawe.</item>
         <item quantity="other">Hierdie weergawe van Signal verval oor %1$d dae. Doen \'n bywerking van die jongste weergawe.</item>

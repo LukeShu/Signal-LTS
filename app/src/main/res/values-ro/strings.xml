@@ -1651,7 +1651,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Actualizează acum</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Această versiune de Signal va expira astăzi. Actualizează la cea mai recentă versiune.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Această versiune de Signal va expira astăzi. Actualizează la cea mai recentă versiune.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Această versiune de Signal va expira mâine. Actualizează la cea mai recentă versiune.</item>
         <item quantity="few">Această versiune de Signal va expira în %1$d zile. Actualizează la cea mai recentă versiune.</item>

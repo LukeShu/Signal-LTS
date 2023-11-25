@@ -1708,7 +1708,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">עדכן עכשיו</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">גרסה זו של Signal תפוג היום. עדכן אל הגרסה האחרונה.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">גרסה זו של Signal תפוג היום. עדכן אל הגרסה האחרונה.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">גרסה זו של Signal תצא מתוקף מחר. כדאי לעדכן לגרסה האחרונה.</item>
         <item quantity="two">גרסה זו של Signal תצא מתוקף עוד יומיים. כדאי לעדכן לגרסה האחרונה.</item>

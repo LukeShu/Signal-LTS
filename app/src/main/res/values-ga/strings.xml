@@ -1765,7 +1765,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Nuashonraigh anois é</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Rachaidh do leagan Signal as feidhm inniu. Nuashonraigh chuig an leagan is déanaí.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Rachaidh do leagan Signal as feidhm inniu. Nuashonraigh chuig an leagan is déanaí.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Rachaidh do leagan Signal as feidhm amárach. Nuashonraigh chuig an leagan is déanaí.</item>
         <item quantity="two">Rachaidh do leagan Signal as feidhm i gceann %1$d lá. Nuashonraigh chuig an leagan is déanaí.</item>
