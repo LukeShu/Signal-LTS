@@ -62,7 +62,7 @@ jobs:
       run: |
         find -name '*.apk'
         mv --verbose app/build/outputs/apk/playProd/release/*arm64*.apk diffuse-base.apk ||
-        mv --verbose app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-new.apk
+        mv --verbose app/build/outputs/apk/playProd/release/Signal-Android-play-prod-release-unsigned-*.apk diffuse-base.apk
 
     - uses: actions/checkout@v3
       with:
