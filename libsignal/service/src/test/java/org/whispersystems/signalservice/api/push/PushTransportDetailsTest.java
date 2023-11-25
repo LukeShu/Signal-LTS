@@ -5,14 +5,16 @@
 
 package org.whispersystems.signalservice.api.push;
 
-import junit.framework.TestCase;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
 
 import org.whispersystems.signalservice.internal.push.PushTransportDetails;
 
-public class PushTransportDetailsTest extends TestCase {
+public class PushTransportDetailsTest {
 
   private final PushTransportDetails transportV3 = new PushTransportDetails();
 
+  @Test
   public void testV3Padding() {
     for (int i=0;i<159;i++) {
       byte[] message = new byte[i];
