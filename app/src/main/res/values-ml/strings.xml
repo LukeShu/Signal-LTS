@@ -1608,7 +1608,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ഇപ്പോൾ അപ്ഡേറ്റ് ചെയ്യുക</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal - ന്റെ ഈ പതിപ്പ് ഇന്ന് കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റുചെയ്യുക.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal - ന്റെ ഈ പതിപ്പ് ഇന്ന് കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റുചെയ്യുക.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-ന്റെ ഈ പതിപ്പ് നാളെ കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുക.</item>
         <item quantity="other">Signal-ന്റെ ഈ പതിപ്പ് %1$d ദിവസത്തിനുള്ളിൽ കാലഹരണപ്പെടും. ഏറ്റവും പുതിയ പതിപ്പിലേക്ക് അപ്‌ഡേറ്റ് ചെയ്യുക.</item>

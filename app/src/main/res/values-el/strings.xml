@@ -1608,7 +1608,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Αναβάθμιση τώρα</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Αυτή η έκδοση Signal θα λήξει τώρα. Αναβάθμισε στη πιο πρόσφατη έκδοση.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Αυτή η έκδοση Signal θα λήξει τώρα. Αναβάθμισε στη πιο πρόσφατη έκδοση.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Αυτή η έκδοση του Signal θα λήξει αύριο. Κάνε αναβάθμιση στην πιο πρόσφατη έκδοση.</item>
         <item quantity="other">Αυτή η έκδοση του Signal θα λήξει σε %1$d ημέρες. Κάνε αναβάθμιση στην πιο πρόσφατη έκδοση.</item>

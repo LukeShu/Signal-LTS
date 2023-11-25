@@ -1550,7 +1550,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Update sekarang</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Versi Signal ini akan tamat tempoh hari ini. Kemas kini ke versi terkini.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Versi Signal ini akan tamat tempoh hari ini. Kemas kini ke versi terkini.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Versi Signal ini akan tamat tempoh dalam %1$d hari. Kemas kini ke versi terkini.</item>
     </plurals>

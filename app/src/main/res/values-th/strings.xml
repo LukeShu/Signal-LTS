@@ -1550,7 +1550,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ปรับปรุงเดี๋ยวนี้</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal รุ่นนี้จะหมดอายุวันนี้ โปรดปรับรุ่นเป็นรุ่นล่าสุด</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal รุ่นนี้จะหมดอายุวันนี้ โปรดปรับรุ่นเป็นรุ่นล่าสุด</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Signal รุ่นนี้จะหมดอายุใน %1$d วัน โปรดปรับรุ่นเป็นรุ่นล่าสุด</item>
     </plurals>

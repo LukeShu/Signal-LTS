@@ -1608,7 +1608,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Ажурирај сада</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ваша верзија Signal-а истиче данас. Ажурирате на најновију верзију.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ваша верзија Signal-а истиче данас. Ажурирате на најновију верзију.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ова верзија Signal-а истиче сутра. Ажурирајте апликацију на најновију верзију.</item>
         <item quantity="other">Ова верзија Signal-а истиче за %1$d дан(а). Ажурирајте апликацију на најновију верзију.</item>

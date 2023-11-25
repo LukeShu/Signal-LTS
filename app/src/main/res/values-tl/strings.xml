@@ -1608,7 +1608,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">I-update na</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Itong version ng Signal ay mage-expire ngayon. Mag-update sa most recent version.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Itong version ng Signal ay mage-expire ngayon. Mag-update sa most recent version.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Mag-e-expire na bukas ang version na ito ng Signal. Mag-update sa pinakabagong version.</item>
         <item quantity="other">Mag-e-expire na ang version na ito ng Signal pagkatapos ng %1$d araw. Mag-update sa pinakabagong version.</item>

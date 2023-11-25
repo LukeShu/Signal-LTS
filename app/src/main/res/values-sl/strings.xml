@@ -1724,7 +1724,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Posodobi zdaj</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ta različica aplikacije Signal poteče danes. Nadgradite je na najnovejšo različico.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ta različica aplikacije Signal poteče danes. Nadgradite je na najnovejšo različico.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ta različica aplikacije Signal poteče jutri. Nadgradite na najnovejšo različico.</item>
         <item quantity="two">Ta različica aplikacije Signal poteče čez %1$d dni. Nadgradite na najnovejšo različico.</item>

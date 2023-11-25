@@ -1550,7 +1550,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">지금 업데이트하세요.</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">이 Signal 버전은 오늘 만료됩니다. 최신 버전으로 업데이트하세요.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">이 Signal 버전은 오늘 만료됩니다. 최신 버전으로 업데이트하세요.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">이 Signal 버전은 %1$d일 후에 만료됩니다. 최신 버전으로 업데이트하세요.</item>
     </plurals>

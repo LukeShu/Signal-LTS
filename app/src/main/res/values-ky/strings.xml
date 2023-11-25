@@ -1550,7 +1550,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Жаңыртуу</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal\'дын бул версиясынын мөөнөтү бүгүн бүтөт. Эң акыркы версиясына жаңыртыңыз.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal\'дын бул версиясынын мөөнөтү бүгүн бүтөт. Эң акыркы версиясына жаңыртыңыз.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Signal\'дын бул версиясынын мөөнөтү %1$d күндөн кийин бүтөт. Эң акыркы версиясына жаңыртыңыз.</item>
     </plurals>

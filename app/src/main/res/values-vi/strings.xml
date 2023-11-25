@@ -1550,7 +1550,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Cập nhật ngay</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Phiên bản này của Signal sẽ hết hạn hôm nay. Hãy cập nhật lên phiên bản mới nhất.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Phiên bản này của Signal sẽ hết hạn hôm nay. Hãy cập nhật lên phiên bản mới nhất.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Phiên bản này của Signal sẽ hết hạn trong vòng %1$d ngày. Hãy cập nhật phiên bản mới nhất.</item>
     </plurals>
