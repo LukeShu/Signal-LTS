@@ -374,25 +374,40 @@ public class Util {
     return secret;
   }
 
+  public static final class ClientExpiration {
+    public final @NonNull Instant deadline;
+    public final @NonNull String reason;
+
+    ClientExpiration(@NonNull Instant deadline, @NonNull String reason) {
+      this.deadline = deadline;
+      this.reason   = reason;
+    }
+
+    public boolean isExpired(@NonNull Instant now) {
+      return this.deadline.compareTo(now) <= 0;
+    }
+  }
+
   /**
-   * @return The amount of time until this build of Signal will be considered 'expired'.
-   *         A zero or negative value means that it is already 'expired'.
+   * @return When this build of Signal will be considered 'expired'.
    *         Takes into account both the build age as well as any remote deprecation values.
    */
-  public static @NonNull Duration getTimeUntilBuildExpiry() {
-    if (SignalStore.misc().isClientDeprecated()) {
-      return Duration.ZERO;
+  public static @NonNull ClientExpiration getClientExpiration(@NonNull Context context) {
+    String reason = SignalStore.misc().clientDeprecatedReason();
+    if (reason != null) {
+      return new ClientExpiration(Instant.EPOCH, reason);
     }
 
-    Instant  buildExpiration            = BuildConfig.BUILD_TIMESTAMP.plus(BUILD_LIFESPAN);
-    Duration timeUntilBuildDeprecation  = Duration.between(Instant.now(), buildExpiration);
+    ClientExpiration buildExpiration = new ClientExpiration(BuildConfig.BUILD_TIMESTAMP.plus(BUILD_LIFESPAN),
+                                                            context.getString(R.string.DeprecationReason_local_build));
 
-    Duration timeUntilRemoteDeprecation = RemoteDeprecation.getTimeUntilDeprecation();
-    if (timeUntilRemoteDeprecation == null) {
-      return timeUntilBuildDeprecation;
-    }
+    ClientExpiration remoteExpiration = RemoteDeprecation.getClientExpiration(context);
 
-    return Collections.min(Arrays.asList(timeUntilBuildDeprecation, timeUntilRemoteDeprecation));
+    return Stream.of(buildExpiration, remoteExpiration)
+                 .filter(c -> c != null)
+                 .sortBy(c -> c.deadline)
+                 .findFirst()
+                 .get();
   }
 
   public static boolean isMmsCapable(Context context) {

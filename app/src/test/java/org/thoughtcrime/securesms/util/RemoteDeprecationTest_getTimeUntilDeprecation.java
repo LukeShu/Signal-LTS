@@ -1,5 +1,7 @@
 package org.thoughtcrime.securesms.util;
 
+import android.content.Context;
+
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,9 +15,14 @@ import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.mockito.Mockito.mock;
 
 @RunWith(Parameterized.class)
 public class RemoteDeprecationTest_getTimeUntilDeprecation {
+
+  private final Context context = mock(Context.class);
 
   private final String   json;
   private final Instant  currentDate;
@@ -100,6 +107,12 @@ public class RemoteDeprecationTest_getTimeUntilDeprecation {
 
   @Test
   public void getTimeUntilExpiration() {
-    assertEquals(timeUntilExpiration, RemoteDeprecation.getTimeUntilDeprecation(json, currentDate, currentVersion));
+    Util.ClientExpiration expiration = RemoteDeprecation.getClientExpiration(context, json, currentVersion);
+    if (timeUntilExpiration == null) {
+      assertNull(expiration);
+    } else {
+      assertNotNull(expiration);
+      assertEquals(timeUntilExpiration, Duration.between(currentDate, expiration.deadline));
+    }
   }
 }

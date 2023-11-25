@@ -230,6 +230,12 @@
     <string name="ClientDeprecatedActivity_warning">Warning</string>
     <string name="ClientDeprecatedActivity_your_version_of_signal_has_expired_you_can_view_your_message_history">Your version of Signal has expired. You can view your message history but you won\'t be able to send or receive messages until you update.</string>
 
+    <!-- deprecation reasons -->
+    <!-- The first argument is a semver version number string (e.g. "6.27.2"), and the second argument is an ISO 8601 timestamp (e.g. "2023-11-25T15:37:46Z") -->
+    <string name="DeprecationReason_remote_planned">the server said that versions %1$s and lower expire at %2$s</string>
+    <string name="DeprecationReason_remote_unplanned">the server replied with HTTP 499 build date</string>
+    <string name="DeprecationReason_local_build">90 days after the build date</string>
+
     <!-- CommunicationActions -->
     <string name="CommunicationActions_no_browser_found">No web browser found.</string>
     <string name="CommunicationActions_send_email">Send email</string>
