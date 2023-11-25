@@ -38,7 +38,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Utility methods to help display dates in a nice, easily readable way.
  */
-public class DateUtils extends android.text.format.DateUtils {
+public class DateUtils {
 
   @SuppressWarnings("unused")
   private static final String                        TAG                    = Log.tag(DateUtils.class);
@@ -55,8 +55,12 @@ public class DateUtils extends android.text.format.DateUtils {
     return Math.abs(System.currentTimeMillis() - millis) <= unit.toMillis(span);
   }
 
+  private static boolean isToday(final long millis) {
+    return android.text.format.DateUtils.isToday(millis);
+  }
+
   private static boolean isYesterday(final long when) {
-    return DateUtils.isToday(when + TimeUnit.DAYS.toMillis(1));
+    return android.text.format.DateUtils.isToday(when + TimeUnit.DAYS.toMillis(1));
   }
 
   private static int convertDelta(final long millis, TimeUnit to) {
@@ -66,6 +70,10 @@ public class DateUtils extends android.text.format.DateUtils {
   private static String getFormattedDateTime(long time, String template, Locale locale) {
     final String localizedPattern = getLocalizedPattern(template, locale);
     return setLowercaseAmPmStrings(new SimpleDateFormat(localizedPattern, locale), locale).format(new Date(time));
+  }
+
+  public static String formatElapsedTime(long elapsedSeconds) {
+    return android.text.format.DateUtils.formatElapsedTime(elapsedSeconds);
   }
 
   public static String getBriefRelativeTimeSpanString(final Context c, final Locale locale, final long timestamp) {
