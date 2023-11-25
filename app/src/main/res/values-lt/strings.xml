@@ -1734,7 +1734,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Atnaujinti dabar</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Šiandien nustos galioti ši Signal versija. Atnaujinkite Signal iki naujausios versijos.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Šiandien nustos galioti ši Signal versija. Atnaujinkite Signal iki naujausios versijos.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ši „Signal“ versija nustos galioti rytoj. Atnaujink „Signal“ į naujausią versiją.</item>
         <item quantity="few">Ši „Signal“ versija nustos galioti po %1$d dienų. Atnaujink „Signal“ į naujausią versiją.</item>

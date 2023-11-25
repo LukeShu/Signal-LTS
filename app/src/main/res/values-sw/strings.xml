@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Sasisha sasa</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Muda wa toleo hili la Signal utaisha leo. Sasisha utumie toleo jipya.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Muda wa toleo hili la Signal utaisha leo. Sasisha utumie toleo jipya.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Muda wa toleo hili la Signal utaisha kesho. Sasisha utumie toleo jipya.</item>
         <item quantity="other">Muda wa toleo hili la Signal utaisha ndani ya siku %1$d. Sasisha utumie toleo jipya.</item>

@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">আপডেট করুন</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal-এর এই সংস্করণটির মেয়াদ আজ শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal-এর এই সংস্করণটির মেয়াদ আজ শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-এর এই সংস্করণটির মেয়াদ আগামীকাল শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</item>
         <item quantity="other">Signal-এর এই সংস্করণটির মেয়াদ %1$d দিনের মধ্যে শেষ হয়ে যাবে। সর্বশেষ সংস্করণে আপডেট করুন।</item>

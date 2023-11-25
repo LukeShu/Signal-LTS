@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Nu bijwerken</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Deze versie van Signal zal vandaag verlopen. Werk bij naar de meest recente versie.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Deze versie van Signal zal vandaag verlopen. Werk bij naar de meest recente versie.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Deze versie van Signal verloopt morgen. Werk bij naar de meest recente versie.</item>
         <item quantity="other">Deze versie van Signal zal over %1$d dagen verlopen. Werk bij naar de meest recente versie.</item>

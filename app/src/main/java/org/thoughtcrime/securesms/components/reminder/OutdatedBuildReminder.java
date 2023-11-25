@@ -25,11 +25,7 @@ public class OutdatedBuildReminder extends Reminder {
   public @NonNull CharSequence getText(@NonNull Context context) {
     int days = getDaysUntilExpiry();
 
-    if (days == 0) {
-      return context.getString(R.string.OutdatedBuildReminder_your_version_of_signal_will_expire_today);
-    } else {
-      return context.getResources().getQuantityString(R.plurals.OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days, days, days);
-    }
+    return context.getResources().getQuantityString(R.plurals.OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days, days, days);
   }
 
   @Override

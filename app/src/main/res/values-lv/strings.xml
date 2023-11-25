@@ -1676,7 +1676,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Atjaunināt tagad</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Šīs Signal versijas lietošanas termiņš beigsies šodien. Aktualizējiet uz nesenāku versiju.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Šīs Signal versijas lietošanas termiņš beigsies šodien. Aktualizējiet uz nesenāku versiju.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="zero">Šīs Signal versijas lietošanas termiņš beigsies pēc %1$d dienām. Atjauniniet uz jaunāku versiju.</item>
         <item quantity="one">Šīs Signal versijas lietošanas termiņš beigsies rīt. Atjauniniet uz jaunāku versiju.</item>

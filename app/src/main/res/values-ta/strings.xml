@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">இப்பொழுது மேம்படுத்து</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">சிக்னலின் இந்த பதிப்பு இன்று காலாவதியாகும். மிக சமீபத்திய பதிப்பிற்கு புதுப்பிக்கவும்.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">சிக்னலின் இந்த பதிப்பு இன்று காலாவதியாகும். மிக சமீபத்திய பதிப்பிற்கு புதுப்பிக்கவும்.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">சிக்னலின் இந்த பதிப்பு நாளை காலாவதியாகும். மிக சமீபத்திய பதிப்பிற்கு புதுப்பிக்கவும்.</item>
         <item quantity="other">சிக்னலின் இந்த பதிப்பு %1$d நாட்களில் காலாவதியாகும். மிக சமீபத்திய பதிப்பிற்கு புதுப்பிக்கவும்.</item>

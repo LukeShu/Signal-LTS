@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">همین حالا به‌روزرسانی کنید</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تاریخ انقضای این نسخهٔ سیگنال امروز به پایان می‌رسد. به آخرین نسخه به‌روزرسانی کنید.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تاریخ انقضای این نسخهٔ سیگنال امروز به پایان می‌رسد. به آخرین نسخه به‌روزرسانی کنید.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">این نسخه سیگنال فردا منقضی می‌شود. به آخرین نسخه به‌روزرسانی کنید.</item>
         <item quantity="other">این نسخه سیگنال طی %1$d روز آینده منقضی می‌شود. به آخرین نسخه به‌روزرسانی کنید.</item>

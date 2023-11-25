@@ -1560,7 +1560,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ھازىر يېڭىلاڭ</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">بۇ Signal نەشرىنىڭ ۋاقتى بۈگۈن توشىدۇ. ئەڭ يېڭى نەشرىگە يېڭىلاڭ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">بۇ Signal نەشرىنىڭ ۋاقتى بۈگۈن توشىدۇ. ئەڭ يېڭى نەشرىگە يېڭىلاڭ.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Signal نىڭ بۇ نەشرىنىڭ %1$d كۈندىن كېيىن ۋاقتى توشىدۇ. ئەڭ يېڭى نەشرىگە يېڭىلاڭ.</item>
     </plurals>

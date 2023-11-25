@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Päivitä nyt</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Tämä Signal-versio vanhenee tänään. Päivitä viimeisimpään versioon.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Tämä Signal-versio vanhenee tänään. Päivitä viimeisimpään versioon.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Tämä Signal-versio vanhenee huomenna. Päivitä viimeisimpään versioon.</item>
         <item quantity="other">Tämä Signal-versio vanhenee %1$d päivän kuluttua. Päivitä viimeisimpään versioon.</item>

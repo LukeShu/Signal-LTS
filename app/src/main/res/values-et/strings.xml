@@ -1618,7 +1618,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Uuenda kohe</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">See Signali versioon aegub täna. Uuenda kõige uuemale versioonile.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">See Signali versioon aegub täna. Uuenda kõige uuemale versioonile.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">See Signali versioon aegub homme. Uuenda kõige värskemale versioonile.</item>
         <item quantity="other">See Signali versioon aegub %1$d päeva pärast. Uuenda kõige värskemale versioonile.</item>
