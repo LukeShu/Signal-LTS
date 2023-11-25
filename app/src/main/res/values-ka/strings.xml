@@ -4788,22 +4788,22 @@
     <string name="MySupportPreference__please_contact_support">გთხოვთ, მხარდაჭერის გუნდს მიმართო</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">Signal-ის განახლება</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">Signal-ის განახლება</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Signal-ის ამ ვერსიას ვადა გაუვიდა. განაახლე ახლავე, რათა Signal-ის გამოყენება განაგრძო.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Signal-ის ამ ვერსიას ვადა გაუვიდა. განაახლე ახლავე, რათა Signal-ის გამოყენება განაგრძო.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">განახლება</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">განახლება</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">გაუქმება</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">გაუქმება</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">მოწყობილობა არ არის რეგისტრირებული</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">მოწყობილობა არ არის რეგისტრირებული</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">ეს მოწყობილობა აღარ არის რეგისტრირებული. ხელახლა დარეგისტრირდი, რომ გააგრძელო Signal-ის გამოყენება ამ მოწყობილობაზე.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">ეს მოწყობილობა აღარ არის რეგისტრირებული. ხელახლა დარეგისტრირდი, რომ გააგრძელო Signal-ის გამოყენება ამ მოწყობილობაზე.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">ხელახლა რეგისტრაცია</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">ხელახლა რეგისტრაცია</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">გაუქმება</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">გაუქმება</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">ბუსტის ემბლემას ვადა გაუვიდა</string>

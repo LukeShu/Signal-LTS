@@ -4788,22 +4788,22 @@
     <string name="MySupportPreference__please_contact_support">કૃપા કરીને સપોર્ટનો સંપર્ક કરો.</string>
 
     <!-- Title of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__title">સિગ્નલ ને અપડેટ કરો</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__title">સિગ્નલ ને અપડેટ કરો</string> -->
     <!-- Message of dialog telling user they need to update signal as it expired -->
-    <string name="UpdateSignalExpiredDialog__message">Signalનું આ વર્ઝન સમાપ્ત થઈ ગયું છે. Signalનો ઉપયોગ ચાલુ રાખવા માટે હમણાં જ અપડેટ કરો.</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__message">Signalનું આ વર્ઝન સમાપ્ત થઈ ગયું છે. Signalનો ઉપયોગ ચાલુ રાખવા માટે હમણાં જ અપડેટ કરો.</string> -->
     <!-- Button text of expiration dialog, will take user to update the app -->
-    <string name="UpdateSignalExpiredDialog__update_action">અપડેટ</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__update_action">અપડેટ</string> -->
     <!-- Button text of expiration dialog to cancel the dialog.  -->
-    <string name="UpdateSignalExpiredDialog__cancel_action">રદ કરો</string>
+  <!-- Removed by excludeNonTranslatables <string name="UpdateSignalExpiredDialog__cancel_action">રદ કરો</string> -->
 
     <!-- Title of dialog telling user they need to re-register signal -->
-    <string name="ReregisterSignalDialog__title">ડિવાઇસ રજીસ્ટર થયેલું નથી</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__title">ડિવાઇસ રજીસ્ટર થયેલું નથી</string> -->
     <!-- Message of dialog telling user they need to re-register signal as it is no longer registered -->
-    <string name="ReregisterSignalDialog__message">આ ડિવાઇસ રજીસ્ટર થયેલું નથી. આ ડિવાઇસ પર Signalનો ઉપયોગ ચાલુ રાખવા માટે ફરીથી રજીસ્ટર કરો.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__message">આ ડિવાઇસ રજીસ્ટર થયેલું નથી. આ ડિવાઇસ પર Signalનો ઉપયોગ ચાલુ રાખવા માટે ફરીથી રજીસ્ટર કરો.</string> -->
     <!-- Button text of re-registration dialog to re-register the device.  -->
-    <string name="ReregisterSignalDialog__reregister_action">ફરીથી રજીસ્ટર</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__reregister_action">ફરીથી રજીસ્ટર</string> -->
     <!-- Button text of re-registration dialog to cancel the dialog.  -->
-    <string name="ReregisterSignalDialog__cancel_action">રદ કરો</string>
+  <!-- Removed by excludeNonTranslatables <string name="ReregisterSignalDialog__cancel_action">રદ કરો</string> -->
 
     <!-- Title of expiry sheet when boost badge falls off profile unexpectedly. -->
     <string name="ExpiredBadgeBottomSheetDialogFragment__boost_badge_expired">બૂસ્ટ બૅજ સમાપ્ત</string>

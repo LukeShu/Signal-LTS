@@ -1,14 +1,19 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
-apply plugin: 'java-library'
-apply plugin: 'org.jetbrains.kotlin.jvm'
-apply plugin: 'java-test-fixtures'
-apply plugin: 'com.google.protobuf'
-apply plugin: 'maven-publish'
-apply plugin: 'signing'
-apply plugin: 'idea'
-apply plugin: 'org.jlleitschuh.gradle.ktlint'
-apply plugin: 'com.squareup.wire'
+plugins {
+    // Third-party plugins
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'java-test-fixtures'
+    id 'com.google.protobuf'
+    id 'maven-publish'
+    id 'signing'
+    id 'idea'
+    id 'com.squareup.wire'
+
+    // Plugins from Signal's own `build-logic`
+    id 'ktlint'
+}
 
 archivesBaseName = "signal-service-java"
 version          = lib_signal_service_version_number
@@ -38,16 +43,6 @@ afterEvaluate {
     ].forEach { taskName ->
         tasks.named(taskName) {
             mustRunAfter tasks.named('generateMainProtos')
-        }
-    }
-}
-
-ktlint {
-    version.set("0.49.1")
-
-    filter {
-        exclude { entry ->
-            entry.file.toString().contains("build/generated/source/wire")
         }
     }
 }
