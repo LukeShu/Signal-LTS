@@ -23,6 +23,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.adapter.mapping.PagingMappingAdapter
 import org.thoughtcrime.securesms.util.setRelativeDrawables
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -278,7 +279,7 @@ class CallLogAdapter(
         } else {
           callState
         },
-        DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), date)
+        DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(date))
       )
 
       binding.callInfo.setRelativeDrawables(

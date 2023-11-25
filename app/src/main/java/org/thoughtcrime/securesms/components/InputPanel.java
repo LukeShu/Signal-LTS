@@ -72,6 +72,8 @@ import org.thoughtcrime.securesms.util.concurrent.AssertedSuccessListener;
 import org.thoughtcrime.securesms.util.concurrent.ListenableFuture;
 import org.thoughtcrime.securesms.util.concurrent.SettableFuture;
 
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
@@ -808,7 +810,7 @@ public class InputPanel extends LinearLayout
     @MainThread
     public void display() {
       this.startTime = System.currentTimeMillis();
-      this.recordTimeView.setText(DateUtils.formatElapsedTime(0));
+      this.recordTimeView.setText(DateUtils.formatElapsedTime(null));
       ViewUtil.fadeIn(this.recordTimeView, FADE_TIME);
       ThreadUtil.runOnMainDelayed(this, TimeUnit.SECONDS.toMillis(1));
       microphone.setVisibility(View.VISIBLE);
@@ -830,12 +832,11 @@ public class InputPanel extends LinearLayout
     public void run() {
       long localStartTime = startTime;
       if (localStartTime > 0) {
-        long elapsedTime = System.currentTimeMillis() - localStartTime;
-        long elapsedSeconds = TimeUnit.MILLISECONDS.toSeconds(elapsedTime);
-        if (elapsedSeconds >= limitSeconds) {
+        Duration elapsedTime = Duration.between(Instant.ofEpochMilli(localStartTime), Instant.now());
+        if (elapsedTime.compareTo(Duration.ofSeconds(limitSeconds)) >= 0) {
           onLimitHit.run();
         } else {
-          recordTimeView.setText(DateUtils.formatElapsedTime(elapsedSeconds));
+          recordTimeView.setText(DateUtils.formatElapsedTime(elapsedTime));
           ThreadUtil.runOnMainDelayed(this, TimeUnit.SECONDS.toMillis(1));
         }
       }

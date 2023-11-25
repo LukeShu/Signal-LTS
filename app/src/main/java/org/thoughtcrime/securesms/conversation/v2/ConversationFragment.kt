@@ -308,6 +308,7 @@ import org.thoughtcrime.securesms.util.visible
 import org.thoughtcrime.securesms.verify.VerifyIdentityActivity
 import org.thoughtcrime.securesms.wallpaper.ChatWallpaper
 import org.thoughtcrime.securesms.wallpaper.ChatWallpaperDimLevelUtil
+import java.time.Instant
 import java.util.Locale
 import java.util.Optional
 import java.util.concurrent.ExecutionException
@@ -2246,7 +2247,7 @@ class ConversationFragment :
 
     fun bind(message: ConversationMessage?) {
       if (message != null) {
-        binding.scrollDateHeader.text = DateUtils.getConversationDateHeaderString(requireContext(), Locale.getDefault(), message.conversationTimestamp)
+        binding.scrollDateHeader.text = DateUtils.getConversationDateHeaderString(requireContext(), Locale.getDefault(), Instant.ofEpochMilli(message.conversationTimestamp))
       }
     }
 

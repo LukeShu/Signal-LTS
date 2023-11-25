@@ -27,6 +27,7 @@ import org.thoughtcrime.securesms.providers.BlobProvider
 import org.thoughtcrime.securesms.util.DateUtils
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import java.io.ByteArrayOutputStream
+import java.time.Instant
 import java.util.Locale
 
 class DonationReceiptDetailFragment : DSLSettingsFragment(layoutId = R.layout.donation_receipt_detail_fragment) {
@@ -65,14 +66,14 @@ class DonationReceiptDetailFragment : DSLSettingsFragment(layoutId = R.layout.do
   private fun renderPng(record: DonationReceiptRecord, subscriptionName: String) {
     progressDialog = SignalProgressDialog.show(requireContext())
 
-    val today: String = DateUtils.formatDateWithDayOfWeek(Locale.getDefault(), System.currentTimeMillis())
+    val today: String = DateUtils.formatDateWithDayOfWeek(Locale.getDefault(), Instant.now())
     val amount: String = FiatMoneyUtil.format(resources, record.amount)
     val type: String = when (record.type) {
       DonationReceiptRecord.Type.RECURRING -> getString(R.string.DonationReceiptDetailsFragment__s_dash_s, subscriptionName, getString(R.string.DonationReceiptListFragment__recurring))
       DonationReceiptRecord.Type.BOOST -> getString(R.string.DonationReceiptListFragment__one_time)
       DonationReceiptRecord.Type.GIFT -> getString(R.string.DonationReceiptListFragment__donation_for_a_friend)
     }
-    val datePaid: String = DateUtils.formatDate(Locale.getDefault(), record.timestamp)
+    val datePaid: String = DateUtils.formatDate(Locale.getDefault(), Instant.ofEpochMilli(record.timestamp))
 
     SimpleTask.run(viewLifecycleOwner.lifecycle, {
       val outputStream = ByteArrayOutputStream()
@@ -149,7 +150,7 @@ class DonationReceiptDetailFragment : DSLSettingsFragment(layoutId = R.layout.do
 
       textPref(
         title = DSLSettingsText.from(R.string.DonationReceiptDetailsFragment__date_paid),
-        summary = record.let { DSLSettingsText.from(DateUtils.formatDateWithYear(Locale.getDefault(), it.timestamp)) }
+        summary = record.let { DSLSettingsText.from(DateUtils.formatDateWithYear(Locale.getDefault(), Instant.ofEpochMilli(it.timestamp))) }
       )
     }
   }

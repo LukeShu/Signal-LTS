@@ -20,6 +20,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.drawAsTopItemDecoration
 import org.thoughtcrime.securesms.util.layoutIn
 import org.thoughtcrime.securesms.util.toLocalDate
+import java.time.Instant
 import java.util.Locale
 
 private typealias ConversationElement = MappingModel<*>
@@ -214,7 +215,7 @@ class ConversationItemDecorations(hasWallpaper: Boolean = false, private val sch
       get() = itemView.height
 
     fun bind(model: ConversationMessageElement) {
-      val dateText = DateUtils.getConversationDateHeaderString(itemView.context, Locale.getDefault(), model.timestamp())
+      val dateText = DateUtils.getConversationDateHeaderString(itemView.context, Locale.getDefault(), Instant.ofEpochMilli(model.timestamp()))
       date.text = dateText
       updateForWallpaper()
     }

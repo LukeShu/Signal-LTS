@@ -3,6 +3,7 @@ package org.thoughtcrime.securesms.components.settings.conversation.preferences
 import android.content.Context
 import org.thoughtcrime.securesms.R
 import org.thoughtcrime.securesms.util.DateUtils
+import java.time.Instant
 import java.util.Locale
 
 object Utils {
@@ -13,7 +14,7 @@ object Utils {
     } else {
       context.getString(
         R.string.ConversationSettingsFragment__conversation_muted_until_s,
-        DateUtils.getTimeString(context, Locale.getDefault(), this)
+        DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(this))
       )
     }
   }

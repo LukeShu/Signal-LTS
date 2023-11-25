@@ -25,6 +25,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.LayoutFactory
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 object MyStoriesItem {
@@ -178,7 +179,7 @@ object MyStoriesItem {
       } else {
         errorIndicator.visible = false
         date.visible = true
-        date.text = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), model.distributionStory.messageRecord.dateSent)
+        date.text = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(model.distributionStory.messageRecord.dateSent))
       }
     }
 

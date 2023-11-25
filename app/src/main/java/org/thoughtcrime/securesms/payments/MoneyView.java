@@ -21,6 +21,7 @@ import org.whispersystems.signalservice.api.payments.Money;
 
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
+import java.time.Instant;
 import java.util.Locale;
 
 public final class MoneyView extends AppCompatTextView {
@@ -101,7 +102,7 @@ public final class MoneyView extends AppCompatTextView {
     if (timestamp > 0L) {
       balanceSpan = new SpannableString(getResources().getString(R.string.CurrencyAmountFormatter_s_at_s,
                                         balance,
-                                        DateUtils.getTimeString(ApplicationDependencies.getApplication(), Locale.getDefault(), timestamp)));
+                                        DateUtils.getTimeString(ApplicationDependencies.getApplication(), Locale.getDefault(), Instant.ofEpochMilli(timestamp))));
     } else {
       balanceSpan = new SpannableString(balance);
     }

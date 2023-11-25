@@ -23,6 +23,7 @@ import org.thoughtcrime.securesms.preferences.widgets.NotificationPrivacyPrefere
 import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.util.DateUtils;
 
+import java.time.Instant;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -140,7 +141,7 @@ class VoiceNoteMediaItemFactory {
     if (preference.isDisplayContact()) {
       subtitle = context.getString(R.string.VoiceNoteMediaItemFactory__voice_message,
                                    DateUtils.formatDateWithoutDayOfWeek(Locale.getDefault(),
-                                                                        dateReceived));
+                                                                        Instant.ofEpochMilli(dateReceived)));
     }
 
     return new MediaItem.Builder()

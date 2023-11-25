@@ -12,6 +12,7 @@ import org.thoughtcrime.securesms.database.model.MessageRecord
 import org.thoughtcrime.securesms.util.DateUtils
 import org.thoughtcrime.securesms.util.Projection
 import org.thoughtcrime.securesms.util.isScheduled
+import java.time.Instant
 import kotlin.math.abs
 import kotlin.time.Duration.Companion.minutes
 
@@ -117,7 +118,7 @@ class V2ConversationItemShape(
   ): Boolean {
     if (previousMessage == null ||
       previousMessage.isUpdate ||
-      !DateUtils.isSameDay(currentMessage.timestamp, previousMessage.timestamp) ||
+      !DateUtils.isSameDay(Instant.ofEpochMilli(currentMessage.timestamp), Instant.ofEpochMilli(previousMessage.timestamp)) ||
       !isWithinClusteringTime(currentMessage, previousMessage) ||
       currentMessage.isScheduled() ||
       currentMessage.fromRecipient != previousMessage.fromRecipient
@@ -134,7 +135,7 @@ class V2ConversationItemShape(
   ): Boolean {
     if (nextMessage == null ||
       nextMessage.isUpdate ||
-      !DateUtils.isSameDay(currentMessage.timestamp, nextMessage.timestamp) ||
+      !DateUtils.isSameDay(Instant.ofEpochMilli(currentMessage.timestamp), Instant.ofEpochMilli(nextMessage.timestamp)) ||
       !isWithinClusteringTime(currentMessage, nextMessage) ||
       currentMessage.isScheduled() ||
       currentMessage.reactions.isNotEmpty()

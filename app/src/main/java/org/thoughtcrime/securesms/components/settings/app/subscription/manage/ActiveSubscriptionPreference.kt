@@ -19,6 +19,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.visible
 import org.whispersystems.signalservice.api.subscriptions.ActiveSubscription
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -82,7 +83,7 @@ object ActiveSubscriptionPreference {
         R.string.MySupportPreference__renews_s,
         DateUtils.formatDateWithYear(
           Locale.getDefault(),
-          model.renewalTimestamp
+          Instant.ofEpochMilli(model.renewalTimestamp)
         )
       )
       badge.alpha = 1f

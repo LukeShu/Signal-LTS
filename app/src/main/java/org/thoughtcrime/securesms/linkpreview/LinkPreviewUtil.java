@@ -18,6 +18,7 @@ import org.thoughtcrime.securesms.util.LinkUtil;
 import org.thoughtcrime.securesms.util.Util;
 import org.whispersystems.signalservice.api.util.OptionalUtil;
 
+import java.time.Instant;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -161,7 +162,8 @@ public final class LinkPreviewUtil {
                        values.get(KEY_MODIFIED_TIME_1),
                        values.get(KEY_MODIFIED_TIME_2))
                    .map(DateUtils::parseIso8601)
-                   .filter(time -> time > 0)
+                   .filter(time -> time != null)
+                   .map(time -> time.toEpochMilli())
                    .findFirst()
                    .orElse(0L);
     }

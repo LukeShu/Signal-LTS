@@ -11,6 +11,7 @@ import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.BuildConfig;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.Objects;
 
 public final class RemoteDeprecation {
@@ -79,7 +80,11 @@ public final class RemoteDeprecation {
     }
 
     public long getExpiration() {
-      return DateUtils.parseIso8601(iso8601);
+      Instant time = DateUtils.parseIso8601(iso8601);
+      if (time == null) {
+        return -1;
+      }
+      return time.toEpochMilli();
     }
   }
 

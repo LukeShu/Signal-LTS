@@ -148,6 +148,7 @@ import org.thoughtcrime.securesms.util.ViewUtil;
 import org.thoughtcrime.securesms.util.views.NullableStub;
 import org.thoughtcrime.securesms.util.views.Stub;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
@@ -1811,7 +1812,7 @@ public final class ConversationItem extends RelativeLayout implements BindableCo
       contactPhotoHolder.setVisibility(VISIBLE);
 
       if (!previous.isPresent() || previous.get().isUpdate() || !current.getFromRecipient().equals(previous.get().getFromRecipient()) ||
-          !DateUtils.isSameDay(previous.get().getTimestamp(), current.getTimestamp()) || !isWithinClusteringTime(current, previous.get()))
+          !DateUtils.isSameDay(Instant.ofEpochMilli(previous.get().getTimestamp()), Instant.ofEpochMilli(current.getTimestamp())) || !isWithinClusteringTime(current, previous.get()))
       {
         groupSenderHolder.setVisibility(VISIBLE);
 
@@ -1924,10 +1925,10 @@ public final class ConversationItem extends RelativeLayout implements BindableCo
 
   private boolean isStartOfMessageCluster(@NonNull MessageRecord current, @NonNull Optional<MessageRecord> previous, boolean isGroupThread) {
     if (isGroupThread) {
-      return !previous.isPresent() || previous.get().isUpdate() || !DateUtils.isSameDay(current.getTimestamp(), previous.get().getTimestamp()) ||
+      return !previous.isPresent() || previous.get().isUpdate() || !DateUtils.isSameDay(Instant.ofEpochMilli(current.getTimestamp()), Instant.ofEpochMilli(previous.get().getTimestamp())) ||
              !current.getFromRecipient().equals(previous.get().getFromRecipient()) || !isWithinClusteringTime(current, previous.get()) || MessageRecordUtil.isScheduled(current);
     } else {
-      return !previous.isPresent() || previous.get().isUpdate() || !DateUtils.isSameDay(current.getTimestamp(), previous.get().getTimestamp()) ||
+      return !previous.isPresent() || previous.get().isUpdate() || !DateUtils.isSameDay(Instant.ofEpochMilli(current.getTimestamp()), Instant.ofEpochMilli(previous.get().getTimestamp())) ||
              current.isOutgoing() != previous.get().isOutgoing() || previous.get().isSecure() != current.isSecure() || !isWithinClusteringTime(current, previous.get()) ||
              MessageRecordUtil.isScheduled(current);
     }
@@ -1935,11 +1936,11 @@ public final class ConversationItem extends RelativeLayout implements BindableCo
 
   private boolean isEndOfMessageCluster(@NonNull MessageRecord current, @NonNull Optional<MessageRecord> next, boolean isGroupThread) {
     if (isGroupThread) {
-      return !next.isPresent() || next.get().isUpdate() || !DateUtils.isSameDay(current.getTimestamp(), next.get().getTimestamp()) ||
+      return !next.isPresent() || next.get().isUpdate() || !DateUtils.isSameDay(Instant.ofEpochMilli(current.getTimestamp()), Instant.ofEpochMilli(next.get().getTimestamp())) ||
              !current.getFromRecipient().equals(next.get().getFromRecipient()) || !current.getReactions().isEmpty() || !isWithinClusteringTime(current, next.get()) ||
              MessageRecordUtil.isScheduled(current);
     } else {
-      return !next.isPresent() || next.get().isUpdate() || !DateUtils.isSameDay(current.getTimestamp(), next.get().getTimestamp()) ||
+      return !next.isPresent() || next.get().isUpdate() || !DateUtils.isSameDay(Instant.ofEpochMilli(current.getTimestamp()), Instant.ofEpochMilli(next.get().getTimestamp())) ||
              current.isOutgoing() != next.get().isOutgoing() || !current.getReactions().isEmpty() || next.get().isSecure() != current.isSecure() ||
              !isWithinClusteringTime(current, next.get()) || MessageRecordUtil.isScheduled(current);
     }
@@ -1950,7 +1951,7 @@ public final class ConversationItem extends RelativeLayout implements BindableCo
   }
 
   private boolean isFooterVisible(@NonNull MessageRecord current, @NonNull Optional<MessageRecord> next, boolean isGroupThread) {
-    boolean differentTimestamps = next.isPresent() && !DateUtils.isSameExtendedRelativeTimestamp(next.get().getTimestamp(), current.getTimestamp());
+    boolean differentTimestamps = next.isPresent() && !DateUtils.isSameExtendedRelativeTimestamp(Instant.ofEpochMilli(next.get().getTimestamp()), Instant.ofEpochMilli(current.getTimestamp()));
 
     return forceFooter(messageRecord) || current.getExpiresIn() > 0 || !current.isSecure() || current.isPending() || current.isPendingInsecureSmsFallback() ||
            current.isFailed() || current.isRateLimited() || differentTimestamps || isEndOfMessageCluster(current, next, isGroupThread);

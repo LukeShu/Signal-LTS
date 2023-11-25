@@ -19,6 +19,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.LayoutFactory
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Currency
 import java.util.Locale
 
@@ -133,9 +134,9 @@ data class Subscription(
       )
 
       if (model.isActive && model.willRenew) {
-        binding.tagline.text = context.getString(R.string.Subscription__renews_s, DateUtils.formatDateWithYear(Locale.getDefault(), model.renewalTimestamp))
+        binding.tagline.text = context.getString(R.string.Subscription__renews_s, DateUtils.formatDateWithYear(Locale.getDefault(), Instant.ofEpochMilli(model.renewalTimestamp)))
       } else if (model.isActive) {
-        binding.tagline.text = context.getString(R.string.Subscription__expires_s, DateUtils.formatDateWithYear(Locale.getDefault(), model.renewalTimestamp))
+        binding.tagline.text = context.getString(R.string.Subscription__expires_s, DateUtils.formatDateWithYear(Locale.getDefault(), Instant.ofEpochMilli(model.renewalTimestamp)))
       } else {
         binding.tagline.text = context.getString(R.string.Subscription__get_a_s_badge, model.subscription.badge.name)
       }

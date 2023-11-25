@@ -24,6 +24,7 @@ import org.thoughtcrime.securesms.permissions.Permissions;
 
 import java.io.File;
 import java.security.SecureRandom;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -42,7 +43,7 @@ public class BackupUtil {
       BackupInfo backup = getLatestBackup();
 
       if (backup == null) return context.getString(R.string.BackupUtil_never);
-      else                return DateUtils.getExtendedRelativeTimeSpanString(context, locale, backup.getTimestamp());
+      else                return DateUtils.getExtendedRelativeTimeSpanString(context, locale, Instant.ofEpochMilli(backup.getTimestamp()));
     } catch (NoExternalStorageException e) {
       Log.w(TAG, e);
       return context.getString(R.string.BackupUtil_unknown);

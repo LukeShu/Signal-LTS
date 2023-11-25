@@ -38,7 +38,7 @@ import org.thoughtcrime.securesms.util.Projection;
 import org.thoughtcrime.securesms.util.ProjectionList;
 
 import java.sql.Date;
-import java.text.SimpleDateFormat;
+import java.time.Instant;
 import java.util.HashSet;
 import java.util.Locale;
 import java.util.Optional;
@@ -145,15 +145,16 @@ final class MessageHeaderViewHolder extends RecyclerView.ViewHolder implements G
       receivedDate.setVisibility(View.GONE);
     } else {
       Locale           dateLocale    = Locale.getDefault();
-      SimpleDateFormat dateFormatter = DateUtils.getDetailedDateFormatter(itemView.getContext(), dateLocale);
-      sentDate.setText(formatBoldString(R.string.message_details_header_sent, dateFormatter.format(new Date(messageRecord.getDateSent()))));
+      sentDate.setText(formatBoldString(R.string.message_details_header_sent,
+                                        DateUtils.getMessageDetailsTimeString(itemView.getContext(), dateLocale, Instant.ofEpochMilli(messageRecord.getDateSent()))));
       sentDate.setOnLongClickListener(v -> {
         copyToClipboard(String.valueOf(messageRecord.getDateSent()));
         return true;
       });
 
       if (messageRecord.getDateReceived() != messageRecord.getDateSent() && !messageRecord.isOutgoing()) {
-        receivedDate.setText(formatBoldString(R.string.message_details_header_received, dateFormatter.format(new Date(messageRecord.getDateReceived()))));
+        receivedDate.setText(formatBoldString(R.string.message_details_header_received,
+                                              DateUtils.getMessageDetailsTimeString(itemView.getContext(), dateLocale, Instant.ofEpochMilli(messageRecord.getDateReceived()))));
         receivedDate.setOnLongClickListener(v -> {
           copyToClipboard(String.valueOf(messageRecord.getDateReceived()));
           return true;

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import org.thoughtcrime.securesms.devicelist.Device;
 import org.thoughtcrime.securesms.util.DateUtils;
 
+import java.time.Instant;
 import java.util.Locale;
 
 public class DeviceListItem extends LinearLayout {
@@ -41,12 +42,12 @@ public class DeviceListItem extends LinearLayout {
     this.created.setText(getContext().getString(R.string.DeviceListItem_linked_s,
                                                 DateUtils.getDayPrecisionTimeSpanString(getContext(),
                                                                                         locale,
-                                                                                        deviceInfo.getCreated())));
+                                                                                        Instant.ofEpochMilli(deviceInfo.getCreated()))));
 
     this.lastActive.setText(getContext().getString(R.string.DeviceListItem_last_active_s,
                                                    DateUtils.getDayPrecisionTimeSpanString(getContext(),
                                                                                            locale,
-                                                                                           deviceInfo.getLastSeen())));
+                                                                                           Instant.ofEpochMilli(deviceInfo.getLastSeen()))));
 
     this.deviceId = deviceInfo.getId();
   }

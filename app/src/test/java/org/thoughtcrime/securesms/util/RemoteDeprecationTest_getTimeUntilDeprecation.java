@@ -7,6 +7,7 @@ import org.junit.runners.Parameterized;
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.testutil.EmptyLogger;
 
+import java.time.Instant;
 import java.util.Arrays;
 import java.util.Collection;
 
@@ -84,9 +85,9 @@ public class RemoteDeprecationTest_getTimeUntilDeprecation {
     });
   }
 
-  public RemoteDeprecationTest_getTimeUntilDeprecation(String json, long currentDate, String currentVersion, long timeUntilExpiration) {
+  public RemoteDeprecationTest_getTimeUntilDeprecation(String json, Instant currentDate, String currentVersion, long timeUntilExpiration) {
     this.json                = json;
-    this.currentDate         = currentDate;
+    this.currentDate         = currentDate.toEpochMilli();
     this.currentVersion      = currentVersion;
     this.timeUntilExpiration = timeUntilExpiration;
   }

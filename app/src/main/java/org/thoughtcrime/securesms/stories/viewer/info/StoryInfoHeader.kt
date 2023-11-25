@@ -11,6 +11,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -39,7 +40,7 @@ object StoryInfoHeader {
     override fun bind(model: Model) {
       if (model.sentMillis > 0L) {
         sentView.visible = true
-        sentView.text = DateUtils.getTimeString(context, Locale.getDefault(), model.sentMillis)
+        sentView.text = DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(model.sentMillis))
         itemView.setOnLongClickListener {
           Util.copyToClipboard(context, model.sentMillis.toString())
           Toast.makeText(context, R.string.MyStoriesFragment__copied_sent_timestamp_to_clipboard, Toast.LENGTH_SHORT).show()
@@ -52,7 +53,7 @@ object StoryInfoHeader {
 
       if (model.receivedMillis > 0L) {
         recvView.visible = true
-        recvView.text = DateUtils.getTimeString(context, Locale.getDefault(), model.receivedMillis)
+        recvView.text = DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(model.receivedMillis))
       } else {
         recvView.visible = false
       }

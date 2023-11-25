@@ -71,6 +71,7 @@ import org.thoughtcrime.securesms.util.SpanUtil
 import org.thoughtcrime.securesms.util.StorageUtil
 import org.thoughtcrime.securesms.util.ViewUtil
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 import java.util.concurrent.TimeUnit
 import kotlin.math.roundToInt
@@ -429,7 +430,7 @@ class MediaPreviewV2Fragment : LoggingFragment(R.layout.fragment_media_preview_v
 
   private fun getSubTitleText(mediaRecord: MediaTable.MediaRecord): CharSequence {
     val text = if (mediaRecord.date > 0) {
-      DateUtils.getExtendedRelativeTimeSpanString(requireContext(), Locale.getDefault(), mediaRecord.date)
+      DateUtils.getExtendedRelativeTimeSpanString(requireContext(), Locale.getDefault(), Instant.ofEpochMilli(mediaRecord.date))
     } else {
       getString(R.string.MediaPreviewActivity_draft)
     }
