@@ -26,9 +26,6 @@
 
 -keepattributes *Annotation*
 
--dontnote junit.framework.**
--dontnote junit.runner.**
-
 -dontwarn androidx.test.**
 -dontwarn org.junit.**
 -dontwarn org.hamcrest.**

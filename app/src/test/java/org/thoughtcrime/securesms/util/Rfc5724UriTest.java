@@ -17,13 +17,12 @@
 
 package org.thoughtcrime.securesms.util;
 
-import junit.framework.AssertionFailedError;
-
 import org.junit.Test;
 import org.thoughtcrime.securesms.BaseUnitTest;
 
 import java.net.URISyntaxException;
 
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
 public class Rfc5724UriTest extends BaseUnitTest {
@@ -39,12 +38,7 @@ public class Rfc5724UriTest extends BaseUnitTest {
     };
 
     for (String uri : invalidSchemaUris) {
-      try {
-        new Rfc5724Uri(uri);
-        throw new AssertionFailedError("URISyntaxException should be thrown");
-      } catch (URISyntaxException e) {
-        // success
-      }
+      assertThrows(URISyntaxException.class, () -> new Rfc5724Uri(uri));
     }
   }
 
