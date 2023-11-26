@@ -13,7 +13,7 @@ import java.util.Collection;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class RemoteExpirationTest_getTimeUntilDeprecation {
+public class RemoteDeprecationTest_getTimeUntilDeprecation {
 
   private final String json;
   private final long   currentDate;
@@ -69,7 +69,7 @@ public class RemoteExpirationTest_getTimeUntilDeprecation {
     });
   }
 
-  public RemoteExpirationTest_getTimeUntilDeprecation(String json, long currentDate, String currentVersion, long timeUntilExpiration) {
+  public RemoteDeprecationTest_getTimeUntilDeprecation(String json, long currentDate, String currentVersion, long timeUntilExpiration) {
     this.json                = json;
     this.currentDate         = currentDate;
     this.currentVersion      = currentVersion;
