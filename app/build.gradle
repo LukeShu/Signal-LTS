@@ -146,6 +146,12 @@ android {
             includeAndroidResources = true
         }
 
+        unitTests.all {
+            // Allow us to mock the sytem clock and the system
+            // timezone for the DateUtils tests.
+            jvmArgs "--add-opens", "java.base/java.time=ALL-UNNAMED"
+        }
+
         managedDevices {
             devices {
                 pixel3api30 (ManagedVirtualDevice) {
