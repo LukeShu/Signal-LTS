@@ -744,7 +744,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">ឧបករណ៍នេះ មិនគាំទ្រ Play Services។ ចុច ដើម្បីបិទការបង្កើនប្រសិទ្ធិភាពប្រព័ន្ធថ្ម ដែលរារាំង Signal ពីទាញយកសារនានា នៅពេលឧបករណ៍ទុកចោល។</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">កំណែ Signal នេះបានផុតកំណត់។ ធ្វើបច្ចុប្បន្នភាពឥឡូវ ដើម្បីផ្ញើ និងទទួលសារ។</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">កំណែ Signal នេះបានផុតកំណត់។ ធ្វើបច្ចុប្បន្នភាពឥឡូវ ដើម្បីផ្ញើ និងទទួលសារ។</string> -->
     <string name="ExpiredBuildReminder_update_now">ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1551,9 +1551,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">ជំនាន់ Signal​ នេះនឹងផុតកំណត់ថ្ងៃនេះ។ ធ្វើបច្ចុប្បន្នភាពទៅកាន់ជំនាន់ថ្មីបំផុត។</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">ជំនាន់ Signal នេះ នឹងផុតកំណត់នៅ %1$d ថ្ងៃ។ ធ្វើបច្ចុប្បន្នភាពទៅកាន់ជំនាន់ថ្មីបំផុត។</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">បញ្ចូលឃ្លាសម្ងាត់</string>

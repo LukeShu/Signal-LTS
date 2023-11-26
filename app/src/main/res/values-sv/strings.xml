@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Enheten stöder inte Play-tjänster. Tryck för att inaktivera systembatterioptimeringar som hindrar Signal från att hämta meddelanden vid inaktivitet.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Denna version av Signal har upphört att gälla. Uppdatera nu för att skicka och ta emot meddelanden.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Denna version av Signal har upphört att gälla. Uppdatera nu för att skicka och ta emot meddelanden.</string> -->
     <string name="ExpiredBuildReminder_update_now">Uppdatera nu</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1609,10 +1609,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Uppdatera nu</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Denna version av Signal upphör att gälla idag. Uppdatera till den senaste versionen.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Denna version av Signal upphör att gälla i morgon. Uppdatera till den senaste versionen.</item>
         <item quantity="other">Denna version av Signal upphör att gälla om %1$d dagar. Uppdatera till den senaste versionen.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Ange lösenord</string>

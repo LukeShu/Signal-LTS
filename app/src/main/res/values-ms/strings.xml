@@ -744,7 +744,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Peranti ini tidak menyokong Perkhidmatan Play. Ketik untuk menyahdayakan pengoptimuman bateri sistem yang menghalang Signal daripada mengambil mesej semasa tidak aktif.  </string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Versi Signal ini telah tamat tempoh. Kemas kini sekarang untuk menghantar dan menerima mesej.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Versi Signal ini telah tamat tempoh. Kemas kini sekarang untuk menghantar dan menerima mesej.</string> -->
     <string name="ExpiredBuildReminder_update_now">Update sekarang</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1551,9 +1551,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Update sekarang</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Versi Signal ini akan tamat tempoh hari ini. Kemas kini ke versi terkini.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Versi Signal ini akan tamat tempoh dalam %1$d hari. Kemas kini ke versi terkini.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Masukkan frasa laluan</string>

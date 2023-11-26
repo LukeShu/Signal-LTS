@@ -808,7 +808,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Níl tacú sa ghléas seo do Play Services. Tapáil le hoptamú ceallra an chórais a dhíchumasú, rud a chuireann srian ar Signal teachtaireachtaí a aisghabháil agus é neamhghníomhach.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Chuaigh an leagan seo de Signal i léig. Nuashonraigh anois é chun teachtaireachtaí a sheoladh agus a fháil.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Chuaigh an leagan seo de Signal i léig. Nuashonraigh anois é chun teachtaireachtaí a sheoladh agus a fháil.</string> -->
     <string name="ExpiredBuildReminder_update_now">Nuashonraigh anois é</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1783,13 +1783,13 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Nuashonraigh anois é</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Rachaidh do leagan Signal as feidhm inniu. Nuashonraigh chuig an leagan is déanaí.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Rachaidh do leagan Signal as feidhm amárach. Nuashonraigh chuig an leagan is déanaí.</item>
         <item quantity="two">Rachaidh do leagan Signal as feidhm i gceann %1$d lá. Nuashonraigh chuig an leagan is déanaí.</item>
         <item quantity="few">Rachaidh do leagan Signal as feidhm i gceann %1$d lá. Nuashonraigh chuig an leagan is déanaí.</item>
         <item quantity="many">Rachaidh do leagan Signal as feidhm i gceann %1$d lá. Nuashonraigh chuig an leagan is déanaí.</item>
         <item quantity="other">Rachaidh do leagan Signal as feidhm i gceann %1$d lá. Nuashonraigh chuig an leagan is déanaí.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Cuir isteach nath faire</string>

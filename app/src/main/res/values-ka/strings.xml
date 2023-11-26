@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">ამ მოწყობილობას არ აქვს Play Services-ის მხარდაჭერა. დააჭირე, რათა გამორთო ბატარეის სისტემური ოპტიმიზაცია, რაც ხელს უშლის Signal-ს შეტყობინებების მოძიებაში, როცა აპლიკაციას არ იყენებ.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-ის ამ ვერსიას ვადა გაუვიდა. განაახლე ახლავე, რათა გააგზავნო და მიიღო შეტყობინებები.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-ის ამ ვერსიას ვადა გაუვიდა. განაახლე ახლავე, რათა გააგზავნო და მიიღო შეტყობინებები.</string> -->
     <string name="ExpiredBuildReminder_update_now">განაახლე ახლავე</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1609,10 +1609,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">განაახლე ახლავე</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal-ის ამ ვერსიას ვადა დღეს ამოეწურება. გადმოწერე უახლესი ვერსია.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-ის ამ ვერსიას ვადა ხვალ გაუვა. გადმოწერე უახლესი ვერსია.</item>
         <item quantity="other">Signal-ის ამ ვერსიას ვადა %1$d დღეში გაუვა. გადმოწერე უახლესი ვერსია.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">შეიყვანე პაროლ-ფრაზა</string>

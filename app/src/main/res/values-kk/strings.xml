@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Бұл құрылғыда Play қызметтері жұмыс істемейді. Signal жұмыс істемей тұрғанда хат алуға кедергі ететін жүйе батареясын оңтайландыру параметрлерін өшіру үшін түртіңіз.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-дың бұл нұсқасы ескіріп кетті. Хаттар жіберу және алу үшін қазір жаңартыңыз.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal-дың бұл нұсқасы ескіріп кетті. Хаттар жіберу және алу үшін қазір жаңартыңыз.</string> -->
     <string name="ExpiredBuildReminder_update_now">Қазір жаңарту</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1609,10 +1609,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Қазір жаңарту</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal қолданбасының бұл нұсқасының мерзімі бүгін бітеді. Ең соңғы нұсқасын орнатыңыз.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal қолданбасының бұл нұсқасының мерзімі ертең бітеді. Ең соңғы нұсқасын орнатыңыз.</item>
         <item quantity="other">Signal қолданбасының бұл нұсқасының мерзімі %1$d күннен кейін бітеді. Ең соңғы нұсқасын орнатыңыз.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Құпия сөйлемді енгізіңіз</string>

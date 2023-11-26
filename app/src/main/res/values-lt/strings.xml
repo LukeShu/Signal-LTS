@@ -792,7 +792,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Šis įrenginys nepalaiko „Play“ paslaugų. Bakstelėkite, norėdami išjungti sistemos baterijos optimizavimus, kurie neleidžia Signal gauti žinučių tol, kol įrenginys yra neaktyvus.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ši Signal versija nebegalioja. Norėdami siųsti ir gauti žinutes, atnaujinkite programėlę dabar.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ši Signal versija nebegalioja. Norėdami siųsti ir gauti žinutes, atnaujinkite programėlę dabar.</string> -->
     <string name="ExpiredBuildReminder_update_now">Atnaujinti dabar</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1725,12 +1725,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Atnaujinti dabar</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Šiandien nustos galioti ši Signal versija. Atnaujinkite Signal iki naujausios versijos.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ši „Signal“ versija nustos galioti rytoj. Atnaujink „Signal“ į naujausią versiją.</item>
         <item quantity="few">Ši „Signal“ versija nustos galioti po %1$d dienų. Atnaujink „Signal“ į naujausią versiją.</item>
         <item quantity="many">Ši „Signal“ versija nustos galioti po %1$d d. Atnaujink „Signal“ į naujausią versiją.</item>
         <item quantity="other">Ši „Signal“ versija nustos galioti po %1$d dienų. Atnaujink „Signal“ į naujausią versiją.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Įveskite slaptafrazę</string>

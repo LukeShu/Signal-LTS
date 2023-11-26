@@ -744,7 +744,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">بۇ ئۈسكۈنە Google Play مۇلازىمەتلىرىنى قوللىمايدۇ. Signalنىڭ ھەرىكەتسىز ھالەتتىمۇ ئۇچۇر ئېلىشىنى توسۇپ قويىدىغان «سىستېما باتارېيەسىنى ئەلالاشتۇرۇش»نى چەكلەڭ.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">بۇ Signal نەشرىنىڭ ۋاقتى توشتى. ئۇچۇر يوللىيالىشىڭىز ۋە قوبۇل قىلالىشىڭىز ئۈچۈن ھازىرلا يېڭىلاڭ.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">بۇ Signal نەشرىنىڭ ۋاقتى توشتى. ئۇچۇر يوللىيالىشىڭىز ۋە قوبۇل قىلالىشىڭىز ئۈچۈن ھازىرلا يېڭىلاڭ.</string> -->
     <string name="ExpiredBuildReminder_update_now">ھازىر يېڭىلاڭ</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1551,9 +1551,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ھازىر يېڭىلاڭ</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">بۇ Signal نەشرىنىڭ ۋاقتى بۈگۈن توشىدۇ. ئەڭ يېڭى نەشرىگە يېڭىلاڭ.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Signal نىڭ بۇ نەشرىنىڭ %1$d كۈندىن كېيىن ۋاقتى توشىدۇ. ئەڭ يېڭى نەشرىگە يېڭىلاڭ.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">ئىم ئىبارىسى كىرگۈزۈڭ</string>

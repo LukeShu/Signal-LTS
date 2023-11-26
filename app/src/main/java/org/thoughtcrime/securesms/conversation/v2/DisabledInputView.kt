@@ -16,6 +16,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.google.android.material.button.MaterialButton
 import org.thoughtcrime.securesms.R
+import org.thoughtcrime.securesms.keyvalue.SignalStore
 import org.thoughtcrime.securesms.messagerequests.MessageRequestState
 import org.thoughtcrime.securesms.messagerequests.MessageRequestViewModel
 import org.thoughtcrime.securesms.messagerequests.MessageRequestsBottomView
@@ -61,7 +62,11 @@ class DisabledInputView @JvmOverloads constructor(
         val message = findViewById<TextView>(R.id.logged_out_message)
         val actionButton = findViewById<MaterialButton>(R.id.logged_out_button)
 
-        message.setText(if (clientExpired) R.string.ExpiredBuildReminder_this_version_of_signal_has_expired else R.string.UnauthorizedReminder_this_is_likely_because_you_registered_your_phone_number_with_Signal_on_a_different_device)
+        if (clientExpired) {
+          message.setText(context.getResources().getString(R.string.ExpiredBuildReminder_this_version_of_signal_has_expired2, SignalStore.misc().clientDeprecatedReason()))
+        } else {
+          message.setText(R.string.UnauthorizedReminder_this_is_likely_because_you_registered_your_phone_number_with_Signal_on_a_different_device)
+        }
         actionButton.setText(if (clientExpired) R.string.ConversationFragment__update_build else R.string.ConversationFragment__reregister_signal)
         actionButton.setOnClickListener {
           if (clientExpired) {
