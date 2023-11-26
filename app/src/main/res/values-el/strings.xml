@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Αυτή η συσκευή δεν υποστηρίζει τις υπηρεσίες Play. Πάτα για απενεργοποίηση των βελτιστοποιήσεων μπαταρίας του συστήματος που εμποδίζουν το Signal από το να λαμβάνει μηνύματα όταν είναι ανενεργό.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Αυτή η έκδοση Signal έχει λήξει. Αναβάθμισε τώρα για να στείλεις και να λάβεις μηνύματα.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Αυτή η έκδοση Signal έχει λήξει. Αναβάθμισε τώρα για να στείλεις και να λάβεις μηνύματα.</string> -->
     <string name="ExpiredBuildReminder_update_now">Αναβάθμιση τώρα</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1619,10 +1619,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Αναβάθμιση τώρα</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Αυτή η έκδοση Signal θα λήξει τώρα. Αναβάθμισε στη πιο πρόσφατη έκδοση.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Αυτή η έκδοση του Signal θα λήξει αύριο. Κάνε αναβάθμιση στην πιο πρόσφατη έκδοση.</item>
         <item quantity="other">Αυτή η έκδοση του Signal θα λήξει σε %1$d ημέρες. Κάνε αναβάθμιση στην πιο πρόσφατη έκδοση.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Εισαγωγή συνθηματικού</string>

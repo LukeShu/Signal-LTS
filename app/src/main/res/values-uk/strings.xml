@@ -792,7 +792,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Цей пристрій не підтримує служби Google Play. Торкніться, щоб вимкнути режим ощадливого споживання енергії Signal і отримувати повідомлення коли Signal працює у фоні.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ваша версія Signal застаріла. Оновіть зараз, щоб відправляти та отримувати повідомлення.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ваша версія Signal застаріла. Оновіть зараз, щоб відправляти та отримувати повідомлення.</string> -->
     <string name="ExpiredBuildReminder_update_now">Оновити зараз</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1735,12 +1735,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Оновитись зараз</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Вашу версію Signal перестануть підтримувати сьогодні. Торкніться, щоб оновити до останньої версії.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ця версія Signal припинить дію завтра. Оновіть застосунок до останньої версії.</item>
         <item quantity="few">Ця версія Signal припинить дію через %1$d дні. Оновіть застосунок до останньої версії.</item>
         <item quantity="many">Ця версія Signal припинить дію через %1$d днів. Оновіть застосунок до останньої версії.</item>
         <item quantity="other">Ця версія Signal припинить дію через %1$d дня. Оновіть застосунок до останньої версії.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Введіть фразу-пароль</string>

@@ -792,7 +792,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Toto zariadenie nepodporuje služby Google Play. Ťuknite pre vypnutie systémovej optimalizácie batérie, ktorá zabraňuje Signalu prijímať správy v neaktívnom stave.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Táto verzia Signalu vypršala. Pre odosielanie a príjem ďalších správ ju aktualizujte.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Táto verzia Signalu vypršala. Pre odosielanie a príjem ďalších správ ju aktualizujte.</string> -->
     <string name="ExpiredBuildReminder_update_now">Aktualizovať teraz</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1735,12 +1735,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Aktualizujte teraz</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Táto verzia Signalu dnes vyprší. Aktualizujte ju na najnovšiu verziu.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Táto verzia Signalu vyprší zajtra. Aktualizujte ju na najnovšiu verziu.</item>
         <item quantity="few">Táto verzia Signalu vyprší za %1$d dni. Aktualizujte ju na najnovšiu verziu.</item>
         <item quantity="many">Táto verzia Signalu vyprší za %1$d dňa. Aktualizujte ju na najnovšiu verziu.</item>
         <item quantity="other">Táto verzia Signalu vyprší za %1$d dní. Aktualizujte ju na najnovšiu verziu.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Zadajte heslo</string>

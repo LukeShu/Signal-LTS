@@ -56,6 +56,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.SecureRandom;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -64,12 +66,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 
 public class Util {
   private static final String TAG = Log.tag(Util.class);
 
-  private static final long BUILD_LIFESPAN = TimeUnit.DAYS.toMillis(90);
+  private static final Duration BUILD_LIFESPAN = Duration.ofDays(90);
 
   public static final String COPY_LABEL = "text\u00AD";
 
@@ -373,25 +374,40 @@ public class Util {
     return secret;
   }
 
+  public static final class ClientExpiration {
+    public final @NonNull Instant deadline;
+    public final @NonNull String reason;
+
+    ClientExpiration(@NonNull Instant deadline, @NonNull String reason) {
+      this.deadline = deadline;
+      this.reason   = reason;
+    }
+
+    public boolean isExpired(@NonNull Instant now) {
+      return this.deadline.compareTo(now) <= 0;
+    }
+  }
+
   /**
-   * @return The amount of time (in ms) until this build of Signal will be considered 'expired'.
+   * @return When this build of Signal will be considered 'expired'.
    *         Takes into account both the build age as well as any remote deprecation values.
    */
-  public static long getTimeUntilBuildExpiry() {
-    if (SignalStore.misc().isClientDeprecated()) {
-      return 0;
+  public static @NonNull ClientExpiration getClientExpiration(@NonNull Context context) {
+    String reason = SignalStore.misc().clientDeprecatedReason();
+    if (reason != null) {
+      return new ClientExpiration(Instant.EPOCH, reason);
     }
 
-    long buildAge                   = System.currentTimeMillis() - BuildConfig.BUILD_TIMESTAMP;
-    long timeUntilBuildDeprecation  = BUILD_LIFESPAN - buildAge;
-    long timeUntilRemoteDeprecation = RemoteDeprecation.getTimeUntilDeprecation();
+    ClientExpiration buildExpiration = new ClientExpiration(Instant.ofEpochMilli(BuildConfig.BUILD_TIMESTAMP).plus(BUILD_LIFESPAN),
+                                                            context.getString(R.string.DeprecationReason_local_build));
 
-    if (timeUntilRemoteDeprecation != -1) {
-      long timeUntilDeprecation = Math.min(timeUntilBuildDeprecation, timeUntilRemoteDeprecation);
-      return Math.max(timeUntilDeprecation, 0);
-    } else {
-      return Math.max(timeUntilBuildDeprecation, 0);
-    }
+    ClientExpiration remoteExpiration = RemoteDeprecation.getClientExpiration(context);
+
+    return Stream.of(buildExpiration, remoteExpiration)
+                 .filter(c -> c != null)
+                 .sortBy(c -> c.deadline)
+                 .findFirst()
+                 .get();
   }
 
   public static boolean isMmsCapable(Context context) {

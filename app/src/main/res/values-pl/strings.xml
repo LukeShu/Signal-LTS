@@ -792,7 +792,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Urządzenie nie wspiera Usług Play. Dotknij, aby wyłączyć systemową optymalizację baterii uniemożliwiającą odbieranie wiadomości w czasie braku aktywności.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ta wersja Signal wygasła. Zaktualizuj teraz, aby móc wysyłać i odbierać wiadomości.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ta wersja Signal wygasła. Zaktualizuj teraz, aby móc wysyłać i odbierać wiadomości.</string> -->
     <string name="ExpiredBuildReminder_update_now">Aktualizuj teraz</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1735,12 +1735,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Aktualizuj teraz</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Twoja wersja Signal wygaśnie dzisiaj. Zaktualizuj do najnowszej wersji.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Twoja wersja Signal wygaśnie jutro. Zaktualizuj do najnowszej wersji.</item>
         <item quantity="few">Twoja wersja Signal wygaśnie za %1$d dni. Zaktualizuj do najnowszej wersji.</item>
         <item quantity="many">Twoja wersja Signal wygaśnie za %1$d dni. Zaktualizuj do najnowszej wersji.</item>
         <item quantity="other">Twoja wersja Signal wygaśnie za %1$d dni. Zaktualizuj do najnowszej wersji.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Podaj hasło</string>

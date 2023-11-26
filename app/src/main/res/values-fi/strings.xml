@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Laite ei tue Play-palveluita. Virransäästöominaisuudet estävät viestien hakemisen taustalla. Ota toiminto pois käytöstä napauttamalla.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Tämä Signal-versio on vanhentunut. Päivitä nyt lähettääksesi ja vastaanottaaksesi viestejä.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Tämä Signal-versio on vanhentunut. Päivitä nyt lähettääksesi ja vastaanottaaksesi viestejä.</string> -->
     <string name="ExpiredBuildReminder_update_now">Päivitä nyt</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1619,10 +1619,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Päivitä nyt</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Tämä Signal-versio vanhenee tänään. Päivitä viimeisimpään versioon.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Tämä Signal-versio vanhenee huomenna. Päivitä viimeisimpään versioon.</item>
         <item quantity="other">Tämä Signal-versio vanhenee %1$d päivän kuluttua. Päivitä viimeisimpään versioon.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Syötä salalause</string>

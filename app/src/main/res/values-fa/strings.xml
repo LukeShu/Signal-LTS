@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">این دستگاه از خدمات Play پشتیبانی نمی‌کند. برای غیرفعال کردن بهینه‌سازی باتری سیستم که از دریافت پیام‌ها هنگامی که سیگنال غیرفعال است ممانعت می‌کند، ضربه بزنید.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">این نسخهٔ سیگنال منقضی شده است. برای ارسال و دریافت پیام‌ها همین حالا به‌روزرسانی کنید.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">این نسخهٔ سیگنال منقضی شده است. برای ارسال و دریافت پیام‌ها همین حالا به‌روزرسانی کنید.</string> -->
     <string name="ExpiredBuildReminder_update_now">همین حالا به‌روزرسانی کن</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1619,10 +1619,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">همین حالا به‌روزرسانی کنید</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تاریخ انقضای این نسخهٔ سیگنال امروز به پایان می‌رسد. به آخرین نسخه به‌روزرسانی کنید.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">این نسخه سیگنال فردا منقضی می‌شود. به آخرین نسخه به‌روزرسانی کنید.</item>
         <item quantity="other">این نسخه سیگنال طی %1$d روز آینده منقضی می‌شود. به آخرین نسخه به‌روزرسانی کنید.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">گذرواژه را وارد کنید</string>

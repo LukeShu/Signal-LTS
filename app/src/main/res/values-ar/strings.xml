@@ -824,7 +824,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">هذا الهاتف لا يدعم خدمات Play. أنقر لإلغاء تفعيل ميزة الأداء الأمثل للبطارية والتي تمنع سيجنال من استقبال الرسائل عند عدم النشاط.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">انتهت صلاحية هذا الإصدار من سيجنال. يُرجى التحديث الآن لإرسال واستلام الرسائل.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">انتهت صلاحية هذا الإصدار من سيجنال. يُرجى التحديث الآن لإرسال واستلام الرسائل.</string> -->
     <string name="ExpiredBuildReminder_update_now">حدِّث الآن</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1851,14 +1851,14 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">حدِّث الآن</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تنتهي اليوم صلاحية إصدار سيجنال. يُرجى اللمس لتثبيت آخر نسخة من التطبيق.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="zero">تنتهي صلاحية إصدار سيجنال خلال %1$d يوم. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="one">تنتهي صلاحية إصدار سيجنال غدًا. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="two">تنتهي صلاحية إصدار سيجنال خلال يومين %1$d. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="few">تنتهي صلاحية إصدار سيجنال خلال %1$d أيام. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="many">تنتهي صلاحية إصدار سيجنال خلال %1$d يومًا. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="other">تنتهي صلاحية إصدار سيجنال خلال %1$d يومٍ. يُرجى التحديث لآخر إصدار.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">أدخل العبارة السرية</string>

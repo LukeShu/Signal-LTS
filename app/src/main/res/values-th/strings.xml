@@ -744,7 +744,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">อุปกรณ์นี้ไม่รองรับ Play Services แตะเพื่อปิดใช้งานการปรับประสิทธิภาพแบตเตอรีซึ่งจะทำให้ Signal ไม่สามารถรับข้อความได้ในขณะที่ไม่ได้เปิดแอปบนหน้าจอ</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal รุ่นนี้หมดอายุแล้ว ปรับรุ่นเดี๋ยวนี้เพื่อรับและส่งข้อความ</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Signal รุ่นนี้หมดอายุแล้ว ปรับรุ่นเดี๋ยวนี้เพื่อรับและส่งข้อความ</string> -->
     <string name="ExpiredBuildReminder_update_now">ปรับรุ่นเดี๋ยวนี้</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1561,9 +1561,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ปรับปรุงเดี๋ยวนี้</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal รุ่นนี้จะหมดอายุวันนี้ โปรดปรับรุ่นเป็นรุ่นล่าสุด</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">Signal รุ่นนี้จะหมดอายุใน %1$d วัน โปรดปรับรุ่นเป็นรุ่นล่าสุด</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">ใส่วลีรหัสผ่าน</string>

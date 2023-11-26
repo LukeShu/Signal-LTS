@@ -744,7 +744,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">ဤဖုန်းသည် Play Services အသုံးပြု၍မရပါ။ Signal အသုံးမပြုသည့်အချိန်တွင် သတင်းစကားများပြန်လည် ထုတ်ယူရာတွင် အနှောက်အယှက်ပြုသည့်အတွက် ဘက်ထရီ အသုံးပြုမှုစောင့် ကြည့်သည့်စနစ်ကို ပိတ်ထားပေးပါ။</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">ယခု အသုံးပြုနေသော Signal ဗားရှင်း သက်တမ်းကုန်သွားပြီ။ မက်ဆေ့ခ်ျများပို့ရန်နှင့် လက်ခံရန် ယခု Update လုပ်ပါ။</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">ယခု အသုံးပြုနေသော Signal ဗားရှင်း သက်တမ်းကုန်သွားပြီ။ မက်ဆေ့ခ်ျများပို့ရန်နှင့် လက်ခံရန် ယခု Update လုပ်ပါ။</string> -->
     <string name="ExpiredBuildReminder_update_now">ယခု Update လုပ်ပါ။</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1561,9 +1561,9 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">ယခု အပ်ဒိတ် လုပ်ပါ</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">၎င်း Signal ဗားရှင်းသည် ဒီနေ့ သက်တမ်းကုန်ပါလိမ့်မယ်။ နောက်ဆုံးဗားရှင်းသို့ အပ်ဒိတ်ပြုလုပ်ပါ။</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">၎င်း Signal ဗားရှင်းသည် %1$d ရက်အတွင်း သက်တမ်းကုန်ပါလိမ့်မယ်။ နောက်ဆုံးဗားရှင်းသို့ အပ်ဒိတ်ပြုလုပ်ပါ။</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">စကားဝှက် ထည့်ပါ။</string>

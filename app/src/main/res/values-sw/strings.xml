@@ -760,7 +760,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Kifaa hiki hakiwezeshi Huduma za Play. Gonga ili kulemaza na kuboresha mfumo wa betri unaozuia Signal kupokea ujumbe wakati haupo kwenye matumizi.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Muda wa toleo hili la Signal umekwisha. Sasisha sasa ili utume na kupokea ujumbe.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Muda wa toleo hili la Signal umekwisha. Sasisha sasa ili utume na kupokea ujumbe.</string> -->
     <string name="ExpiredBuildReminder_update_now">Sasisha sasa</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1619,10 +1619,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Sasisha sasa</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Muda wa toleo hili la Signal utaisha leo. Sasisha utumie toleo jipya.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Muda wa toleo hili la Signal utaisha kesho. Sasisha utumie toleo jipya.</item>
         <item quantity="other">Muda wa toleo hili la Signal utaisha ndani ya siku %1$d. Sasisha utumie toleo jipya.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Ingiza nenosiri</string>

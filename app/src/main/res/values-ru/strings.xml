@@ -792,7 +792,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Это устройство не поддерживает Службы Google Play. Нажмите для отключения оптимизации энергопотребления, которая не позволяет Signal получать сообщения, когда он неактивен.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Эта версия Signal устарела. Обновитесь сейчас, чтобы отправлять и получать сообщения.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Эта версия Signal устарела. Обновитесь сейчас, чтобы отправлять и получать сообщения.</string> -->
     <string name="ExpiredBuildReminder_update_now">Обновиться</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1735,12 +1735,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Обновить сейчас</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Эта версия Signal перестанет работать сегодня. Обновитесь до новейшей версии.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Эта версия Signal перестанет работать завтра. Обновитесь до новейшей версии.</item>
         <item quantity="few">Эта версия Signal перестанет работать через %1$d дня. Обновитесь до новейшей версии.</item>
         <item quantity="many">Эта версия Signal перестанет работать через %1$d дней. Обновитесь до новейшей версии.</item>
         <item quantity="other">Эта версия Signal перестанет работать через %1$d дня. Обновитесь до новейшей версии.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Введите парольную фразу</string>
