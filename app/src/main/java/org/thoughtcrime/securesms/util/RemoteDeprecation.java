@@ -11,6 +11,7 @@ import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.BuildConfig;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.time.Instant;
 import java.util.Objects;
 
@@ -21,21 +22,23 @@ public final class RemoteDeprecation {
   private RemoteDeprecation() { }
 
   /**
-   * @return The amount of time (in milliseconds) until this client version expires, or -1 if
-   *         there's no pending expiration.
+   * @return The amount of time until this client version expires, or nul1 if
+   *         there's no pending expiration.  A zero or negative Duration means
+   *         that the client version has already expired.
    */
-  public static long getTimeUntilDeprecation() {
-    return getTimeUntilDeprecation(FeatureFlags.clientExpiration(), System.currentTimeMillis(), BuildConfig.VERSION_NAME);
+  public static @Nullable Duration getTimeUntilDeprecation() {
+    return getTimeUntilDeprecation(FeatureFlags.clientExpiration(), Instant.now(), BuildConfig.VERSION_NAME);
   }
 
   /**
-   * @return The amount of time (in milliseconds) until this client version expires, or -1 if
-   *         there's no pending expiration.
+   * @return The amount of time until this client version expires, or null if
+   *         there's no pending expiration.  A zero or negative Duration means
+   *         that the client version has already expired.
    */
   @VisibleForTesting
-  static long getTimeUntilDeprecation(String json, long currentTime, @NonNull String currentVersion) {
+  static @Nullable Duration getTimeUntilDeprecation(String json, @NonNull Instant currentTime, @NonNull String currentVersion) {
     if (Util.isEmpty(json)) {
-      return -1;
+      return null;
     }
 
     SemanticVersion ourVersion = Objects.requireNonNull(SemanticVersion.parse(currentVersion));
@@ -45,20 +48,20 @@ public final class RemoteDeprecation {
       expirations = JsonUtils.fromJson(json, ClientExpiration[].class);
     } catch (IOException e) { // JsonUtils throws IOException on error
       Log.w(TAG, e);
-      return -1;
+      return null;
     }
 
     ClientExpiration expiration = Stream.of(expirations)
-                                        .filter(c -> c.getVersion() != null && c.getExpiration() != -1)
+                                        .filter(c -> c.getVersion() != null && c.getExpiration() != null)
                                         .filter(c -> c.getVersion().compareTo(ourVersion) > 0)
                                         .sortBy(ClientExpiration::getExpiration)
                                         .findFirst()
                                         .orElse(null);
     if (expiration == null) {
-      return -1;
+      return null;
     }
 
-    return Math.max(expiration.getExpiration() - currentTime, 0);
+    return Duration.between(currentTime, expiration.getExpiration());
   }
 
   private static final class ClientExpiration {
@@ -79,12 +82,8 @@ public final class RemoteDeprecation {
       return SemanticVersion.parse(minVersion);
     }
 
-    public long getExpiration() {
-      Instant time = DateUtils.parseIso8601(iso8601);
-      if (time == null) {
-        return -1;
-      }
-      return time.toEpochMilli();
+    public @Nullable Instant getExpiration() {
+      return DateUtils.parseIso8601(iso8601);
     }
   }
 

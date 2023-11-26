@@ -8,8 +8,6 @@ import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.util.PlayStoreUtil;
 import org.thoughtcrime.securesms.util.Util;
 
-import java.util.concurrent.TimeUnit;
-
 /**
  * Reminder that is shown when a build is getting close to expiry (either because of the
  * compile-time constant, or remote deprecation).
@@ -38,6 +36,6 @@ public class OutdatedBuildReminder extends Reminder {
   }
 
   private static int getDaysUntilExpiry() {
-    return (int) TimeUnit.MILLISECONDS.toDays(Util.getTimeUntilBuildExpiry());
+    return (int) Util.getTimeUntilBuildExpiry().toDays();
   }
 }

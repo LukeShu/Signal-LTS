@@ -56,6 +56,8 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.SecureRandom;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
@@ -64,12 +66,11 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
-import java.util.concurrent.TimeUnit;
 
 public class Util {
   private static final String TAG = Log.tag(Util.class);
 
-  private static final long BUILD_LIFESPAN = TimeUnit.DAYS.toMillis(90);
+  private static final Duration BUILD_LIFESPAN = Duration.ofDays(90);
 
   public static final String COPY_LABEL = "text\u00AD";
 
@@ -374,24 +375,24 @@ public class Util {
   }
 
   /**
-   * @return The amount of time (in ms) until this build of Signal will be considered 'expired'.
+   * @return The amount of time until this build of Signal will be considered 'expired'.
+   *         A zero or negative value means that it is already 'expired'.
    *         Takes into account both the build age as well as any remote deprecation values.
    */
-  public static long getTimeUntilBuildExpiry() {
+  public static @NonNull Duration getTimeUntilBuildExpiry() {
     if (SignalStore.misc().isClientDeprecated()) {
-      return 0;
+      return Duration.ZERO;
     }
 
-    long buildAge                   = System.currentTimeMillis() - BuildConfig.BUILD_TIMESTAMP;
-    long timeUntilBuildDeprecation  = BUILD_LIFESPAN - buildAge;
-    long timeUntilRemoteDeprecation = RemoteDeprecation.getTimeUntilDeprecation();
+    Instant  buildExpiration            = BuildConfig.BUILD_TIMESTAMP.plus(BUILD_LIFESPAN);
+    Duration timeUntilBuildDeprecation  = Duration.between(Instant.now(), buildExpiration);
 
-    if (timeUntilRemoteDeprecation != -1) {
-      long timeUntilDeprecation = Math.min(timeUntilBuildDeprecation, timeUntilRemoteDeprecation);
-      return Math.max(timeUntilDeprecation, 0);
-    } else {
-      return Math.max(timeUntilBuildDeprecation, 0);
+    Duration timeUntilRemoteDeprecation = RemoteDeprecation.getTimeUntilDeprecation();
+    if (timeUntilRemoteDeprecation == null) {
+      return timeUntilBuildDeprecation;
     }
+
+    return Collections.min(Arrays.asList(timeUntilBuildDeprecation, timeUntilRemoteDeprecation));
   }
 
   public static boolean isMmsCapable(Context context) {
