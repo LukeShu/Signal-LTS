@@ -32,9 +32,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -126,7 +129,16 @@ public class DateUtils {
 
   private static String getFormattedDateTime(long time, String template, Locale locale) {
     final String localizedPattern = getLocalizedPattern(template, locale);
-    return setLowercaseAmPmStrings(new SimpleDateFormat(localizedPattern, locale), locale).format(new Date(time));
+
+    final SimpleDateFormat formatter = new SimpleDateFormat(localizedPattern, locale);
+    setLowercaseAmPmStrings(formatter, locale);
+    // Since we're setting the timezone to the default, this is
+    // normally a no-op, but is important for testing because mocking
+    // ZoneId.systemDefault is easy, but mocking the timezone used by
+    // `new Date()` is a pain.
+    formatter.setTimeZone(TimeZone.getTimeZone(ZoneId.systemDefault()));
+
+    return formatter.format(new Date(time));
   }
 
   public static @NonNull String formatElapsedTime(@Nullable final Duration elapsed) {
@@ -275,7 +287,14 @@ public class DateUtils {
       dateFormatPattern = getLocalizedPattern("MMM d, yyyy hh:mm:ss a zzz", locale);
     }
 
-    return (new SimpleDateFormat(dateFormatPattern, locale)).format(when.toEpochMilli());
+    final SimpleDateFormat formatter = new SimpleDateFormat(dateFormatPattern, locale);
+    // Since we're setting the timezone to the default, this is
+    // normally a no-op, but is important for testing because mocking
+    // ZoneId.systemDefault is easy, but mocking the timezone used by
+    // `new Date()` is a pain.
+    formatter.setTimeZone(TimeZone.getTimeZone(ZoneId.systemDefault()));
+
+    return formatter.format(when.toEpochMilli());
   }
 
   public static @NonNull String getConversationDateHeaderString(@NonNull final Context context, @NonNull final Locale locale, @NonNull final Instant when) {
@@ -306,7 +325,11 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     String dayModifier;
     if (isToday(timestamp)) {
-      Calendar calendar = Calendar.getInstance(locale);
+      // Since we're passing in the default timezone, normally we'd be
+      // able to just omit that argument, but passing it explicitly is
+      // important for testing because mocking the default timezone
+      // used by `Calendar.getInstance(locale)` is a pain.
+      Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(ZoneId.systemDefault()), locale);
       // Since we're setting the time to the current time, this is
       // normally a no-op, but is important for testing because
       // mocking the clock used by `Calendar.getInstance()` is a pain.
@@ -351,10 +374,13 @@ public class DateUtils {
   }
 
   public static boolean isSameDay(@NonNull final Instant t1, @NonNull final Instant t2) {
-    String d1 = getDateFormat().format(new Date(t1.toEpochMilli()));
-    String d2 = getDateFormat().format(new Date(t2.toEpochMilli()));
+    ZoneId tz = ZoneId.systemDefault();
+    LocalDateTime dt1 = LocalDateTime.ofInstant(t1, tz);
+    LocalDateTime dt2 = LocalDateTime.ofInstant(t2, tz);
 
-    return d1.equals(d2);
+    return (dt1.getYear() == dt2.getYear() &&
+            dt1.getMonthValue() == dt2.getMonthValue() &&
+            dt1.getDayOfMonth() == dt2.getDayOfMonth());
   }
 
   public static boolean isSameExtendedRelativeTimestamp(@NonNull final Instant second, @NonNull final Instant first) {
