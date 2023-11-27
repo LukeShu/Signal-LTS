@@ -38,6 +38,7 @@ import org.signal.core.util.StringUtil;
 import org.thoughtcrime.securesms.util.views.LearnMoreTextView;
 import org.whispersystems.signalservice.api.payments.Money;
 
+import java.time.Instant;
 import java.util.Locale;
 import java.util.Objects;
 
@@ -246,6 +247,6 @@ public final class PaymentDetailsFragment extends LoggingFragment {
   }
 
   private @NonNull CharSequence getStatusFromPayment(@NonNull Payment payment) {
-    return getResources().getString(R.string.PaymentsDeatilsFragment__payment_completed_s, DateUtils.getTimeString(requireContext(), Locale.getDefault(), payment.getDisplayTimestamp()));
+    return getResources().getString(R.string.PaymentsDeatilsFragment__payment_completed_s, DateUtils.getTimeString(requireContext(), Locale.getDefault(), Instant.ofEpochMilli(payment.getDisplayTimestamp())));
   }
 }

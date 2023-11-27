@@ -1,8 +1,11 @@
 package org.thoughtcrime.securesms.net;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 
 import org.signal.core.util.logging.Log;
+import org.thoughtcrime.securesms.R;
 import org.thoughtcrime.securesms.keyvalue.SignalStore;
 
 import java.io.IOException;
@@ -17,13 +20,19 @@ public final class RemoteDeprecationDetectorInterceptor implements Interceptor {
 
   private static final String TAG = Log.tag(RemoteDeprecationDetectorInterceptor.class);
 
+  private final String reason;
+
+  public RemoteDeprecationDetectorInterceptor(@NonNull Context context) {
+    this.reason = context.getString(R.string.DeprecationReason_remote_unplanned);
+  }
+
   @Override
   public @NonNull Response intercept(@NonNull Chain chain) throws IOException {
     Response response = chain.proceed(chain.request());
 
     if (response.code() == 499 && !SignalStore.misc().isClientDeprecated()) {
       Log.w(TAG, "Received 499. Client version is deprecated.");
-      SignalStore.misc().markClientDeprecated();
+      SignalStore.misc().markClientDeprecated(reason);
     }
 
     return response;

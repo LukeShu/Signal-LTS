@@ -15,6 +15,7 @@ import org.thoughtcrime.securesms.recipients.Recipient;
 import org.thoughtcrime.securesms.util.DateUtils;
 import org.thoughtcrime.securesms.util.livedata.LiveDataUtil;
 
+import java.time.Instant;
 import java.util.Locale;
 import java.util.UUID;
 
@@ -63,11 +64,11 @@ final class PaymentsDetailsViewModel extends ViewModel {
     }
 
     String getDate() {
-      return DateUtils.formatDate(Locale.getDefault(), payment.getDisplayTimestamp());
+      return DateUtils.formatDate(Locale.getDefault(), Instant.ofEpochMilli(payment.getDisplayTimestamp()));
     }
 
     String getTime(@NonNull Context context) {
-      return DateUtils.getTimeString(context, Locale.getDefault(), payment.getDisplayTimestamp());
+      return DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(payment.getDisplayTimestamp()));
     }
   }
 

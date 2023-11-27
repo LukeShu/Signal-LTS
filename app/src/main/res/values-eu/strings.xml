@@ -1594,7 +1594,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Eguneratu orain</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Singalen bertsio hau gaur iraungiko da. Eguneratu azken bertsiora.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Singalen bertsio hau gaur iraungiko da. Eguneratu azken bertsiora.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal-en bertsio hau bihar iraungiko da. Eguneratu azken bertsiora.</item>
         <item quantity="other">Signal-en bertsio hau %1$d egun barru iraungiko da. Eguneratu azken bertsiora.</item>

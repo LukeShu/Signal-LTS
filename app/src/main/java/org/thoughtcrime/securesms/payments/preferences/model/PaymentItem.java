@@ -23,6 +23,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingModelList;
 import org.whispersystems.signalservice.api.payments.FormatterOptions;
 import org.whispersystems.signalservice.api.payments.PaymentsConstants;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Locale;
 import java.util.Objects;
@@ -77,7 +78,7 @@ public final class PaymentItem implements MappingModel<PaymentItem> {
       return SpanUtil.color(ContextCompat.getColor(context, R.color.signal_alert_primary), context.getString(R.string.PaymentsHomeFragment__payment_failed));
     }
 
-    String date   = DateUtils.formatDateWithoutDayOfWeek(Locale.getDefault(), payment.getDisplayTimestamp());
+    String date   = DateUtils.formatDateWithoutDayOfWeek(Locale.getDefault(), Instant.ofEpochMilli(payment.getDisplayTimestamp()));
     int    prefix = payment.getDirection().isReceived() ? R.string.PaymentsHomeFragment__received_s : R.string.PaymentsHomeFragment__sent_s;
 
     return context.getString(prefix, date);

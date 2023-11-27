@@ -10,6 +10,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.LayoutFactory
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -42,7 +43,7 @@ object StoryInfoRecipientRow {
     override fun bind(model: Model) {
       avatarView.setRecipient(model.recipientDeliveryStatus.recipient)
       nameView.text = model.recipientDeliveryStatus.recipient.getDisplayName(context)
-      timestampView.text = DateUtils.getTimeString(context, Locale.getDefault(), model.recipientDeliveryStatus.timestamp)
+      timestampView.text = DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(model.recipientDeliveryStatus.timestamp))
     }
   }
 }

@@ -52,6 +52,7 @@ import org.thoughtcrime.securesms.util.livedata.LiveDataUtil;
 import org.thoughtcrime.securesms.verify.VerifyIdentityActivity;
 import org.whispersystems.signalservice.api.push.ServiceId;
 
+import java.time.Instant;
 import java.util.Collection;
 import java.util.Locale;
 import java.util.Objects;
@@ -202,7 +203,7 @@ public final class ConversationUpdateItem extends FrameLayout
   {
     return candidate.isPresent()      &&
            candidate.get().isUpdate() &&
-           DateUtils.isSameDay(current.getTimestamp(), candidate.get().getTimestamp()) &&
+           DateUtils.isSameDay(Instant.ofEpochMilli(current.getTimestamp()), Instant.ofEpochMilli(candidate.get().getTimestamp())) &&
            isSameType(current, candidate.get());
   }
 

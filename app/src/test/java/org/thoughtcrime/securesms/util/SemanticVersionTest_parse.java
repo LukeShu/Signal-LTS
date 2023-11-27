@@ -7,7 +7,7 @@ import org.junit.runners.Parameterized;
 import java.util.Arrays;
 import java.util.Collection;
 
-import static junit.framework.TestCase.assertEquals;
+import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
 public class SemanticVersionTest_parse {
@@ -23,6 +23,8 @@ public class SemanticVersionTest_parse {
         { "111.222.333",      new SemanticVersion(111, 222, 333)},
         { "v1.2.3",           null },
         { "1.2.3x",           null },
+        { "1.2.3.4",          new SemanticVersion(1, 2, 3)},
+        { "1.2.3-x",          new SemanticVersion(1, 2, 3)},
         { "peter.ben.parker", null },
         { "",                 null}
     });

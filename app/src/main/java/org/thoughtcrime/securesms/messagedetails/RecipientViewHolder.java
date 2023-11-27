@@ -13,6 +13,7 @@ import org.thoughtcrime.securesms.components.FromTextView;
 import org.thoughtcrime.securesms.util.DateUtils;
 import org.thoughtcrime.securesms.util.TextSecurePreferences;
 
+import java.time.Instant;
 import java.util.Locale;
 
 final class RecipientViewHolder extends RecyclerView.ViewHolder {
@@ -63,7 +64,7 @@ final class RecipientViewHolder extends RecyclerView.ViewHolder {
 
       if (data.getTimestamp() > 0) {
         Locale dateLocale = Locale.getDefault();
-        timestamp.setText(DateUtils.getTimeString(itemView.getContext(), dateLocale, data.getTimestamp()));
+        timestamp.setText(DateUtils.getTimeString(itemView.getContext(), dateLocale, Instant.ofEpochMilli(data.getTimestamp())));
       } else {
         timestamp.setText("");
       }

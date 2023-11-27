@@ -1594,7 +1594,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">నవీకరణ చేయండి ఇప్పుడు</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal యొక్క ఈ వెర్షన్ ఈ రోజుతో ముగుస్తుంది. ఇటీవలి సంస్కరణకు నవీకరించండి.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Signal యొక్క ఈ వెర్షన్ ఈ రోజుతో ముగుస్తుంది. ఇటీవలి సంస్కరణకు నవీకరించండి.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Signal యొక్క ఈ వెర్షన్ గడువు రేపు ముగుస్తుంది. తాజా వెర్షన్‌కు అప్‌డేట్ చేయండి.</item>
         <item quantity="other">Signal యొక్క ఈ వెర్షన్ గడువు %1$d రోజుల్లో గడువు ముగుస్తుంది. తాజా వెర్షన్‌కు అప్‌డేట్ చేయండి.</item>

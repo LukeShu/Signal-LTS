@@ -12,6 +12,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.LayoutFactory
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
+import java.time.Instant
 import java.util.Locale
 
 object DonationReceiptListItem {
@@ -39,7 +40,7 @@ object DonationReceiptListItem {
     override fun bind(model: Model) {
       itemView.setOnClickListener { onClick(model) }
       badgeView.setBadge(model.badge)
-      dateView.text = DateUtils.formatDate(Locale.getDefault(), model.record.timestamp)
+      dateView.text = DateUtils.formatDate(Locale.getDefault(), Instant.ofEpochMilli(model.record.timestamp))
       typeView.setText(
         when (model.record.type) {
           DonationReceiptRecord.Type.RECURRING -> R.string.DonationReceiptListFragment__recurring

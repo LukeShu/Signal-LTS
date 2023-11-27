@@ -68,6 +68,7 @@ import org.whispersystems.signalservice.api.push.ServiceId;
 import org.whispersystems.signalservice.api.util.UuidUtil;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -359,7 +360,7 @@ public abstract class MessageRecord extends DisplayRecord {
   }
 
   protected @NonNull String getCallDateString(@NonNull Context context) {
-    return DateUtils.getSimpleRelativeTimeSpanString(context, Locale.getDefault(), getDateSent());
+    return DateUtils.getSimpleRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(getDateSent()));
   }
 
   protected static @NonNull UpdateDescription fromRecipient(@NonNull Recipient recipient,

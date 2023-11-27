@@ -58,6 +58,7 @@ import org.thoughtcrime.securesms.util.hasExtraText
 import org.thoughtcrime.securesms.util.hasNoBubble
 import org.thoughtcrime.securesms.util.isScheduled
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -499,9 +500,9 @@ class V2TextOnlyViewHolder<Model : MappingModel<Model>>(
     } else if (record.isRateLimited) {
       binding.conversationItemFooterDate.setText(R.string.ConversationItem_send_paused)
     } else if (record.isScheduled()) {
-      binding.conversationItemFooterDate.text = (DateUtils.getOnlyTimeString(getContext(), Locale.getDefault(), (record as MediaMmsMessageRecord).scheduledDate))
+      binding.conversationItemFooterDate.text = (DateUtils.getOnlyTimeString(getContext(), Locale.getDefault(), Instant.ofEpochMilli((record as MediaMmsMessageRecord).scheduledDate)))
     } else {
-      var date = DateUtils.getSimpleRelativeTimeSpanString(context, Locale.getDefault(), record.timestamp)
+      var date = DateUtils.getSimpleRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(record.timestamp))
       if (conversationContext.displayMode != ConversationItemDisplayMode.DETAILED && record is MediaMmsMessageRecord && record.isEditMessage()) {
         date = getContext().getString(R.string.ConversationItem_edited_timestamp_footer, date)
       }

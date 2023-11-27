@@ -30,6 +30,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingModel
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -254,7 +255,7 @@ object StoriesLandingItem {
         date.text = SpanUtil.color(ContextCompat.getColor(context, R.color.signal_alert_primary), context.getString(message))
       } else {
         errorIndicator.visible = false
-        date.text = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), model.data.dateInMilliseconds)
+        date.text = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(model.data.dateInMilliseconds))
       }
     }
 

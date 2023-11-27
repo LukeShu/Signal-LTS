@@ -103,6 +103,8 @@ import org.thoughtcrime.securesms.util.dynamiclanguage.DynamicLanguageContextWra
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 import java.security.Security;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
@@ -272,9 +274,10 @@ public class ApplicationContext extends MultiDexApplication implements AppForegr
   }
 
   public void checkBuildExpiration() {
-    if (Util.getTimeUntilBuildExpiry() <= 0 && !SignalStore.misc().isClientDeprecated()) {
-      Log.w(TAG, "Build expired!");
-      SignalStore.misc().markClientDeprecated();
+    Util.ClientExpiration expiration = Util.getClientExpiration(this);
+    if (expiration.isExpired(Instant.now()) && !SignalStore.misc().isClientDeprecated()) {
+      Log.w(TAG, "Build expired! " + expiration.reason);
+      SignalStore.misc().markClientDeprecated(expiration.reason);
     }
   }
 

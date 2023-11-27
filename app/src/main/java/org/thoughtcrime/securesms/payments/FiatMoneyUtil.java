@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.text.DecimalFormat;
 import java.text.DecimalFormatSymbols;
 import java.text.NumberFormat;
+import java.time.Instant;
 import java.util.Currency;
 import java.util.Locale;
 import java.util.Optional;
@@ -69,7 +70,7 @@ public final class FiatMoneyUtil {
     if (amount.getTimestamp() > 0 && options.displayTime) {
       return resources.getString(R.string.CurrencyAmountFormatter_s_at_s,
                                  formattedAmount,
-                                 DateUtils.getTimeString(ApplicationDependencies.getApplication(), Locale.getDefault(), amount.getTimestamp()));
+                                 DateUtils.getTimeString(ApplicationDependencies.getApplication(), Locale.getDefault(), Instant.ofEpochMilli(amount.getTimestamp())));
     }
     return formattedAmount;
   }

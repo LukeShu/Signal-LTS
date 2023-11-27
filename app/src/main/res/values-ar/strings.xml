@@ -1822,7 +1822,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">حدِّث الآن</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تنتهي اليوم صلاحية إصدار سيجنال. يُرجى اللمس لتثبيت آخر نسخة من التطبيق.</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">تنتهي اليوم صلاحية إصدار سيجنال. يُرجى اللمس لتثبيت آخر نسخة من التطبيق.</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="zero">تنتهي صلاحية إصدار سيجنال خلال %1$d يوم. يُرجى التحديث لآخر إصدار.</item>
         <item quantity="one">تنتهي صلاحية إصدار سيجنال غدًا. يُرجى التحديث لآخر إصدار.</item>

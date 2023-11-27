@@ -44,6 +44,7 @@ import org.thoughtcrime.securesms.util.ViewUtil;
 import org.thoughtcrime.securesms.util.dualsim.SubscriptionInfoCompat;
 import org.thoughtcrime.securesms.util.dualsim.SubscriptionManagerCompat;
 
+import java.time.Instant;
 import java.util.Locale;
 import java.util.Objects;
 import java.util.Optional;
@@ -318,7 +319,7 @@ public class ConversationItemFooter extends ConstraintLayout {
     } else if (messageRecord.isRateLimited()) {
       dateView.setText(R.string.ConversationItem_send_paused);
     } else if (MessageRecordUtil.isScheduled(messageRecord)) {
-      dateView.setText(DateUtils.getOnlyTimeString(getContext(), locale, ((MediaMmsMessageRecord) messageRecord).getScheduledDate()));
+      dateView.setText(DateUtils.getOnlyTimeString(getContext(), locale, Instant.ofEpochMilli(((MediaMmsMessageRecord) messageRecord).getScheduledDate())));
     } else {
       long timestamp = messageRecord.getTimestamp();
       if (messageRecord.isEditMessage()) {
@@ -326,7 +327,7 @@ public class ConversationItemFooter extends ConstraintLayout {
           timestamp = messageRecord.getDateSent();
         }
       }
-      String date = DateUtils.getSimpleRelativeTimeSpanString(getContext(), locale, timestamp);
+      String date = DateUtils.getSimpleRelativeTimeSpanString(getContext(), locale, Instant.ofEpochMilli(timestamp));
       if (displayMode != ConversationItemDisplayMode.DETAILED && messageRecord.isEditMessage()) {
         date = getContext().getString(R.string.ConversationItem_edited_timestamp_footer, date);
       }

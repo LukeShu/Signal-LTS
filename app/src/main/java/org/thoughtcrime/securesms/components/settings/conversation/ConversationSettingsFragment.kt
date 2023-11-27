@@ -96,6 +96,7 @@ import org.thoughtcrime.securesms.util.navigation.safeNavigate
 import org.thoughtcrime.securesms.util.views.SimpleProgressDialog
 import org.thoughtcrime.securesms.verify.VerifyIdentityActivity
 import org.thoughtcrime.securesms.wallpaper.ChatWallpaperActivity
+import java.time.Instant
 import java.util.Locale
 
 private const val REQUEST_CODE_VIEW_CONTACT = 1
@@ -450,7 +451,7 @@ class ConversationSettingsFragment : DSLSettingsFragment(
 
       if (state.calls.isNotEmpty()) {
         val firstCall = state.calls.first()
-        sectionHeaderPref(DSLSettingsText.from(DateUtils.formatDate(Locale.getDefault(), firstCall.record.timestamp)))
+        sectionHeaderPref(DSLSettingsText.from(DateUtils.formatDate(Locale.getDefault(), Instant.ofEpochMilli(firstCall.record.timestamp))))
 
         for (call in state.calls) {
           customPref(call)

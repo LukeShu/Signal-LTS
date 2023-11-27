@@ -22,6 +22,7 @@ import org.thoughtcrime.securesms.util.Projection
 import org.thoughtcrime.securesms.util.ThemeUtil
 import org.thoughtcrime.securesms.util.ViewUtil
 import org.thoughtcrime.securesms.wallpaper.ChatWallpaper
+import java.time.Instant
 import java.util.Locale
 
 private val TAG = Log.tag(ChatColorPreviewView::class.java)
@@ -87,7 +88,7 @@ class ChatColorPreviewView @JvmOverloads constructor(
         findViewById(R.id.bubble_4_delivery)
       )
 
-      val now: String = DateUtils.getExtendedRelativeTimeSpanString(context, Locale.getDefault(), System.currentTimeMillis())
+      val now: String = DateUtils.getExtendedRelativeTimeSpanString(context, Locale.getDefault(), Instant.now())
       listOf(sent1, sent2, recv1, recv2).forEach {
         it.time.text = now
         it.delivery?.setRead()

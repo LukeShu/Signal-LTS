@@ -38,6 +38,7 @@ import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
 import org.thoughtcrime.securesms.util.changeConstraints
 import org.thoughtcrime.securesms.util.padding
 import org.thoughtcrime.securesms.util.visible
+import java.time.Instant
 import java.util.Locale
 
 typealias OnCopyClick = (CharSequence) -> Unit
@@ -182,7 +183,7 @@ object StoryGroupReplyItem {
         alertView.setNone()
         itemView.setOnClickListener(null)
 
-        val dateText = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), model.sentAtMillis)
+        val dateText = DateUtils.getBriefRelativeTimeSpanString(context, Locale.getDefault(), Instant.ofEpochMilli(model.sentAtMillis))
         date.text = dateText
         dateBelow.text = dateText
       }

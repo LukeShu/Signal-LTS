@@ -62,6 +62,7 @@ import org.thoughtcrime.securesms.util.navigation.SafeNavigation;
 import org.thoughtcrime.securesms.util.views.CircularProgressMaterialButton;
 
 import java.io.IOException;
+import java.time.Instant;
 import java.util.Locale;
 
 import static org.thoughtcrime.securesms.registration.fragments.RegistrationViewDelegate.setDebugLogSubmitMultiTapView;
@@ -182,7 +183,7 @@ public final class RestoreBackupFragment extends LoggingFragment {
                                   RestoreBackupFragmentDirections.actionNoBackupFound());
     } else {
       restoreBackupSize.setText(getString(R.string.RegistrationActivity_backup_size_s, Util.getPrettyFileSize(backup.getSize())));
-      restoreBackupTime.setText(getString(R.string.RegistrationActivity_backup_timestamp_s, DateUtils.getExtendedRelativeTimeSpanString(requireContext(), Locale.getDefault(), backup.getTimestamp())));
+      restoreBackupTime.setText(getString(R.string.RegistrationActivity_backup_timestamp_s, DateUtils.getExtendedRelativeTimeSpanString(requireContext(), Locale.getDefault(), Instant.ofEpochMilli(backup.getTimestamp()))));
 
       restoreButton.setOnClickListener((v) -> handleRestore(v.getContext(), backup));
     }

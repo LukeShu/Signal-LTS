@@ -87,6 +87,7 @@ import org.thoughtcrime.securesms.util.SpanUtil;
 import org.thoughtcrime.securesms.util.Util;
 import org.thoughtcrime.securesms.util.livedata.LiveDataUtil;
 
+import java.time.Instant;
 import java.util.List;
 import java.util.Locale;
 import java.util.Set;
@@ -252,7 +253,7 @@ public final class ConversationListItem extends ConstraintLayout implements Bind
     observeDisplayBody(lifecycleOwner, displayBody);
 
     if (thread.getDate() > 0) {
-      CharSequence date = DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, thread.getDate());
+      CharSequence date = DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, Instant.ofEpochMilli(thread.getDate()));
       dateView.setText(date);
       dateView.setTypeface(thread.isRead() ? LIGHT_TYPEFACE : BOLD_TYPEFACE);
       dateView.setTextColor(thread.isRead() ? ContextCompat.getColor(getContext(), R.color.signal_text_secondary)
@@ -327,7 +328,7 @@ public final class ConversationListItem extends ConstraintLayout implements Bind
 
     fromView.setText(recipient.get(), false);
     setSubjectViewText(SearchUtil.getHighlightedSpan(locale, searchStyleFactory, messageResult.getBodySnippet(), highlightSubstring, SearchUtil.MATCH_ALL));
-    dateView.setText(DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, messageResult.getReceivedTimestampMs()));
+    dateView.setText(DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, Instant.ofEpochMilli(messageResult.getReceivedTimestampMs())));
     archivedView.setVisibility(GONE);
     unreadIndicator.setVisibility(GONE);
     unreadMentions.setVisibility(GONE);
@@ -356,7 +357,7 @@ public final class ConversationListItem extends ConstraintLayout implements Bind
     });
 
     fromView.setText(recipient.get(), false);
-    dateView.setText(DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, groupWithMembers.getDate()));
+    dateView.setText(DateUtils.getBriefRelativeTimeSpanString(getContext(), locale, Instant.ofEpochMilli(groupWithMembers.getDate())));
     archivedView.setVisibility(GONE);
     unreadIndicator.setVisibility(GONE);
     unreadMentions.setVisibility(GONE);

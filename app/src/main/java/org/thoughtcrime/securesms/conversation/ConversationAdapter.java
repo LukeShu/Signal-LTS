@@ -60,6 +60,7 @@ import org.thoughtcrime.securesms.util.StickyHeaderDecoration;
 import org.thoughtcrime.securesms.util.ThemeUtil;
 import org.thoughtcrime.securesms.util.ViewUtil;
 
+import java.time.Instant;
 import java.util.Calendar;
 import java.util.HashSet;
 import java.util.List;
@@ -352,11 +353,11 @@ public class ConversationAdapter
     ConversationMessage conversationMessage = Objects.requireNonNull(getItem(position));
 
     if (scheduledMessagesMode) {
-      viewHolder.setText(DateUtils.getScheduledMessagesDateHeaderString(viewHolder.itemView.getContext(), locale, ((MediaMmsMessageRecord) conversationMessage.getMessageRecord()).getScheduledDate()));
+      viewHolder.setText(DateUtils.getScheduledMessagesDateHeaderString(viewHolder.itemView.getContext(), locale, Instant.ofEpochMilli(((MediaMmsMessageRecord) conversationMessage.getMessageRecord()).getScheduledDate())));
     } else if (condensedMode == ConversationItemDisplayMode.EDIT_HISTORY) {
-      viewHolder.setText(DateUtils.getConversationDateHeaderString(viewHolder.itemView.getContext(), locale, conversationMessage.getMessageRecord().getDateSent()));
+      viewHolder.setText(DateUtils.getConversationDateHeaderString(viewHolder.itemView.getContext(), locale, Instant.ofEpochMilli(conversationMessage.getMessageRecord().getDateSent())));
     } else {
-      viewHolder.setText(DateUtils.getConversationDateHeaderString(viewHolder.itemView.getContext(), locale, conversationMessage.getConversationTimestamp()));
+      viewHolder.setText(DateUtils.getConversationDateHeaderString(viewHolder.itemView.getContext(), locale, Instant.ofEpochMilli(conversationMessage.getConversationTimestamp())));
     }
 
     if (type == HEADER_TYPE_POPOVER_DATE) {

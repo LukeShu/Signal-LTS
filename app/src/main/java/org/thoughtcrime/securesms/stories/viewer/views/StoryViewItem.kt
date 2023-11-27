@@ -13,6 +13,7 @@ import org.thoughtcrime.securesms.util.DateUtils
 import org.thoughtcrime.securesms.util.adapter.mapping.LayoutFactory
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingAdapter
 import org.thoughtcrime.securesms.util.adapter.mapping.MappingViewHolder
+import java.time.Instant
 import java.util.Locale
 
 /**
@@ -59,7 +60,7 @@ object StoryViewItem {
     }
 
     private fun formatDate(dateInMilliseconds: Long): String {
-      return DateUtils.formatDateWithDayOfWeek(Locale.getDefault(), dateInMilliseconds)
+      return DateUtils.formatDateWithDayOfWeek(Locale.getDefault(), Instant.ofEpochMilli(dateInMilliseconds))
     }
 
     private fun showContextMenu(model: Model) {

@@ -54,6 +54,7 @@ import org.thoughtcrime.securesms.util.MediaUtil;
 import org.thoughtcrime.securesms.util.Util;
 import org.thoughtcrime.securesms.util.livedata.LiveDataPair;
 
+import java.time.Instant;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -447,7 +448,7 @@ final class MediaGalleryAllAdapter extends StickyHeaderGridAdapter {
       return context.getString(R.string.MediaOverviewActivity_detail_line_3_part,
                                Util.getPrettyFileSize(slide.getFileSize()),
                                getFileTypeDescription(context, slide),
-                               DateUtils.formatDateWithoutDayOfWeek(Locale.getDefault(), mediaRecord.getDate()));
+                               DateUtils.formatDateWithoutDayOfWeek(Locale.getDefault(), Instant.ofEpochMilli(mediaRecord.getDate())));
     }
 
     protected String getFileTypeDescription(@NonNull Context context, @NonNull Slide slide) {

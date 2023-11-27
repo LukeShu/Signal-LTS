@@ -1,12 +1,14 @@
 package org.whispersystems.signalservice.api.util;
 
 
-import junit.framework.AssertionFailedError;
-import junit.framework.TestCase;
+import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
 
-public class PhoneNumberFormatterTest extends TestCase {
+public class PhoneNumberFormatterTest {
   private static final String LOCAL_NUMBER_US  = "+15555555555";
   private static final String NUMBER_CH        = "+41446681800";
   private static final String NUMBER_UK        = "+442079460018";
@@ -16,6 +18,7 @@ public class PhoneNumberFormatterTest extends TestCase {
   private static final String COUNTRY_CODE_UK  = "44";
   private static final String COUNTRY_CODE_DE  = "49";
 
+  @Test
   public void testIsValidNumber() throws Exception {
     assertTrue(PhoneNumberFormatter.isValidNumber("+6831234", "683"));
     assertTrue(PhoneNumberFormatter.isValidNumber("+35851234", "358"));
@@ -36,21 +39,20 @@ public class PhoneNumberFormatterTest extends TestCase {
     assertFalse(PhoneNumberFormatter.isValidNumber("+9718123456789012", "971"));
   }
 
+  @Test
   public void testFormatNumber() throws Exception, InvalidNumberException {
     assertThat(PhoneNumberFormatter.formatNumber("(555) 555-5555", LOCAL_NUMBER_US)).isEqualTo(LOCAL_NUMBER_US);
     assertThat(PhoneNumberFormatter.formatNumber("555-5555", LOCAL_NUMBER_US)).isEqualTo(LOCAL_NUMBER_US);
     assertThat(PhoneNumberFormatter.formatNumber("(123) 555-5555", LOCAL_NUMBER_US)).isNotEqualTo(LOCAL_NUMBER_US);
   }
 
+  @Test
   public void testFormatNumberEmail() throws Exception {
-    try {
-      PhoneNumberFormatter.formatNumber("person@domain.com", LOCAL_NUMBER_US);
-      throw new AssertionFailedError("should have thrown on email");
-    } catch (InvalidNumberException ine) {
-      // success
-    }
+    assertThrows(InvalidNumberException.class, () ->
+                 PhoneNumberFormatter.formatNumber("person@domain.com", LOCAL_NUMBER_US));
   }
 
+  @Test
   public void testFormatNumberE164() throws Exception, InvalidNumberException {
     assertThat(PhoneNumberFormatter.formatE164(COUNTRY_CODE_UK, "(020) 7946 0018")).isEqualTo(NUMBER_UK);
 //    assertThat(PhoneNumberFormatter.formatE164(COUNTRY_CODE_UK, "044 20 7946 0018")).isEqualTo(NUMBER_UK);
@@ -73,6 +75,7 @@ public class PhoneNumberFormatterTest extends TestCase {
     assertThat(PhoneNumberFormatter.formatE164(COUNTRY_CODE_DE, "0049171/123456")).isEqualTo(NUMBER_MOBILE_DE);
   }
 
+  @Test
   public void testFormatRemoteNumberE164() throws Exception, InvalidNumberException {
     assertThat(PhoneNumberFormatter.formatNumber(LOCAL_NUMBER_US, NUMBER_UK)).isEqualTo(LOCAL_NUMBER_US);
     assertThat(PhoneNumberFormatter.formatNumber(LOCAL_NUMBER_US, LOCAL_NUMBER_US)).isEqualTo(LOCAL_NUMBER_US);

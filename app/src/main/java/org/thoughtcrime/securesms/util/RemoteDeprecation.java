@@ -1,5 +1,7 @@
 package org.thoughtcrime.securesms.util;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
@@ -9,8 +11,11 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import org.signal.core.util.logging.Log;
 import org.thoughtcrime.securesms.BuildConfig;
+import org.thoughtcrime.securesms.R;
 
 import java.io.IOException;
+import java.time.Duration;
+import java.time.Instant;
 import java.util.Objects;
 
 public final class RemoteDeprecation {
@@ -20,52 +25,57 @@ public final class RemoteDeprecation {
   private RemoteDeprecation() { }
 
   /**
-   * @return The amount of time (in milliseconds) until this client version expires, or -1 if
-   *         there's no pending expiration.
+   * @return When this client version expires, or nul1 if there's no pending
+   *         expiration.  A value that is the current Instant.now() or is in the
+   *         past means that the client version has already expired.
    */
-  public static long getTimeUntilDeprecation() {
-    return getTimeUntilDeprecation(FeatureFlags.clientExpiration(), System.currentTimeMillis(), BuildConfig.VERSION_NAME);
+  public static @Nullable Util.ClientExpiration getClientExpiration(@NonNull Context context) {
+    return getClientExpiration(context, FeatureFlags.clientExpiration(), BuildConfig.VERSION_NAME);
   }
 
   /**
-   * @return The amount of time (in milliseconds) until this client version expires, or -1 if
-   *         there's no pending expiration.
+   * @return When this client version expires, or nul1 if there's no pending
+   *         expiration.  A value that is the current Instant.now() or is in the
+   *         past means that the client version has already expired.
    */
   @VisibleForTesting
-  static long getTimeUntilDeprecation(String json, long currentTime, @NonNull String currentVersion) {
+  static @Nullable Util.ClientExpiration getClientExpiration(@NonNull Context context, @Nullable String json, @NonNull String currentVersion) {
     if (Util.isEmpty(json)) {
-      return -1;
+      return null;
     }
 
+    SemanticVersion ourVersion = Objects.requireNonNull(SemanticVersion.parse(currentVersion));
+
+    JsonClientExpiration[] expirations = null;
     try {
-      SemanticVersion    ourVersion  = Objects.requireNonNull(SemanticVersion.parse(currentVersion));
-      ClientExpiration[] expirations = JsonUtils.fromJson(json, ClientExpiration[].class);
-
-      ClientExpiration expiration = Stream.of(expirations)
-                                          .filter(c -> c.getVersion() != null && c.getExpiration() != -1)
-                                          .filter(c -> c.requireVersion().compareTo(ourVersion) > 0)
-                                          .sortBy(ClientExpiration::getExpiration)
-                                          .findFirst()
-                                          .orElse(null);
-
-      if (expiration != null) {
-        return Math.max(expiration.getExpiration() - currentTime, 0);
-      }
-    } catch (IOException e) {
+      expirations = JsonUtils.fromJson(json, JsonClientExpiration[].class);
+    } catch (IOException e) { // JsonUtils throws IOException on error
       Log.w(TAG, e);
+      return null;
     }
 
-    return -1;
+    JsonClientExpiration expiration = Stream.of(expirations)
+                                            .filter(c -> c.getVersion() != null && c.getExpiration() != null)
+                                            .filter(c -> c.getVersion().compareTo(ourVersion) > 0)
+                                            .sortBy(JsonClientExpiration::getExpiration)
+                                            .findFirst()
+                                            .orElse(null);
+    if (expiration == null) {
+      return null;
+    }
+
+    return new Util.ClientExpiration(expiration.getExpiration(),
+                                     context.getString(R.string.DeprecationReason_remote_planned, expiration.minVersion, expiration.iso8601));
   }
 
-  private static final class ClientExpiration {
+  private static final class JsonClientExpiration {
     @JsonProperty
     private final String minVersion;
 
     @JsonProperty
     private final String iso8601;
 
-    ClientExpiration(@Nullable @JsonProperty("minVersion") String minVersion,
+    JsonClientExpiration(@Nullable @JsonProperty("minVersion") String minVersion,
                      @Nullable @JsonProperty("iso8601") String iso8601)
     {
       this.minVersion = minVersion;
@@ -76,11 +86,7 @@ public final class RemoteDeprecation {
       return SemanticVersion.parse(minVersion);
     }
 
-    public @NonNull SemanticVersion requireVersion() {
-      return Objects.requireNonNull(getVersion());
-    }
-
-    public long getExpiration() {
+    public @Nullable Instant getExpiration() {
       return DateUtils.parseIso8601(iso8601);
     }
   }

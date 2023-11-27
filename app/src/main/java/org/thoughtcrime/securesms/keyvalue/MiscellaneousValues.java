@@ -19,7 +19,7 @@ public final class MiscellaneousValues extends SignalStoreValues {
   private static final String MESSAGE_REQUEST_ENABLE_TIME    = "message_request_enable_time";
   private static final String LAST_PROFILE_REFRESH_TIME      = "misc.last_profile_refresh_time";
   private static final String USERNAME_SHOW_REMINDER         = "username.show.reminder";
-  private static final String CLIENT_DEPRECATED              = "misc.client_deprecated";
+  private static final String CLIENT_DEPRECATED_REASON       = "misc.client_deprecated.reason";
   private static final String OLD_DEVICE_TRANSFER_LOCKED     = "misc.old_device.transfer.locked";
   private static final String HAS_EVER_HAD_AN_AVATAR         = "misc.has.ever.had.an.avatar";
   private static final String CHANGE_NUMBER_LOCK             = "misc.change_number.lock";
@@ -85,16 +85,24 @@ public final class MiscellaneousValues extends SignalStoreValues {
     return getBoolean(USERNAME_SHOW_REMINDER, true);
   }
 
-  public boolean isClientDeprecated() {
-    return getBoolean(CLIENT_DEPRECATED, false);
+  public @Nullable String clientDeprecatedReason() {
+    String reason = getString(CLIENT_DEPRECATED_REASON, "");
+    if (reason == "") {
+      return null;
+    }
+    return reason;
   }
 
-  public void markClientDeprecated() {
-    putBoolean(CLIENT_DEPRECATED, true);
+  public boolean isClientDeprecated() {
+    return clientDeprecatedReason() != null;
+  }
+
+  public void markClientDeprecated(String reason) {
+    putString(CLIENT_DEPRECATED_REASON, reason);
   }
 
   public void clearClientDeprecated() {
-    putBoolean(CLIENT_DEPRECATED, false);
+    remove(CLIENT_DEPRECATED_REASON);
   }
 
   public boolean isOldDeviceTransferLocked() {

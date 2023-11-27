@@ -1537,7 +1537,7 @@
 
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">即刻更新</string>
-    <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">呢個版本嘅 Signal 今日到期㗎喇。請更新去最新嘅版本。</string>
+  <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">呢個版本嘅 Signal 今日到期㗎喇。請更新去最新嘅版本。</string> -->
     <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="other">呢個版本嘅 Signal %1$d 日後到期㗎喇。請更新去最新嘅版本。</item>
     </plurals>

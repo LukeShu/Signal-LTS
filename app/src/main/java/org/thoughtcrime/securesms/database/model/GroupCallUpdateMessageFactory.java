@@ -15,6 +15,7 @@ import org.thoughtcrime.securesms.util.DateUtils;
 import org.whispersystems.signalservice.api.push.ACI;
 import org.whispersystems.signalservice.api.push.ServiceId;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -53,7 +54,7 @@ public class GroupCallUpdateMessageFactory implements UpdateDescription.Spannabl
   }
 
   private @NonNull String createString() {
-    String time = DateUtils.getTimeString(context, Locale.getDefault(), groupCallUpdateDetails.getStartedCallTimestamp());
+    String time = DateUtils.getTimeString(context, Locale.getDefault(), Instant.ofEpochMilli(groupCallUpdateDetails.getStartedCallTimestamp()));
 
     switch (joinedMembers.size()) {
       case 0:

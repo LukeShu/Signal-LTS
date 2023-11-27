@@ -24,6 +24,7 @@ import org.thoughtcrime.securesms.util.formatHours
 import org.thoughtcrime.securesms.util.fragments.findListener
 import org.thoughtcrime.securesms.util.toLocalDateTime
 import org.thoughtcrime.securesms.util.toMillis
+import java.time.Instant
 import java.time.LocalDateTime
 import java.time.LocalTime
 import java.time.ZoneId
@@ -158,7 +159,7 @@ class ScheduleMessageTimePickerBottomSheet : FixedRoundedCornerBottomSheetDialog
   }
 
   private fun updateSelectedDate() {
-    binding.dateText.text = DateUtils.getDayPrecisionTimeString(requireContext(), Locale.getDefault(), scheduledDate)
+    binding.dateText.text = DateUtils.getDayPrecisionTimeString(requireContext(), Locale.getDefault(), Instant.ofEpochMilli(scheduledDate))
   }
 
   private fun updateSelectedTime() {
