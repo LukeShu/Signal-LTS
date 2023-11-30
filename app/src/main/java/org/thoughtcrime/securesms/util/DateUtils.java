@@ -93,12 +93,23 @@ public class DateUtils {
   private static final long                          MAX_RELATIVE_TIMESTAMP = TimeUnit.MINUTES.toMillis(3);
   private static final int                           HALF_A_YEAR_IN_DAYS    = 182;
 
+  /**
+   * For testing, it is important that we be able to mock the system
+   * clock.  MockK is unable to mock System.currentTimeMillis(), but
+   * is able to mock Instant.now().  Because we shouldn't overhaul the
+   * code to use Instants instead of millis until *after* there are
+   * tests, this is a shim to make mocking possible.
+   */
+  private static long System_currentTimeMillis() {
+    return Instant.now().toEpochMilli();
+  }
+
   private static boolean isWithin(final long millis, final long span, final TimeUnit unit) {
-    return System.currentTimeMillis() - millis <= unit.toMillis(span);
+    return System_currentTimeMillis() - millis <= unit.toMillis(span);
   }
 
   private static boolean isWithinAbs(final long millis, final long span, final TimeUnit unit) {
-    return Math.abs(System.currentTimeMillis() - millis) <= unit.toMillis(span);
+    return Math.abs(System_currentTimeMillis() - millis) <= unit.toMillis(span);
   }
 
   private static boolean isToday(final long millis) {
@@ -110,7 +121,7 @@ public class DateUtils {
   }
 
   private static int convertDelta(final long millis, TimeUnit to) {
-    return (int) to.convert(System.currentTimeMillis() - millis, TimeUnit.MILLISECONDS);
+    return (int) to.convert(System_currentTimeMillis() - millis, TimeUnit.MILLISECONDS);
   }
 
   private static String getFormattedDateTime(long time, String template, Locale locale) {
@@ -151,7 +162,7 @@ public class DateUtils {
     if (isWithin(timestamp, 1, TimeUnit.MINUTES)) {
       return context.getString(R.string.DateUtils_just_now);
     } else if (isWithin(timestamp, 1, TimeUnit.HOURS)) {
-      int mins = (int)TimeUnit.MINUTES.convert(System.currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
+      int mins = (int)TimeUnit.MINUTES.convert(System_currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
       return context.getResources().getString(R.string.DateUtils_minutes_ago, mins);
     } else {
       StringBuilder format = new StringBuilder();
@@ -171,7 +182,7 @@ public class DateUtils {
     if (isWithin(timestamp, 1, TimeUnit.MINUTES)) {
       return context.getString(R.string.DateUtils_just_now);
     } else if (isWithin(timestamp, 1, TimeUnit.HOURS)) {
-      int mins = (int) TimeUnit.MINUTES.convert(System.currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
+      int mins = (int) TimeUnit.MINUTES.convert(System_currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
       return context.getResources().getString(R.string.DateUtils_minutes_ago, mins);
     } else {
       return getOnlyTimeString(context, locale, when);
@@ -221,7 +232,7 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
 
-    if (simpleDateFormat.format(System.currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
+    if (simpleDateFormat.format(System_currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
       return context.getString(R.string.DeviceListItem_today);
     } else {
       String format;
@@ -242,7 +253,7 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
 
-    if (simpleDateFormat.format(System.currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
+    if (simpleDateFormat.format(System_currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
       return context.getString(R.string.DeviceListItem_today);
     } else {
       String format;
@@ -296,6 +307,10 @@ public class DateUtils {
     String dayModifier;
     if (isToday(timestamp)) {
       Calendar calendar = Calendar.getInstance(locale);
+      // Since we're setting the time to the current time, this is
+      // normally a no-op, but is important for testing because
+      // mocking the clock used by `Calendar.getInstance()` is a pain.
+      calendar.setTimeInMillis(System_currentTimeMillis());
       if (calendar.get(Calendar.HOUR_OF_DAY) >= 19) {
         dayModifier = context.getString(R.string.DateUtils_tonight);
       } else {
