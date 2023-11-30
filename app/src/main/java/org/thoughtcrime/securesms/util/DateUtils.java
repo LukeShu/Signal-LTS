@@ -102,11 +102,11 @@ public class DateUtils {
   }
 
   private static boolean isToday(final long millis) {
-    return android.text.format.DateUtils.isToday(millis);
+    return isSameDay(Instant.ofEpochMilli(millis), Instant.now());
   }
 
   private static boolean isYesterday(final long when) {
-    return android.text.format.DateUtils.isToday(when + TimeUnit.DAYS.toMillis(1));
+    return isToday(when + TimeUnit.DAYS.toMillis(1));
   }
 
   private static int convertDelta(final long millis, TimeUnit to) {
@@ -123,6 +123,7 @@ public class DateUtils {
     if (elapsed != null) {
       elapsedSeconds = elapsed.getSeconds();
     }
+    // NB: android.text.format.DateUtils.formatElapsedTime() uses Locale.getDefault()
     return android.text.format.DateUtils.formatElapsedTime(elapsedSeconds);
   }
 
