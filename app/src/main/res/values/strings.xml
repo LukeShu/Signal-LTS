@@ -233,7 +233,7 @@
     <!-- deprecation reasons -->
     <!-- The first argument is a semver version number string (e.g. "6.27.2"), and the second argument is an ISO 8601 timestamp (e.g. "2023-11-25T15:37:46Z") -->
     <string name="DeprecationReason_remote_planned">the server said that versions %1$s and lower expire at %2$s</string>
-    <string name="DeprecationReason_remote_unplanned">the server replied with HTTP 499 build date</string>
+    <string name="DeprecationReason_remote_unplanned">the server replied with HTTP 499</string>
     <string name="DeprecationReason_local_build">90 days after the build date</string>
 
     <!-- CommunicationActions -->
