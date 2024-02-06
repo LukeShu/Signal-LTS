@@ -781,7 +781,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Ovaj uređaj ne podržava Play Services. Pritisnite ovdje kako biste onemogućili sistemske optimizacije korištenja baterije koje sprečavaju Signal da prima poruke dok je aplikacija zatvorena.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ova verzija Signala je istekla. Ažurirajte aplikaciju sada da biste mogli slati i primati poruke.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ova verzija Signala je istekla. Ažurirajte aplikaciju sada da biste mogli slati i primati poruke.</string> -->
     <string name="ExpiredBuildReminder_update_now">Ažuriraj sada</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1709,12 +1709,12 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Ažuriraj sada</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ova verzija Signala ističe danas. Ažurirajte aplikaciju na posljednju verziju.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ova verzija Signala ističe sutra. Ažurirajte aplikaciju na posljednju verziju.</item>
         <item quantity="few">Ova verzija Signala ističe za %1$d dana. Ažurirajte aplikaciju na posljednju verziju.</item>
         <item quantity="many">Ova verzija Signala ističe za %1$d dana. Ažurirajte aplikaciju na posljednju verziju.</item>
         <item quantity="other">Ova verzija Signala ističe za %1$d dana. Ažurirajte aplikaciju na posljednju verziju.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Unesite lozinku</string>

@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Dieses Gerät unterstützt keine Google-Play-Dienste. Antippen, um Akkuoptimierungen zu deaktivieren, die Signal daran hindern, Nachrichten im Hintergrund zu empfangen.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Diese Signal-Version ist veraltet. Aktualisiere jetzt, um Nachrichten senden und empfangen zu können.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Diese Signal-Version ist veraltet. Aktualisiere jetzt, um Nachrichten senden und empfangen zu können.</string> -->
     <string name="ExpiredBuildReminder_update_now">Jetzt aktualisieren</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Jetzt aktualisieren</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Diese Signal-Version wird heute ablaufen. Aktualisiere auf die neueste Version.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Diese Signal-Version wird morgen ablaufen. Aktualisiere auf die neueste Version.</item>
         <item quantity="other">Diese Signal-Version wird in %1$d Tagen ablaufen. Aktualisiere auf die neueste Version.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Passphrase eingeben</string>

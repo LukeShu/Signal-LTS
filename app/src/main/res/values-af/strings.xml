@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Hierdie toestel ondersteun nie Play Services nie. Tik om die optimering van die stelselbatterye uit te skakel wat verhoed dat Signal boodskappe ophaal terwyl hulle onaktief is.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Hierdie weergawe van Signal het verval. Werk dit nou by om boodskappe te kan stuur en ontvang</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Hierdie weergawe van Signal het verval. Werk dit nou by om boodskappe te kan stuur en ontvang</string> -->
     <string name="ExpiredBuildReminder_update_now">Werk nou by</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Werk nou by</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Hierdie weergawe van Signal verval vandag. Werk die jongste weergawe by.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Hierdie weergawe van Signal verval môre. Doen \'n bywerking van die jongste weergawe.</item>
         <item quantity="other">Hierdie weergawe van Signal verval oor %1$d dae. Doen \'n bywerking van die jongste weergawe.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Voorsien wagwoordfrase</string>

@@ -751,7 +751,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Kjo pajisje nuk i mbulon shërbimet e Play. Klikoni për të çaktivizuar optimizimet e baterisë së sistemit që pengojnë Signal-in të marrë mesazhe kur është joaktiv.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ky version i Signal-it ka skaduar. Që të dërgoni dhe merrni mesazhe, përditësojeni që tani.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Ky version i Signal-it ka skaduar. Që të dërgoni dhe merrni mesazhe, përditësojeni që tani.</string> -->
     <string name="ExpiredBuildReminder_update_now">Përditësoje tani</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1595,10 +1595,10 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Përditësoje tani</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Ky version i Signal-it do të skadojë sot. Përditësojeni me versionin më të freskët.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Ky version i Signal skadon nesër. Përditësoje me versionin më të ri.</item>
         <item quantity="other">Ky version i Signal skadon për %1$d ditë. Përditësoje me versionin më të ri.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Jepni frazëkalimin</string>

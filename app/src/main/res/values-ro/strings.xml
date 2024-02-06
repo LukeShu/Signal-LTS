@@ -766,7 +766,7 @@
     <string name="DozeReminder_this_device_does_not_support_play_services_tap_to_disable_system_battery">Acest dispozitiv nu suportă serviciile Play. Apasă pentru a dezactiva optimizarea de sistem a bateriei care împiedică Signal să preia mesaje cât timp este inactiv.</string>
 
     <!-- ExpiredBuildReminder -->
-    <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Această versiune a Signal a expirat. Actualizează acum pentru a trimite și primi mesaje.</string>
+  <!-- Removed by excludeNonTranslatables <string name="ExpiredBuildReminder_this_version_of_signal_has_expired">Această versiune a Signal a expirat. Actualizează acum pentru a trimite și primi mesaje.</string> -->
     <string name="ExpiredBuildReminder_update_now">Actualizează acum</string>
 
     <!-- PendingGroupJoinRequestsReminder -->
@@ -1652,11 +1652,11 @@
     <!-- OutdatedBuildReminder -->
     <string name="OutdatedBuildReminder_update_now">Actualizează acum</string>
   <!-- Removed by excludeNonTranslatables <string name="OutdatedBuildReminder_your_version_of_signal_will_expire_today">Această versiune de Signal va expira astăzi. Actualizează la cea mai recentă versiune.</string> -->
-    <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
+  <!-- Removed by excludeNonTranslatables <plurals name="OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days">
         <item quantity="one">Această versiune de Signal va expira mâine. Actualizează la cea mai recentă versiune.</item>
         <item quantity="few">Această versiune de Signal va expira în %1$d zile. Actualizează la cea mai recentă versiune.</item>
         <item quantity="other">Această versiune de Signal va expira în %1$d de zile. Actualizează la cea mai recentă versiune.</item>
-    </plurals>
+    </plurals> -->
 
     <!-- PassphrasePromptActivity -->
     <string name="PassphrasePromptActivity_enter_passphrase">Introdu parola</string>

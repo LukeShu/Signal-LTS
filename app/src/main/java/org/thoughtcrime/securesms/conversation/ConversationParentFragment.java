@@ -2620,7 +2620,8 @@ public class ConversationParentFragment extends Fragment
       MaterialButton actionButton = loggedOutStub.get().findViewById(R.id.logged_out_button);
 
       if (conversationSecurityInfo.isClientExpired()) {
-        message.setText(R.string.ExpiredBuildReminder_this_version_of_signal_has_expired);
+        message.setText(requireContext().getResources().getString(R.string.ExpiredBuildReminder_this_version_of_signal_has_expired2,
+                                                                  SignalStore.misc().clientDeprecatedReason()));
         actionButton.setText(R.string.ConversationFragment__update_build);
         actionButton.setOnClickListener(v -> {
           PlayStoreUtil.openPlayStoreOrOurApkDownloadPage(requireContext());

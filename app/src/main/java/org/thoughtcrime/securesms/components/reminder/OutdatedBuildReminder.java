@@ -5,11 +5,13 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 import org.thoughtcrime.securesms.R;
+import org.thoughtcrime.securesms.util.DateUtils;
 import org.thoughtcrime.securesms.util.PlayStoreUtil;
 import org.thoughtcrime.securesms.util.Util;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Locale;
 
 /**
  * Reminder that is shown when a build is getting close to expiry (either because of the
@@ -24,9 +26,11 @@ public class OutdatedBuildReminder extends Reminder {
 
   @Override
   public @NonNull CharSequence getText(@NonNull Context context) {
-    int days = (int) Duration.between(Instant.now(), Util.getClientExpiration(context).deadline).toDays();
+    Util.ClientExpiration expiration = Util.getClientExpiration(context);
 
-    return context.getResources().getQuantityString(R.plurals.OutdatedBuildReminder_your_version_of_signal_will_expire_in_n_days, days, days);
+    return context.getResources().getString(R.string.OutdatedBuildReminder_your_version_of_signal_will_expire,
+                                            DateUtils.ltsFormatInstant(context, Locale.getDefault(), expiration.deadline),
+                                            expiration.reason);
   }
 
   @Override
