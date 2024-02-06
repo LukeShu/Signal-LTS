@@ -120,6 +120,7 @@ import org.thoughtcrime.securesms.components.menu.SignalBottomActionBar
 import org.thoughtcrime.securesms.components.settings.app.subscription.donate.DonateToSignalFragment
 import org.thoughtcrime.securesms.components.settings.app.subscription.donate.DonateToSignalType
 import org.thoughtcrime.securesms.components.settings.conversation.ConversationSettingsActivity
+import org.thoughtcrime.securesms.components.spoiler.SpoilerAnnotation
 import org.thoughtcrime.securesms.components.voice.VoiceNoteDraft
 import org.thoughtcrime.securesms.components.voice.VoiceNoteMediaControllerOwner
 import org.thoughtcrime.securesms.components.voice.VoiceNotePlaybackState
@@ -285,6 +286,7 @@ import org.thoughtcrime.securesms.util.DrawableUtil
 import org.thoughtcrime.securesms.util.FeatureFlags
 import org.thoughtcrime.securesms.util.FullscreenHelper
 import org.thoughtcrime.securesms.util.MediaUtil
+import org.thoughtcrime.securesms.util.MessageConstraintsUtil
 import org.thoughtcrime.securesms.util.MessageConstraintsUtil.getEditMessageThresholdHours
 import org.thoughtcrime.securesms.util.MessageConstraintsUtil.isValidEditMessageSend
 import org.thoughtcrime.securesms.util.PlayStoreUtil
@@ -331,7 +333,8 @@ class ConversationFragment :
   ScheduleMessageTimePickerBottomSheet.ScheduleCallback,
   ScheduleMessageDialogCallback,
   ConversationBottomSheetCallback,
-  SafetyNumberBottomSheet.Callbacks {
+  SafetyNumberBottomSheet.Callbacks,
+  EnableCallNotificationSettingsDialog.Callback {
 
   companion object {
     private val TAG = Log.tag(ConversationFragment::class.java)
@@ -458,7 +461,6 @@ class ConversationFragment :
   private lateinit var threadHeaderMarginDecoration: ThreadHeaderMarginDecoration
   private lateinit var conversationItemDecorations: ConversationItemDecorations
   private lateinit var optionsMenuCallback: ConversationOptionsMenuCallback
-  private lateinit var menuProvider: ConversationOptionsMenu.Provider
   private lateinit var typingIndicatorDecoration: TypingIndicatorDecoration
   private lateinit var backPressedCallback: BackPressedDelegate
 
@@ -471,6 +473,7 @@ class ConversationFragment :
   private var reShowScheduleMessagesBar: Boolean = false
   private var composeTextEventsListener: ComposeTextEventsListener? = null
   private var dataObserver: DataObserver? = null
+  private var menuProvider: ConversationOptionsMenu.Provider? = null
 
   private val jumpAndPulseScrollStrategy = object : ScrollToPositionDelegate.ScrollStrategy {
     override fun performScroll(recyclerView: RecyclerView, layoutManager: LinearLayoutManager, position: Int, smooth: Boolean) {
@@ -558,6 +561,8 @@ class ConversationFragment :
     initializeMediaKeyboard()
 
     binding.conversationVideoContainer.setClipToOutline(true)
+
+    SpoilerAnnotation.resetRevealedSpoilers()
 
     registerForResults()
   }
@@ -761,6 +766,10 @@ class ConversationFragment :
 
   override fun onCanceled() = Unit
 
+  override fun onCallNotificationSettingsDialogDismissed() {
+    adapter.notifyDataSetChanged()
+  }
+
   //endregion
 
   private fun observeConversationThread() {
@@ -769,6 +778,7 @@ class ConversationFragment :
       .conversationThreadState
       .subscribeOn(Schedulers.io())
       .doOnSuccess { state ->
+        adapter.setMessageRequestIsAccepted(state.meta.messageRequestData.isMessageRequestAccepted)
         SignalLocalMetrics.ConversationOpen.onDataLoaded()
         conversationItemDecorations.setFirstUnreadCount(state.meta.unreadCount)
         colorizer.onGroupMembershipChanged(state.meta.groupMemberAcis)
@@ -812,7 +822,7 @@ class ConversationFragment :
     backPressedCallback = BackPressedDelegate()
     requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner, backPressedCallback)
 
-    menuProvider.afterFirstRenderMode = true
+    menuProvider?.afterFirstRenderMode = true
 
     viewLifecycleOwner.lifecycle.addObserver(LastScrolledPositionUpdater(adapter, layoutManager, viewModel))
 
@@ -857,7 +867,7 @@ class ConversationFragment :
       setOnClickListener(sendButtonListener)
       setScheduledSendListener(sendButtonListener)
       isEnabled = true
-      post { sendButton.triggerSelectedChangedEvent() }
+      sendButton.triggerSelectedChangedEvent()
     }
 
     sendEditButton.setOnClickListener { handleSendEditMessage() }
@@ -980,6 +990,11 @@ class ConversationFragment :
 
     val conversationUpdateTick = ConversationUpdateTick { adapter.updateTimestamps() }
     viewLifecycleOwner.lifecycle.addObserver(conversationUpdateTick)
+
+    if (args.conversationScreenType.isInPopup) {
+      composeText.requestFocus()
+      binding.conversationInputPanel.quickAttachmentToggle.disable()
+    }
   }
 
   private fun initializeInlineSearch() {
@@ -1150,7 +1165,7 @@ class ConversationFragment :
     presentChatColors(recipient.chatColors)
     invalidateOptionsMenu()
 
-    adapter.onMessageRequestStateChanged(!viewModel.hasMessageRequestState)
+    adapter.setMessageRequestIsAccepted(!viewModel.hasMessageRequestState)
   }
 
   private fun invalidateOptionsMenu() {
@@ -1160,15 +1175,17 @@ class ConversationFragment :
   }
 
   private fun presentActionBarMenu() {
-    optionsMenuCallback = ConversationOptionsMenuCallback()
-    menuProvider = ConversationOptionsMenu.Provider(optionsMenuCallback, disposables)
-    binding.toolbar.addMenuProvider(menuProvider)
-    invalidateOptionsMenu()
+    if (!args.conversationScreenType.isInPopup) {
+      optionsMenuCallback = ConversationOptionsMenuCallback()
+      menuProvider = ConversationOptionsMenu.Provider(optionsMenuCallback, disposables)
+      binding.toolbar.addMenuProvider(menuProvider!!)
+      invalidateOptionsMenu()
+    }
 
     when (args.conversationScreenType) {
       ConversationScreenType.NORMAL -> presentNavigationIconForNormal()
-      ConversationScreenType.BUBBLE -> presentNavigationIconForBubble()
-      ConversationScreenType.POPUP -> Unit
+      ConversationScreenType.BUBBLE,
+      ConversationScreenType.POPUP -> presentNavigationIconForBubble()
     }
   }
 
@@ -1207,8 +1224,10 @@ class ConversationFragment :
       titleView.clearExpiring()
     }
 
-    titleView.setOnClickListener {
-      optionsMenuCallback.handleConversationSettings()
+    if (!args.conversationScreenType.isInPopup) {
+      titleView.setOnClickListener {
+        optionsMenuCallback.handleConversationSettings()
+      }
     }
   }
 
@@ -1404,6 +1423,12 @@ class ConversationFragment :
     if (editMessage == null) {
       Log.w(TAG, "No edit message found, forcing exit")
       inputPanel.exitEditMessageMode()
+      return
+    }
+
+    if (!MessageConstraintsUtil.isWithinMaxEdits(editMessage)) {
+      Log.i(TAG, "Too many edits to the message")
+      Dialogs.showAlertDialog(requireContext(), null, resources.getQuantityString(R.plurals.ConversationActivity_edit_message_too_many_edits, MessageConstraintsUtil.MAX_EDIT_COUNT, MessageConstraintsUtil.MAX_EDIT_COUNT))
       return
     }
 
@@ -1743,7 +1768,9 @@ class ConversationFragment :
     disposables += send
       .doOnSubscribe {
         if (clearCompose) {
+          composeTextEventsListener?.typingStatusEnabled = false
           composeText.setText("")
+          composeTextEventsListener?.typingStatusEnabled = true
           attachmentManager.clear(GlideApp.with(this@ConversationFragment), false)
           inputPanel.clearQuote()
         }
@@ -1759,9 +1786,6 @@ class ConversationFragment :
 
   private fun onSendComplete() {
     if (isDetached || activity?.isFinishing == true) {
-      if (args.conversationScreenType.isInPopup) {
-        activity?.finish()
-      }
       return
     }
 
@@ -1773,6 +1797,10 @@ class ConversationFragment :
     draftViewModel.onSendComplete()
 
     inputPanel.exitEditMessageMode()
+
+    if (args.conversationScreenType.isInPopup) {
+      activity?.finish()
+    }
   }
 
   private fun handleRecentSafetyNumberChange(changedRecords: List<IdentityRecord>) {
@@ -1996,6 +2024,7 @@ class ConversationFragment :
       } else if (isSearchRequested) {
         searchMenuItem?.collapseActionView()
       } else if (args.conversationScreenType.isInBubble) {
+        isEnabled = false
         requireActivity().onBackPressed()
       } else {
         requireActivity().finish()
@@ -2119,10 +2148,17 @@ class ConversationFragment :
   }
 
   private fun handleDeleteMessages(messageParts: Set<MultiselectPart>) {
+    val records = messageParts.map(MultiselectPart::getMessageRecord).toSet()
     disposables += DeleteDialog.show(
       context = requireContext(),
-      messageRecords = messageParts.map(MultiselectPart::getMessageRecord).toSet()
-    ).subscribe()
+      messageRecords = records
+    ).subscribe { (deleted: Boolean, _: Boolean) ->
+      if (!deleted) return@subscribe
+      val editMessageId = inputPanel.editMessageId?.id
+      if (editMessageId != null && records.any { it.id == editMessageId }) {
+        inputPanel.exitEditMessageMode()
+      }
+    }
   }
 
   private inner class SwipeAvailabilityProvider : ConversationItemSwipeCallback.SwipeAvailabilityProvider {
