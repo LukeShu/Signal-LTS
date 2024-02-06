@@ -32,9 +32,12 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Locale;
+import java.util.TimeZone;
 import java.util.concurrent.TimeUnit;
 
 /*
@@ -93,29 +96,49 @@ public class DateUtils {
   private static final long                          MAX_RELATIVE_TIMESTAMP = TimeUnit.MINUTES.toMillis(3);
   private static final int                           HALF_A_YEAR_IN_DAYS    = 182;
 
+  /**
+   * For testing, it is important that we be able to mock the system
+   * clock.  MockK is unable to mock System.currentTimeMillis(), but
+   * is able to mock Instant.now().  Because we shouldn't overhaul the
+   * code to use Instants instead of millis until *after* there are
+   * tests, this is a shim to make mocking possible.
+   */
+  private static long System_currentTimeMillis() {
+    return Instant.now().toEpochMilli();
+  }
+
   private static boolean isWithin(final long millis, final long span, final TimeUnit unit) {
-    return System.currentTimeMillis() - millis <= unit.toMillis(span);
+    return System_currentTimeMillis() - millis <= unit.toMillis(span);
   }
 
   private static boolean isWithinAbs(final long millis, final long span, final TimeUnit unit) {
-    return Math.abs(System.currentTimeMillis() - millis) <= unit.toMillis(span);
+    return Math.abs(System_currentTimeMillis() - millis) <= unit.toMillis(span);
   }
 
   private static boolean isToday(final long millis) {
-    return android.text.format.DateUtils.isToday(millis);
+    return isSameDay(Instant.ofEpochMilli(millis), Instant.now());
   }
 
   private static boolean isYesterday(final long when) {
-    return android.text.format.DateUtils.isToday(when + TimeUnit.DAYS.toMillis(1));
+    return isToday(when + TimeUnit.DAYS.toMillis(1));
   }
 
   private static int convertDelta(final long millis, TimeUnit to) {
-    return (int) to.convert(System.currentTimeMillis() - millis, TimeUnit.MILLISECONDS);
+    return (int) to.convert(System_currentTimeMillis() - millis, TimeUnit.MILLISECONDS);
   }
 
   private static String getFormattedDateTime(long time, String template, Locale locale) {
     final String localizedPattern = getLocalizedPattern(template, locale);
-    return setLowercaseAmPmStrings(new SimpleDateFormat(localizedPattern, locale), locale).format(new Date(time));
+
+    final SimpleDateFormat formatter = new SimpleDateFormat(localizedPattern, locale);
+    setLowercaseAmPmStrings(formatter, locale);
+    // Since we're setting the timezone to the default, this is
+    // normally a no-op, but is important for testing because mocking
+    // ZoneId.systemDefault is easy, but mocking the timezone used by
+    // `new Date()` is a pain.
+    formatter.setTimeZone(TimeZone.getTimeZone(ZoneId.systemDefault()));
+
+    return formatter.format(new Date(time));
   }
 
   public static @NonNull String formatElapsedTime(@Nullable final Duration elapsed) {
@@ -123,6 +146,7 @@ public class DateUtils {
     if (elapsed != null) {
       elapsedSeconds = elapsed.getSeconds();
     }
+    // NB: android.text.format.DateUtils.formatElapsedTime() uses Locale.getDefault()
     return android.text.format.DateUtils.formatElapsedTime(elapsedSeconds);
   }
 
@@ -150,7 +174,7 @@ public class DateUtils {
     if (isWithin(timestamp, 1, TimeUnit.MINUTES)) {
       return context.getString(R.string.DateUtils_just_now);
     } else if (isWithin(timestamp, 1, TimeUnit.HOURS)) {
-      int mins = (int)TimeUnit.MINUTES.convert(System.currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
+      int mins = (int)TimeUnit.MINUTES.convert(System_currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
       return context.getResources().getString(R.string.DateUtils_minutes_ago, mins);
     } else {
       StringBuilder format = new StringBuilder();
@@ -170,7 +194,7 @@ public class DateUtils {
     if (isWithin(timestamp, 1, TimeUnit.MINUTES)) {
       return context.getString(R.string.DateUtils_just_now);
     } else if (isWithin(timestamp, 1, TimeUnit.HOURS)) {
-      int mins = (int) TimeUnit.MINUTES.convert(System.currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
+      int mins = (int) TimeUnit.MINUTES.convert(System_currentTimeMillis() - timestamp, TimeUnit.MILLISECONDS);
       return context.getResources().getString(R.string.DateUtils_minutes_ago, mins);
     } else {
       return getOnlyTimeString(context, locale, when);
@@ -220,7 +244,7 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
 
-    if (simpleDateFormat.format(System.currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
+    if (simpleDateFormat.format(System_currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
       return context.getString(R.string.DeviceListItem_today);
     } else {
       String format;
@@ -241,7 +265,7 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd");
 
-    if (simpleDateFormat.format(System.currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
+    if (simpleDateFormat.format(System_currentTimeMillis()).equals(simpleDateFormat.format(timestamp))) {
       return context.getString(R.string.DeviceListItem_today);
     } else {
       String format;
@@ -263,7 +287,14 @@ public class DateUtils {
       dateFormatPattern = getLocalizedPattern("MMM d, yyyy hh:mm:ss a zzz", locale);
     }
 
-    return (new SimpleDateFormat(dateFormatPattern, locale)).format(when.toEpochMilli());
+    final SimpleDateFormat formatter = new SimpleDateFormat(dateFormatPattern, locale);
+    // Since we're setting the timezone to the default, this is
+    // normally a no-op, but is important for testing because mocking
+    // ZoneId.systemDefault is easy, but mocking the timezone used by
+    // `new Date()` is a pain.
+    formatter.setTimeZone(TimeZone.getTimeZone(ZoneId.systemDefault()));
+
+    return formatter.format(when.toEpochMilli());
   }
 
   public static @NonNull String getConversationDateHeaderString(@NonNull final Context context, @NonNull final Locale locale, @NonNull final Instant when) {
@@ -294,7 +325,15 @@ public class DateUtils {
     final long timestamp = when.toEpochMilli();
     String dayModifier;
     if (isToday(timestamp)) {
-      Calendar calendar = Calendar.getInstance(locale);
+      // Since we're passing in the default timezone, normally we'd be
+      // able to just omit that argument, but passing it explicitly is
+      // important for testing because mocking the default timezone
+      // used by `Calendar.getInstance(locale)` is a pain.
+      Calendar calendar = Calendar.getInstance(TimeZone.getTimeZone(ZoneId.systemDefault()), locale);
+      // Since we're setting the time to the current time, this is
+      // normally a no-op, but is important for testing because
+      // mocking the clock used by `Calendar.getInstance()` is a pain.
+      calendar.setTimeInMillis(System_currentTimeMillis());
       if (calendar.get(Calendar.HOUR_OF_DAY) >= 19) {
         dayModifier = context.getString(R.string.DateUtils_tonight);
       } else {
@@ -335,10 +374,13 @@ public class DateUtils {
   }
 
   public static boolean isSameDay(@NonNull final Instant t1, @NonNull final Instant t2) {
-    String d1 = getDateFormat().format(new Date(t1.toEpochMilli()));
-    String d2 = getDateFormat().format(new Date(t2.toEpochMilli()));
+    ZoneId tz = ZoneId.systemDefault();
+    LocalDateTime dt1 = LocalDateTime.ofInstant(t1, tz);
+    LocalDateTime dt2 = LocalDateTime.ofInstant(t2, tz);
 
-    return d1.equals(d2);
+    return (dt1.getYear() == dt2.getYear() &&
+            dt1.getMonthValue() == dt2.getMonthValue() &&
+            dt1.getDayOfMonth() == dt2.getDayOfMonth());
   }
 
   public static boolean isSameExtendedRelativeTimestamp(@NonNull final Instant second, @NonNull final Instant first) {
