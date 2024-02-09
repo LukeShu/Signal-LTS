@@ -53,7 +53,7 @@ def abiPostFix = ['universal'   : 0,
                   'x86'         : 3,
                   'x86_64'      : 4]
 
-def ltsPostFix = 1
+def ltsPostFix = 2
 def ltsPostFixSize = 10
 canonicalVersionName += "." + ltsPostFix
 
