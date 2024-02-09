@@ -30,7 +30,7 @@ public final class RegistrationUtil {
                                              .then(new DirectoryRefreshJob(false))
                                              .enqueue();
     } else if (!SignalStore.registrationValues().isRegistrationComplete()) {
-      Log.i(TAG, "Registration is not yet complete.", new Throwable());
+      Log.i(TAG, "Registration is not yet complete.");
     }
   }
 }
